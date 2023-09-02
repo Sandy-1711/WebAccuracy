@@ -1,0 +1,112 @@
+.main {
+    background-color: white;
+    /* height: 100dvh; */
+    width: 100dvw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    /* border-bottom: 1px solid #272839; */
+
+}
+
+.text {
+
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.text p {
+    font-size: 25px;
+    color: #ee464b;
+    margin-bottom: 30px;
+}
+
+.text h1 {
+    font-size: 40px;
+    color: #272839;
+}
+
+.servicesBox {
+
+    width: 60%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.servicesCard {
+    position: relative;
+    height: 15rem;
+    color: grey;
+    fill: white;
+    width: 15rem;
+    padding: 0rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    transition: 1s ease-in-out;
+    transition: 400ms ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.servicesCardFront {
+    border: 1px solid #e8e8ef;
+
+    position: absolute;
+    transition: 400ms ease-in-out;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: perspective(500px) rotateY(0deg);
+
+}
+
+.servicesCardBack {
+    border: 1px solid #e8e8ef;
+
+    padding: 1rem;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 400ms ease-in-out;
+
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    
+    transform: perspective(500px) rotateY(-180deg) ;
+}
+
+.servicesCard p {
+    width: 50%;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.servicesCardFront img {
+    filter: opacity(0.7);
+
+}
+
+.servicesCard:hover > .servicesCardBack{
+    
+    transform: perspective(500px) rotateY(0deg);
+}
+.servicesCard:hover > .servicesCardFront{
+    transform: perspective(500px) rotateY(180deg);
+}

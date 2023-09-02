@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+.homePage {
+    width: 100dvw;
+    height: max-content;
+    position: relative;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background: url('https://zimed.netlify.app/assets/images/background/banner-bg-1-1.png');
+}
+
+.servicenav {
+    
+    position: sticky;
+    top: 10vh;
+    height: 5dvh;
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    background-color: #272839;
+
+}
+
+.servicenav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+.servicenav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.contentPage{
+    width: 50%;
+    height: max-content;
+    margin: 40px auto;
+}
+.contentPage h1{
+    margin: 20px 0;
+}
+.contentPage section{
+    padding-top: 10vh;
+}
+
+
+@media screen and (width<=900px) {
+    .contentPage {
+        width: 95%;
+    }
+}

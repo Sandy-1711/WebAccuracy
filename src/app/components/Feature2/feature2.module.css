@@ -1,0 +1,137 @@
+.page {
+    height: max-content;
+    padding: 5rem 0;
+    width: 100dvw;
+    background-color: #F4F4F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.phonePhoto {
+    z-index: 10;
+}
+
+.pattern1 {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    animation: animate 10s infinite;
+    z-index: 5;
+}
+
+.pattern2 {
+    z-index: 5;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    animation: animate 10s infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.text {
+    width: 45%;
+}
+
+.text p {
+    color: #ee464B;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text h1 {
+    font-size: 55px;
+    font-weight: 900;
+    color: #272839;
+}
+
+.feature {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.feature .featureText {
+    z-index: 10;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.circleicon {
+    background-color: #7c7d8a;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+}
+
+.line {
+    z-index: 9;
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: #909097;
+    top: 100%;
+    left: 50%;
+}
+.line1{
+    z-index: 9;
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: #909097;
+    bottom: 100%;
+    left: 50%;
+}
+
+.features {
+    margin-top: 1rem;
+    width: 100%;
+    color: #7c7d8a;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button button {
+    width: fit-content;
+    margin: auto;
+    background: linear-gradient(90deg, #e41256 0%, #ffa337 51%, #e41256 100%);
+    background-size: 200% auto;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .4s ease;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: calc(100dvw / 103.6) calc(100dvw / 53.28);
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button button:hover {
+    background-position: right center;
+
+}

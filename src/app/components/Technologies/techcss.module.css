@@ -1,0 +1,170 @@
+.techPage {
+
+    height: 100dvh;
+    width: 100dvw;
+    background: linear-gradient(90deg, #4352AC, #03A9DB);
+    text-transform: uppercase;
+    color: white;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.techAnimation {
+
+    position: absolute;
+    /* bottom: 30%; */
+
+}
+.techtext {
+    top: 20%;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.innerCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+.outerCircle1 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 3px solid rgb(189, 189, 189, 0.8);
+    border-radius: 50%;
+}
+
+.imageBox {
+    position: absolute;
+    width: 100%;
+    left: -10%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+}
+
+.imgimgbox {
+    background-color: #fff;
+    position: absolute;
+    width: 55px;
+    border-radius: 50%;
+    height: 55px;
+    transform: rotate(calc(360deg / 3 * var(--i) + 45deg));
+    transform-origin: 125px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgimgbox img {
+    height: 60%;
+    width: 60%;
+    transform: rotate(calc(-360deg / 3 * var(--i) - 45deg));
+}
+
+.outerCircle2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 300px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(214, 214, 214, 0.5);
+    border-radius: 50%;
+
+}
+
+.outerCircle2 .imageBox {
+    position: absolute;
+    width: 100%;
+    /* left: -10%; */
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+}
+
+.outerCircle2 .imageBox .imgimgbox {
+    transform: rotate(calc(360deg / 2 * var(--i) - 120deg));
+    transform-origin: 175px;
+
+}
+
+.outerCircle2 .imageBox .imgimgbox img {
+
+    transform: rotate(calc(-360deg / 2 * var(--i) + 120deg));
+
+}
+
+.outerCircle3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 400px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(214, 214, 214, 0.5);
+    border-radius: 50%;
+}
+
+.outerCircle3 .imageBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -5%;
+}
+
+.outerCircle3 .imageBox .imgimgbox {
+
+    transform: rotate(calc(360deg / 2 * var(--i) + 120deg));
+    transform-origin: 225px;
+
+}
+
+.outerCircle3 .imageBox .imgimgbox img {
+
+    transform: rotate(calc(-360deg / 2 * var(--i) - 120deg));
+
+}
+
+.outerCircle4{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 500px;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(214, 214, 214, 0.5);
+    border-radius: 50%;
+}
+.outerCircle4 .imageBox .imgimgbox{
+    transform: rotate(calc(360deg / 2 * var(--i)));
+    transform-origin: 275px;
+    left: 20px;
+}
+.outerCircle4 .imageBox .imgimgbox img {
+
+    transform: rotate(calc(-360deg / 2 * var(--i)));
+
+}
+

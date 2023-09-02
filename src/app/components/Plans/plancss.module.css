@@ -1,0 +1,225 @@
+.planPage {
+    height: max-content;
+    width: 100dvw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+.belowPlanPage{
+    position: relative;
+    height: max-content;
+    width: 100dvw;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    flex-direction: column;
+    z-index: 20;
+}
+.floatingobject3{
+    position: absolute;
+    left: 0;
+}
+.outer {
+    padding: 0 calc(100dvw / 15);
+    width: 80%;
+    background-color: #F4F4F8;
+    height: 15dvh;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.inner h1 {
+    font-size: calc(100dvw / 60);
+
+}
+
+.inner p {
+    font-size: calc(100dvw / 100);
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttondiv button {
+    background: linear-gradient(90deg, #4352AC, #03A9DB);
+    border: none;
+    outline: none;
+    font-size: calc(100dvw / 100);
+    padding: calc(100dvw / 103.6) calc(100dvw / 53.28);
+    /* border: calc(100dvw / 932.5) solid white; */
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-size: calc(100dvw / 93.25);
+    text-transform: uppercase;
+    box-shadow: 1px 1px 10px #4352AC;
+    transition: 400ms ease-in-out;
+
+}
+
+.buttondiv button:hover {
+    background: #F4F4F8;
+    color: #4352AC;
+}
+
+.line {
+    height: 10dvh;
+    width: 2px;
+    background-color: #272839;
+}
+
+.planCards {
+    width: 80%;
+    height: max-content;
+    padding: 5rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.planCard {
+    width: calc(100% / 4.5);
+    overflow: hidden;
+    height: max-content;
+    border: 1px solid rgb(232, 232, 239);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.planCardImage {
+    background-color: white;
+    height: 17rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(232, 232, 239);
+}
+
+.planCardImage h1 {
+    color: #272839;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 1em;
+}
+
+.planCardImage p {
+    color: #7c7d8a;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 18px;
+}
+
+.features {
+    padding: 25px 0;
+    color: #7c7d8a;
+    text-align: center;
+}
+
+.features p {
+    margin-top: 10px;
+}
+
+.planButton {
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.planButton button {
+    width: fit-content;
+    margin: auto;
+    background: linear-gradient(90deg, #e41256 0%, #ffa337 51%, #e41256 100%);
+    background-size: 200% auto;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .4s ease;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: calc(100dvw / 103.6) calc(100dvw / 53.28);
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.planButton button:hover {
+    background-position: right center;
+}
+
+.planHeading {
+    margin-top: 5rem;
+    color: #272839;
+
+}
+
+.floatingobject1 {
+    position: absolute;
+    right: 10%;
+    top: 400px;
+    transform: rotate(-90deg);
+    animation: animate 3s infinite;
+}
+.floatingobject2{
+    position: absolute;
+    left: 10%;
+    top: 400px;
+    animation: move 4s infinite;
+}
+@keyframes move {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.floatingobject1 img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        transform: rotate(-50deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+.aboutPage {
+    background: url('https://zimed.netlify.app/assets/images/background/banner-bg-1-1.png');
+    width: 100vw;
+    padding-top: 10vh;
+    /* background: black; */
+    color: wheat;
+    height: 200vh;
+    font-family: 'Barlow', sans-serif;
+}
