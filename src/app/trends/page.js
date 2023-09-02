@@ -10,7 +10,7 @@ export default function Page() {
                 <p>
                     <strong>Empower Your Ranchi Lifestyle with Cutting-Edge IoT Services</strong>
                     <br />
-                    Welcome to the forefront of technological innovation in Ranchi! Our IoT services are poised to revolutionize the way you interact with your surroundings. Whether you're a homeowner, a business owner, or an entrepreneur, our tailored IoT solutions bring unparalleled convenience, efficiency, and intelligence to your daily life.
+                    Welcome to the forefront of technological innovation in Ranchi! Our IoT services are poised to revolutionize the way you interact with your surroundings. Whether you&apos;re a homeowner, a business owner, or an entrepreneur, our tailored IoT solutions bring unparalleled convenience, efficiency, and intelligence to your daily life.
                     <br />
                     <br />
                     At Web Accuracy, we specialize in crafting seamless IoT experiences that seamlessly connect devices, data, and insights. Our expert team is dedicated to transforming your Ranchi living or working spaces into smart environments that respond intuitively to your needs. From smart homes that adapt to your preferences to intelligent business solutions that streamline operations, we offer a comprehensive suite of IoT services designed to elevate your Ranchi lifestyle.
@@ -18,7 +18,7 @@ export default function Page() {
                     <br />
                     <strong>Discover the Future of Ranchi Living with IoT</strong>
                     <br />
-                    Join us on the journey to a smarter Ranchi. Embrace the power of IoT technology to simplify tasks, enhance comfort, and unlock new possibilities. Whether it's managing your home remotely, optimizing energy usage, or gaining insights to boost business efficiency, Web Accuracy has the perfect IoT solution for you.
+                    Join us on the journey to a smarter Ranchi. Embrace the power of IoT technology to simplify tasks, enhance comfort, and unlock new possibilities. Whether it&apos;s managing your home remotely, optimizing energy usage, or gaining insights to boost business efficiency, Web Accuracy has the perfect IoT solution for you.
                     <br />
                     <br />
                     Experience the future today. Contact us to learn more about our IoT services in Ranchi and embark on a connected, intelligent, and empowered tomorrow.
@@ -66,7 +66,7 @@ export default function Page() {
             <section id='blockchain'>
                 <h1>Blockchain</h1>
                 <p>
-                    Welcome to Ranchi's Leading Web 3.0 and Blockchain Experts: Discover cutting-edge solutions at the forefront of technology with our team of skilled designers and developers in Ranchi.
+                    Welcome to Ranchi&apos;s Leading Web 3.0 and Blockchain Experts: Discover cutting-edge solutions at the forefront of technology with our team of skilled designers and developers in Ranchi.
                 </p>
                 <br/>
                 <ul>
@@ -82,7 +82,7 @@ export default function Page() {
                         <strong>Tailored Solutions:</strong>Our team understands that every project is unique. We craft customized strategies to meet your specific goals, ensuring that your Web 3.0 and blockchain solutions are perfectly aligned with your vision.
                     </li>
                     <li>
-                        <strong>Seamless Integration:</strong>Whether you're looking to integrate blockchain into your existing systems or create a brand-new Web 3.0 platform, our developers have the expertise to seamlessly integrate these technologies for optimal performance.
+                        <strong>Seamless Integration:</strong>Whether you&apos;re looking to integrate blockchain into your existing systems or create a brand-new Web 3.0 platform, our developers have the expertise to seamlessly integrate these technologies for optimal performance.
                     </li>
                 </ul>
 

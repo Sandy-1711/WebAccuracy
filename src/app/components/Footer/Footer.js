@@ -52,22 +52,22 @@ export default function Footer() {
             <div className={footercss.links}>
                 <ul>
 
-                    {data1.map(function (el) {
-                        return <li><span>&#10148; </span><a>{el.title}</a></li>
+                    {data1.map(function (el,index) {
+                        return <li key={index}><span>&#10148; </span><a>{el.title}</a></li>
                     })}
                 </ul>
             </div>
             <div className={footercss.links}>
                 <ul>
-                    {data2.map(function (el) {
-                        return <li><span>&#10148; </span><a>{el.title}</a></li>
+                    {data2.map(function (el,index) {
+                        return <li key={index}><span>&#10148; </span><a>{el.title}</a></li>
                     })}
                 </ul>
             </div>
             <div className={footercss.links}>
                 <ul>
-                    {data3.map(function (el) {
-                        return <li><span>&#10148; </span><a>{el.title}</a></li>
+                    {data3.map(function (el,index) {
+                        return <li key={index}><span>&#10148; </span><a>{el.title}</a></li>
                     })}
                 </ul>
             </div>

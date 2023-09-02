@@ -228,13 +228,13 @@ export default function Plans() {
 
     return (<div className={plancss.planPage}>
         <div className={plancss.floatingobject1}>
-            <img src={'https://zimed.netlify.app/assets/images/shapes/banner-shapes-1-6.png'} />
+            <img src={'https://zimed.netlify.app/assets/images/shapes/banner-shapes-1-6.png'} alt='object1'/>
         </div>
         <div className={plancss.floatingobject2}>
-            <img src={'https://zimed.netlify.app/assets/images/shapes/pricing-shape-2.png'} />
+            <img src={'https://zimed.netlify.app/assets/images/shapes/pricing-shape-2.png'} alt='object2'/>
         </div>
         <div className={plancss.floatingobject3}>
-            <img src='https://zimed.netlify.app/assets/images/shapes/pricing-shape-1.png' />
+            <img src='https://zimed.netlify.app/assets/images/shapes/pricing-shape-1.png' alt='object3'/>
         </div>
         <div className={plancss.belowPlanPage}>
 
@@ -253,8 +253,8 @@ export default function Plans() {
                 <h1>WEBSITE PLANS FOR YOUR BUSINESS / CONCEPT</h1>
             </div>
             <div className={plancss.planCards}>
-                {data1.map(function (el) {
-                    return (<div className={plancss.planCard}>
+                {data1.map(function (el,index) {
+                    return (<div key={index} className={plancss.planCard}>
                         <div className={plancss.planCardImage}>
                             <Image height={100} width={100} src={el.imgsrc} />
                             <h1>&#8377;  {el.price}</h1>
@@ -262,11 +262,11 @@ export default function Plans() {
                         </div>
 
                         <div className={plancss.features}>
-                            {el.features.map(function (elel) {
+                            {el.features.map(function (elel,index) {
                                 if (elel.rup === true) {
-                                    return <p>&#8377; {elel.a}</p>
+                                    return <p key={index}>&#8377; {elel.a}</p>
                                 }
-                                return <p>{elel.a}</p>
+                                return <p key={index}>{elel.a}</p>
                             })}
                         </div>
                         <div className={plancss.planButton}>
@@ -277,19 +277,19 @@ export default function Plans() {
 
             </div>
             <div className={plancss.planCards}>
-                {data2.map(function (el) {
-                    return (<div className={plancss.planCard}>
+                {data2.map(function (el,index) {
+                    return (<div key={index} className={plancss.planCard}>
                         <div className={plancss.planCardImage}>
                             <Image height={100} width={100} src={el.imgsrc} />
                             <h1>&#8377;  {el.price}</h1>
                             <p>{el.plan}</p>
                         </div>
                         <div className={plancss.features}>
-                            {el.features.map(function (elel) {
+                            {el.features.map(function (elel,index) {
                                 if (elel.rup === true) {
-                                    return <p>&#8377; {elel.a}</p>
+                                    return <p key={index}>&#8377; {elel.a}</p>
                                 }
-                                return <p>{elel.a}</p>
+                                return <p key={index}>{elel.a}</p>
                             })}
                         </div>
                         <div className={plancss.planButton}>

@@ -8,11 +8,11 @@ export default function Page() {
         <div className={realitycss.contentPage}>
             <section>
                 <p>
-                    Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR) are technologies that blend the physical and digital worlds to create immersive and interactive experiences. These technologies have applications across various industries and offer innovative ways to engage users and solve problems. Let's take a closer look at each of them:</p>
+                    Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR) are technologies that blend the physical and digital worlds to create immersive and interactive experiences. These technologies have applications across various industries and offer innovative ways to engage users and solve problems. Let&apos;s take a closer look at each of them:</p>
             </section>
             <section id='ar'>
                 <h1>Augmented Reality (AR)</h1>
-                <p>Augmented Reality involves overlaying digital information onto the real world using devices like smartphones, tablets, or AR glasses. AR enhances the user's perception of reality by adding digital elements such as images, videos, or 3D models to their view. It allows users to interact with virtual objects in a real environment.</p>
+                <p>Augmented Reality involves overlaying digital information onto the real world using devices like smartphones, tablets, or AR glasses. AR enhances the user&apos;s perception of reality by adding digital elements such as images, videos, or 3D models to their view. It allows users to interact with virtual objects in a real environment.</p>
                 <br />
                 <h3>Applications of AR:</h3>
                 <br />
@@ -31,7 +31,7 @@ export default function Page() {
                         <strong>Gaming:</strong>AR gaming apps like Pokémon GO use the real world as a playground for virtual elements and interactions.
                     </li>
                     <li>
-                        <strong>Healthcare:</strong>AR can assist medical professionals during surgery by overlaying diagnostic information on a patient's body.
+                        <strong>Healthcare:</strong>AR can assist medical professionals during surgery by overlaying diagnostic information on a patient&apos;s body.
                     </li>
                 </ul>
             </section>
@@ -42,7 +42,7 @@ export default function Page() {
                 <h3>Applications of VR:</h3>
                 <br />
                 <p>
-                    <strong>Gaming:</strong> VR gaming provides users with a fully immersive experience, making them feel like they're inside the game.<br />
+                    <strong>Gaming:</strong> VR gaming provides users with a fully immersive experience, making them feel like they&apos;re inside the game.<br />
                     <strong>Training and Simulation:</strong> Industries like aviation, medicine, and military use VR for realistic training scenarios without real-world risks.<br />
                     <strong>Architecture and Design:</strong> VR enables architects and designers to walk through virtual buildings before construction begins.<br />
                     <strong>Tourism and Entertainment:</strong> VR can transport users to distant locations, historical periods, or fictional worlds.<br />
