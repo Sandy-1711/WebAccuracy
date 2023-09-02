@@ -31,12 +31,11 @@
 
 .servicesBox {
 
-    width: 60%;
+    width: 100%;
     gap: 2rem;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4,15rem);
 
 }
 
@@ -97,8 +96,12 @@
     color: grey;
     text-transform: uppercase;
 }
-
+.servicesCardBack p{
+    width: 90%;
+}
 .servicesCardFront img {
+    width: 50%;
+    height: 50%;
     filter: opacity(0.7);
 
 }
@@ -109,4 +112,71 @@
 }
 .servicesCard:hover > .servicesCardFront{
     transform: perspective(500px) rotateY(180deg);
+}
+@media screen and (width<1200px) {
+    .servicesBox{
+        grid-template-columns: repeat(4,12rem);
+    }
+    .servicesCard{
+        height: 12rem;
+        width: 12rem;
+    }
+    .servicesCard p{
+        font-size: 14px;
+    }
+}
+@media screen and (width<960px) {
+    
+    .text h1{
+        font-size: 22px;
+    }
+    .text p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .servicesBox{
+        grid-template-columns: repeat(3,10rem);
+        gap: 1rem;
+        
+    }
+    .servicesCard{
+        width: 10rem;
+        height: 10rem;
+    }
+    .servicesCard p{
+        font-size: 12px;
+        width: 100%;
+    }
+    .servicesCardBack p{
+        width:100%;
+    }
+}
+@media screen and (width<500px)
+{
+    .servicesBox{
+        grid-template-columns: repeat(4,5.5rem);
+        gap: 5px;
+    }
+    .servicesCard p{
+        font-size: 10px;
+    }
+    .servicesCardFront{
+        gap: 5px;
+    }
+    .servicesCardBack{
+        padding: 1px;
+    }
+    .servicesCardBack p{
+        font-size: 8px;
+    }
+    .servicesCard{
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    .text{
+        margin-bottom: 20px;
+    }
+    .main{
+        padding-bottom: 5rem;
+    }
 }

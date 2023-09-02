@@ -12,7 +12,7 @@
     justify-content: space-around;
     align-items: flex-start;
     color: rgb(188, 188, 188);
-    font-size: calc( 100dvw / 93.25 );
+    font-size: 18px;
     font-weight: 400;
     gap: 5rem;
 
@@ -56,7 +56,7 @@
 }
 
 .copyright {
-    font-size: calc( 100dvw / 94);
+    font-size:10px;
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -72,4 +72,21 @@
 .copyright span {
     color: rgb(95, 95, 255);
     cursor: pointer;
+}
+@media screen and (width<960px) {
+    .links{
+        font-size: 16px;
+        width: 80%;
+    }
+    .linksContainer{
+        width: 100%;
+        /* text-align: center; */
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerPage{
+        padding: 2rem 0 5rem 0;
+    }
 }

@@ -12,6 +12,10 @@
 
 .phonePhoto {
     z-index: 10;
+    /* width:40rem; */
+}
+.phonePhoto img{
+    width: 100%;
 }
 
 .pattern1 {
@@ -20,6 +24,7 @@
     bottom: 10%;
     animation: animate 10s infinite;
     z-index: 5;
+
 }
 
 .pattern2 {
@@ -96,7 +101,7 @@
     z-index: 9;
     position: absolute;
     width: 1px;
-    height: 50px;
+    height: 10px;
     background-color: #909097;
     bottom: 100%;
     left: 50%;
@@ -123,7 +128,7 @@
     border: none;
     border-radius: 5px;
     outline: none;
-    padding: calc(100dvw / 103.6) calc(100dvw / 53.28);
+    padding: 15px 40px;
     cursor: pointer;
     border-radius: 5px;
     color: white;
@@ -134,4 +139,46 @@
 .button button:hover {
     background-position: right center;
 
+}
+
+@media screen and (width<500px) {
+    .phonePhoto{
+        width: 90%;
+    }
+    .text{
+        width: 80%;
+        margin: auto;
+    }
+    .text h1{
+        font-size: 22px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+    .pattern1{
+        width: 5rem;
+    }
+    .pattern1 img{
+        width: 100%;
+    }
+    .circleicon{
+        width: 25px;
+        height: 25px;
+    }
+    .line{
+        height: 80px;
+    }
+    .featureText p{
+        font-size: 18px;
+    }
+    .featureText span{
+        font-size: 15px;
+    }
+    .button button{
+        font-size: 18px;
+        border-radius: 5px;
+        width: max-content;
+        padding: 10px 20px;
+        margin-left: 12%;
+    }
 }

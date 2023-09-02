@@ -6,6 +6,22 @@
     background: url('https://zimed.netlify.app/assets/images/background/banner-bg-1-1.png');
     position: relative;
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heroInside {
+    /* height: 100%; */
+    /* top: 30%; */
+    padding-top: 320px;
+    padding-bottom: 275px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    flex-wrap: wrap;
 }
 
 .pattern1 {
@@ -55,23 +71,25 @@
 
 
 .textBox {
-    position: absolute;
-    top: 55%;
-    transform: translateY(-50%);
-    left: 10%;
-    width: 35%;
+    /* position: absolute; */
+    /* top: 55%; */
+    /* transform: translateY(-50%); */
+    /* left: 0%; */
+    width: 50%;
+    margin-left: 20px;
 }
 
-.textBox h1 {
+.textBox h3 {
     text-transform: uppercase;
-    font-size: calc(100dvw / 27);
+    font-size: 70px;
     color: white;
+    font-weight: 400;
 }
 
 
 .textBox p {
     text-transform: uppercase;
-    font-size: calc(100dvw / 103);
+    font-size: 18px;
     color: white;
     width: 85%;
     margin-top: calc(100dvw / 45);
@@ -82,13 +100,14 @@
     background: transparent;
     border: none;
     outline: none;
-    padding: calc(100dvw / 103.6) calc(100dvw / 53.28);
+    /* padding: calc(100dvw / 103.6) calc(100dvw / 53.28); */
+    padding: 16px 65px;
     border: calc(100dvw / 932.5) solid white;
     cursor: pointer;
-    margin-top: calc(100dvw / 45);
+    margin-top: 40px;
     border-radius: 5px;
     color: white;
-    font-size: calc(100dvw / 93.25);
+    font-size: 18px;
     text-transform: uppercase;
 
 }
@@ -184,20 +203,15 @@
 
 .mobile {
 
-    position: absolute;
-    width: 30rem;
-    right: 15%;
-    top: 20rem;
     animation: ImgBounce 5s ease-in-out 0s infinite alternate;
     animation: load 2s;
     animation-delay: 1s;
     z-index: 110;
 }
 
-.mobile img {
+.mobile img{
     width: 100%;
 }
-
 @keyframes load {
     0% {
         transform: rotateY(0deg);
@@ -289,4 +303,69 @@
 
 .customshapedividerbottom .shape-fill {
     fill: #FFFFFF;
+}
+
+@media screen and (width<1200px) {
+    .heroInside {
+        width: 960px;
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media screen and (width<960px) {
+    .heroInside {
+        height: max-content;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+
+    .heropage {
+        background-position: center;
+        height: max-content;
+    }
+
+
+
+    .textBox {
+        width: 90%;
+    }
+
+    .textBox h3 {
+        font-size: 22px;
+    }
+    .textBox p{
+        font-size: 14px;
+    }
+    .textBox button{
+        padding: 7px 17px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .pattern1{
+        display: none;
+    }
+    
+    .pattern2{
+        display: none;
+    }
+    
+    .pattern3{
+        display: none;
+    }
+    
+    .pattern4{
+        display: none;
+    }
+    .pyramid1{
+        display: none;
+    }
+    .pyramid2{
+        display: none;
+    }
+    
 }

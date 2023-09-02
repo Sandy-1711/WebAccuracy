@@ -62,7 +62,7 @@ export default function ServicesBox() {
                 <p>{element.name}</p>
             </div>
 
-            <div className={featurecss.servicesCardBack}>{element.desc}</div>
+            <div className={featurecss.servicesCardBack}><p>{element.desc}</p></div>
         </div>)
     }
     return <div id='serviceBox' className={featurecss.servicesBox}>
