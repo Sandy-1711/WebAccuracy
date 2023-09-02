@@ -2,7 +2,7 @@ import Image from 'next/image'
 import './globals.css'
 export const metadata = {
   title: 'Website Designers in Ranchi',
-  description: 'Embark on the Future of App Development with Seasoned Developers in Ranchi! 🚀 Are you in pursuit of visionary web designers and developers in Ranchi? Look no further! Our forward-thinking web development solutions are meticulously crafted to breathe life into your concepts within the digital realm. We harness the power of an array of cutting-edge technologies, including React and NextJS, to architect visually mesmerizing and functionally adept cross-platform applications that resonate universally on all platforms',
+  description: 'Embark on the Future of Website Development with Seasoned Developers in Ranchi! 🚀 Are you in pursuit of visionary web designers and developers in Ranchi? Look no further! ',
 }
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
