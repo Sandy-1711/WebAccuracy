@@ -8,16 +8,16 @@ export default function Hero() {
             <div className={herocss.pattern2}></div>
             <div className={herocss.pattern3}></div>
             <div className={herocss.pattern4}>
-                <img src='https://zimed.netlify.app/assets/images/shapes/banner-shapes-1-3.png' />
+                <img src='https://zimed.netlify.app/assets/images/shapes/banner-shapes-1-3.png' alt='pattern' />
             </div>
             <div className={herocss.pyramid1}>
-                <img src='https://zimed.netlify.app/assets/images/shapes/banner-shapes-1-7.png' />
+                <img src='https://zimed.netlify.app/assets/images/shapes/banner-shapes-1-7.png' alt='pattern'/>
             </div>
             <div className={herocss.pyramid2}>
-                <img src='https://zimed.netlify.app/assets/images/shapes/banner-shapes-1-6.png' />
+                <img src='https://zimed.netlify.app/assets/images/shapes/banner-shapes-1-6.png' alt='pattern' />
             </div>
             <div className={herocss.mobile}>
-                <img src='https://zimed.netlify.app/assets/images/mocs/banner-moc-1-1.png' />
+                <img src='https://zimed.netlify.app/assets/images/mocs/banner-moc-1-1.png' alt='pattern'/>
             </div>
             <div className={herocss.textBox}>
                 <h1>Connect With us to connect the world</h1>

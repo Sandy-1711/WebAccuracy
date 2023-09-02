@@ -62,13 +62,13 @@ export default function Circle() {
         <div id='outerCircle' className={techcss.outerCircle1}>
             <div className={techcss.imageBox}>
                 <div style={{ '--i': 0 }} className={techcss.imgimgbox}>
-                    <Image height={100} width={100} src={'/Html.png'} />
+                    <Image height={100} width={100} src={'/Html.png'} alt='html'/>
                 </div>
                 <div style={{ '--i': 1 }} className={techcss.imgimgbox}>
-                    <Image height={100} width={100} src={'/CSS.png'} />
+                    <Image height={100} width={100} src={'/CSS.png'} alt='css'/>
                 </div>
                 <div style={{ '--i': 2 }} className={techcss.imgimgbox}>
-                    <Image height={100} width={100} src={'/Javascript.png'} />
+                    <Image height={100} width={100} src={'/Javascript.png'} alt='javascript'/>
                 </div>
 
             </div>
@@ -76,10 +76,10 @@ export default function Circle() {
         <div id='outerCircle' className={techcss.outerCircle2}>
             <div className={techcss.imageBox}>
                 <div style={{ '--i': 0 }} className={techcss.imgimgbox}>
-                    <Image height={100} width={100} src={'/ReactNative.png'} />
+                    <Image height={100} width={100} src={'/ReactNative.png'} alt='reactnative'/>
                 </div>
                 <div style={{ '--i': 1.2 }} className={techcss.imgimgbox}>
-                    <Image height={100} width={100} src={'/React.png'} />
+                    <Image height={100} width={100} src={'/React.png'} alt='react'/>
                 </div>
             </div>
         </div>
@@ -87,10 +87,10 @@ export default function Circle() {
             <div className={techcss.imageBox}>
                 <div style={{ '--i': 0.2 }} className={techcss.imgimgbox}>
 
-                    <Image height={100} width={100} src={'/Next.png'} />
+                    <Image height={100} width={100} src={'/Next.png'} alt='next'/>
                 </div>
                 <div style={{ '--i': -0.8 }} className={techcss.imgimgbox}>
-                    <Image height={100} width={100} src={'/Node.png'} />
+                    <Image height={100} width={100} src={'/Node.png'}  alt='node'/>
 
                 </div>
             </div>
@@ -100,10 +100,10 @@ export default function Circle() {
             <div className={techcss.imageBox}>
                 <div style={{ '--i': 0.2 }} className={techcss.imgimgbox}>
 
-                    <Image height={100} width={100} src={'/MongoDB.png'} />
+                    <Image height={100} width={100} src={'/MongoDB.png'} alt='mongodb'/>
                 </div>
                 <div style={{ '--i': -0.8 }} className={techcss.imgimgbox}>
-                    <Image height={100} width={100} src={'/Blockchain.png'} />
+                    <Image height={100} width={100} src={'/Blockchain.png'} alt='blockchain'/>
 
                 </div>
             </div>

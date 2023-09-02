@@ -58,7 +58,7 @@ export default function ServicesBox() {
 
         return (<div key={element.id} className={featurecss.servicesCard}>
             <div className={featurecss.servicesCardFront}>
-                <Image loading='lazy' height={100} width={100} src={element.imagesrc} href={element.name} />
+                <Image loading='lazy' height={100} width={100} src={element.imagesrc} alt={element.name} />
                 <p>{element.name}</p>
             </div>
 

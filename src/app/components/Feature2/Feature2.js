@@ -1,12 +1,12 @@
 import featurecss from './feature2.module.css'
 export default function Feature2() {
     return <div className={featurecss.page}>
-        <div className={featurecss.pattern1}><img src='https://zimed.netlify.app/assets/images/shapes/cta-1-shape-3.png' /></div>
+        <div className={featurecss.pattern1}><img src='https://zimed.netlify.app/assets/images/shapes/cta-1-shape-3.png' alt='shape'/></div>
         <div className={featurecss.pattern2}>
-            <img src='https://zimed.netlify.app/assets/images/shapes/cta-1-shape-1.png' />
+            <img src='https://zimed.netlify.app/assets/images/shapes/cta-1-shape-1.png' alt='pattern'/>
         </div>
         <div className={featurecss.phonePhoto}>
-            <img src='https://zimed.netlify.app/assets/images/mocs/cta-moc-1-1.png' />
+            <img src='https://zimed.netlify.app/assets/images/mocs/cta-moc-1-1.png' alt='phonephoto'/>
         </div>
         <div className={featurecss.text}>
             <p>Checkout App Features</p>

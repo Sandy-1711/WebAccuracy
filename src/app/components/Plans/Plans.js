@@ -256,7 +256,7 @@ export default function Plans() {
                 {data1.map(function (el,index) {
                     return (<div key={index} className={plancss.planCard}>
                         <div className={plancss.planCardImage}>
-                            <Image height={100} width={100} src={el.imgsrc} />
+                            <Image height={100} width={100} src={el.imgsrc} alt='plan'/>
                             <h1>&#8377;  {el.price}</h1>
                             <p>{el.plan}</p>
                         </div>
@@ -280,7 +280,7 @@ export default function Plans() {
                 {data2.map(function (el,index) {
                     return (<div key={index} className={plancss.planCard}>
                         <div className={plancss.planCardImage}>
-                            <Image height={100} width={100} src={el.imgsrc} />
+                            <Image height={100} width={100} src={el.imgsrc} alt='plan' />
                             <h1>&#8377;  {el.price}</h1>
                             <p>{el.plan}</p>
                         </div>

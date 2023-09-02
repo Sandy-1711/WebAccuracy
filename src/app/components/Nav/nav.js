@@ -29,14 +29,14 @@ export default function Nav() {
 
     return <nav id="nav" className={navcss.navbar}>
 
-        <div className={navcss.logo}><Image height={100} width={100} src='https://zimed.netlify.app/assets/images/logo-1-1.png' /></div>
+        <div className={navcss.logo}><Image height={100} width={100} src='https://zimed.netlify.app/assets/images/logo-1-1.png' alt="logo" /></div>
         <div className={navcss.menuicon}>
 
             <img className={navcss.menubar} id="menubar" onClick={function () {
                 document.getElementById("menuclose").style.display = "block";
                 document.getElementById("menubar").style.display = "none";
                 document.getElementById("nav").style.transform = "translate(0)"
-            }} src="/menu.svg" />
+            }} src="/menu.svg" alt="menu"/>
         </div>
         <div className={navcss.menuicon}>
 
@@ -46,7 +46,7 @@ export default function Nav() {
                     document.getElementById("menuclose").style.display = "none";
                     document.getElementById("nav").style.transform = "translate(-40dvw)"
 
-                }} id="menuclose" src="/close.svg" />
+                }} id="menuclose" src="/close.svg" alt="close" />
         </div>
 
         <ul className={navcss.menu}>
