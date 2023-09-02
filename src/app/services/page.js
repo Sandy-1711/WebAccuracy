@@ -63,7 +63,7 @@ export default function ServicesPage() {
                     📈 Your Success, Our Priority: At Web Accuracy, we measure our success by the success of our clients. We work closely with you to understand your goals, preferences, and requirements, ensuring that the final product aligns perfectly with your vision.
                     <br />
                     <br />
-                    Ready to elevate your online presence? Partner with Web Accuracy and experience website development like never before. Contact us today to get started!"
+                    Ready to elevate your online presence? Partner with Web Accuracy and experience website development like never before. Contact us today to get started!
 
                 </p>
             </section>
