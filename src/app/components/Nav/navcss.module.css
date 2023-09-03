@@ -114,7 +114,7 @@
     height: 30px;
     position: absolute;
     right: 25%;
-    z-index: 99999;
+    z-index: 99991;
     top: 50%;
     transform: translateY(-50%);
 

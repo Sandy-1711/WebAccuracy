@@ -9,9 +9,11 @@ export default function Nav() {
 
     useEffect(function () {
 
+
         window.addEventListener('mousemove', function (e) {
             const mousePosition = e.clientX / window.innerWidth * 100;
-            if (mousePosition > 50) {
+            console.log(mousePosition);
+            if (mousePosition > 55) {
                 document.getElementById("menubar").style.display = "block";
                 document.getElementById("menuclose").style.display = "none";
                 document.getElementById("menumobile").style.transform = "translate(-50dvw)"
@@ -110,13 +112,13 @@ export default function Nav() {
             </div>
             <div className={navcss.menuicon}>
 
-                <img className={navcss.menuclose}
+                <img id="menuclose" className={navcss.menuclose}
                     onClick={function () {
                         document.getElementById("menubar").style.display = "block";
                         document.getElementById("menuclose").style.display = "none";
                         document.getElementById("menumobile").style.transform = "translate(-50dvw)"
 
-                    }} id="menuclose" src="/close.svg" alt="close" />
+                    }} src="/close.svg" alt="close" />
             </div>
 
             <ul className={navcss.menulist}>
