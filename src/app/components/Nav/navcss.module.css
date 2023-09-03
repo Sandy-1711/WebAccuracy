@@ -113,7 +113,7 @@
     display: none;
     height: 30px;
     position: absolute;
-    right: 15%;
+    right: 25%;
     z-index: 99999;
     top: 50%;
     transform: translateY(-50%);
@@ -125,10 +125,22 @@
     position: absolute;
     /* left: 0; */
     height: 25px;
-    right: 15%;
+    right: 25%;
     z-index: 99999;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.menuicon {
+    background-color: #272839;
+    height: 50px;
+    width: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    left: 50vw;
+    top: 12%;
+
 }
 
 .logo img {
@@ -140,6 +152,7 @@
 .trendstab,
 .threedtechtab {
     position: relative;
+
 }
 
 .submenu {
@@ -187,19 +200,156 @@
 
 }
 
+.menumobile {
+    display: none;
+}
+
 @media screen and (width<1200px) {
-    .navinner{
+    .navinner {
         width: 960px;
     }
-    .navinner .menu{
+
+    .menubar {
+        display: block;
+    }
+
+    .navinner .menu {
         display: none;
     }
-}
-@media screen and (width<960px) {
-    .navinner{
+
+    .navbar {
+        position: fixed;
+    }
+
+    .servicestab,
+    .trendstab,
+    .threedtechtab {
+        position: relative;
+
+    }
+
+    .submenu {
+        top: 0;
+        left: unset;
+        right: 0;
+        z-index: 999;
+        background-color: black;
+    }
+
+    .submenu ul {
+        position: absolute;
+        left: 1rem;
+        background-color: black;
+        align-items: flex-start !important;
+        justify-content: flex-start;
+    }
+
+    .menumobile {
+        display: block;
+        transform: translate(-50vw);
+        transition: 300ms ease-in-out;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: #272839;
+        color: white;
+        padding: 1.25rem;
+        padding-right: 1rem;
+
+    }
+
+    .logomobile {
+        height: 45px;
         width: 100%;
+        width: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .logomobile img {
+        height: 50%;
+        width: auto;
+
+    }
+
+    .menumobile ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 10px;
+        font-size: 25px;
+        list-style: none;
+    }
+
+    .menumobile ul li a:focus {
+        outline: none;
+    }
+
+    .menumobile ul li a {
+        color: white;
+        user-select: none;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .menumobile ul li a:hover {
+        color: grey;
+    }
+
+    .menumobile ul li a i {
+        font-size: 15px;
+    }
+
+    .navbar button {
+        padding: 0.5rem 0.5rem;
+        position: absolute;
+        right: 5%;
     }
 }
+
+@media screen and (width<960px) {
+
+    .navinner {
+        width: 100%;
+    }
+
+    .menumobile ul {
+        font-size: 25px;
+    }
+}
+
+@media screen and (width<500px) {
+    .navbar {
+        height: 6vh;
+        background: url('https://zimed.netlify.app/assets/images/background/banner-bg-1-1.png');
+
+    }
+
+    .navinner {
+        height: 100%;
+    }
+
+    .menumobile ul {
+        font-size: 18px;
+    }
+
+    .logo {
+        height: 25px;
+    }
+
+    .menuicon {
+        top: 7%;
+
+    }
+
+}
+
 /* 
 @media screen and (width<=1024px) {
     .navbar ul {
@@ -224,29 +374,7 @@
 
     }
 
-    .navbar {
-        position: fixed;
-        transform: translate(-40dvw);
-        top: 0;
-        left: 0;
-        transition: 300ms ease-in-out;
-        padding: 50px 20px;
-        z-index: 9999;
-        height: 100dvh;
-        width: 40dvw;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        font-family: 'Barlow', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        background: #272839;
-        border-bottom: 1px solid rgb(174, 171, 171, 0.2);
-        border: none;
-        color: white;
-        gap: 0;
-    }
+    
 
     .navbar ul {
         height: 100%;

@@ -209,9 +209,10 @@
     z-index: 110;
 }
 
-.mobile img{
+.mobile img {
     width: 100%;
 }
+
 @keyframes load {
     0% {
         transform: rotateY(0deg);
@@ -338,34 +339,46 @@
     .textBox h3 {
         font-size: 22px;
     }
-    .textBox p{
-        font-size: 14px;
+
+    .textBox p {
+        font-size: 12px;
+        width: 90%;
     }
-    .textBox button{
+
+    .textBox button {
         padding: 7px 17px;
         font-size: 14px;
         margin-top: 10px;
     }
-    .pattern1{
+
+    .pattern1 {
         display: none;
     }
-    
-    .pattern2{
+
+    .pattern2 {
         display: none;
     }
-    
-    .pattern3{
+
+    .pattern3 {
         display: none;
     }
-    
-    .pattern4{
+
+    .pattern4 {
         display: none;
     }
-    .pyramid1{
+
+    .pyramid1 {
         display: none;
     }
-    .pyramid2{
+
+    .pyramid2 {
         display: none;
     }
-    
+
+}
+
+@media screen and (width<500px) {
+    .heroInside {
+        padding-top: 80px;
+    }
 }

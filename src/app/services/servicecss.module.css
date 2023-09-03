@@ -29,3 +29,11 @@
         width: 95%;
     }
 }
+@media screen and (width<500px) {
+    .nav{
+        background: none;
+    }
+    .contentPage section:first-child{
+        padding-top: 0;
+    }
+}
