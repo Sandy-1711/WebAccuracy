@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
 .heropage {
-    height: calc(100dvh + 5rem);
+    height: calc(950px + 5rem);
     width: 100dvw;
     background: url('https://zimed.netlify.app/assets/images/background/banner-bg-1-1.png');
     position: relative;

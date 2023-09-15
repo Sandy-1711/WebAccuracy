@@ -56,7 +56,7 @@
 
 .menu>li a::before {
     content: '';
-    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 0.4s linear;
     height: 1.5px;
     width: 0%;
     position: absolute;

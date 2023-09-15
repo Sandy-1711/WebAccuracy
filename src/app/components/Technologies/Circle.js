@@ -13,7 +13,7 @@ export default function Circle() {
         if (window.innerWidth > 900) {
 
             tl.to("#nav", {
-                y: -100,
+                y: '-100%',
                 scrollTrigger: {
                     trigger: `#techPage`,
                     scroller: `body`,
@@ -25,7 +25,7 @@ export default function Circle() {
             })
         }
         tl.from(`#inner`, {
-            opacity: 0,
+            // opacity: 0,
             scrollTrigger: {
                 trigger: `#techPage`,
                 scroller: `body`,
@@ -37,9 +37,10 @@ export default function Circle() {
             }
 
         })
-        
+
         tl.from('#outerCircle', {
             opacity: 0,
+            scale:0.5,
             stagger: 1,
             rotate: '100deg',
             scrollTrigger: {
@@ -56,6 +57,9 @@ export default function Circle() {
 
     }, []);
     return (<div id='techAnimation' className={techcss.techAnimation}>
+        <div id='line' className={techcss.line}>
+            
+        </div>
         <div id='inner' className={techcss.innerCircle}>
         </div>
         <div id='outerCircle' className={techcss.outerCircle1}>

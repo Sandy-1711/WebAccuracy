@@ -41,7 +41,7 @@ export default function Nav() {
     return <nav id="nav" className={navcss.navbar}>
         <div className={navcss.navinner}>
 
-            <div className={navcss.logo}><Image height={100} width={100} src='/logo.png' alt="logo" /></div>
+            <div className={navcss.logo}><a href="/"><Image height={100} width={100} src='/logo.png' alt="logo" /></a></div>
 
 
             <ul className={navcss.menu}>

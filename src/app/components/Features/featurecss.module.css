@@ -35,7 +35,7 @@
     gap: 2rem;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4,15rem);
+    grid-template-columns: repeat(4, 15rem);
 
 }
 
@@ -57,6 +57,10 @@
     transform: perspective(500px) rotateY(0deg);
 }
 
+.servicesCard:first-child {
+    
+}
+
 .servicesCardFront {
     border: 1px solid #e8e8ef;
 
@@ -72,6 +76,9 @@
     gap: 1rem;
     text-align: center;
     backface-visibility: hidden;
+    background: linear-gradient(90deg, #4352AC, #03A9DB);
+    
+
     transform: perspective(500px) rotateY(0deg);
 
 }
@@ -87,96 +94,120 @@
     height: 100%;
     width: 100%;
     text-align: left;
-    
-    transform: perspective(500px) rotateY(-180deg) ;
+    background-color: #0CB7CE;
+    color: white;
+    transform: perspective(500px) rotateY(-180deg);
 }
 
 .servicesCard p {
     width: 50%;
     color: grey;
+    color: white;
     text-transform: uppercase;
 }
-.servicesCardBack p{
+
+
+.servicesCardBack p {
+    color: white;
     width: 90%;
 }
+
 .servicesCardFront img {
     width: 50%;
     height: 50%;
-    filter: opacity(0.7);
+    color: white;
+    filter: opacity(1) invert(1);
 
 }
 
-.servicesCard:hover > .servicesCardBack{
-    
+.servicesCard:hover>.servicesCardBack {
+
     transform: perspective(500px) rotateY(0deg);
 }
-.servicesCard:hover > .servicesCardFront{
+
+.servicesCard:hover>.servicesCardFront {
     transform: perspective(500px) rotateY(180deg);
 }
+
 @media screen and (width<1200px) {
-    .servicesBox{
-        grid-template-columns: repeat(4,12rem);
+    .servicesBox {
+        grid-template-columns: repeat(4, 12rem);
     }
-    .servicesCard{
+
+    .servicesCard {
         height: 12rem;
         width: 12rem;
     }
-    .servicesCard p{
+
+    .servicesCard p {
         font-size: 14px;
     }
 }
+
 @media screen and (width<960px) {
-    
-    .text h1{
+
+    .text h1 {
         font-size: 22px;
     }
-    .text p{
+
+    .text p {
         font-size: 18px;
         margin-bottom: 20px;
     }
-    .servicesBox{
-        grid-template-columns: repeat(3,10rem);
+
+    .servicesBox {
+        grid-template-columns: repeat(3, 10rem);
         gap: 1rem;
-        
+
     }
-    .servicesCard{
+
+    .servicesCard {
         width: 10rem;
         height: 10rem;
     }
-    .servicesCard p{
+
+    .servicesCard p {
         font-size: 12px;
         width: 100%;
     }
-    .servicesCardBack p{
-        width:100%;
+
+    .servicesCardBack p {
+        width: 100%;
     }
 }
-@media screen and (width<500px)
-{
-    .servicesBox{
-        grid-template-columns: repeat(4,5.5rem);
+
+@media screen and (width<500px) {
+    .servicesBox {
+        grid-template-columns: repeat(4, 5.5rem);
         gap: 5px;
     }
-    .servicesCard p{
+
+    .servicesCard p {
         font-size: 10px;
     }
-    .servicesCardFront{
+
+    .servicesCardFront {
         gap: 5px;
     }
-    .servicesCardBack{
+
+    .servicesCardBack {
         padding: 1px;
     }
-    .servicesCardBack p{
+
+    .servicesCardBack p {
         font-size: 8px;
     }
-    .servicesCard{
+
+    .servicesCard {
         width: 5.5rem;
         height: 5.5rem;
     }
-    .text{
+
+    .text {
         margin-bottom: 20px;
     }
-    .main{
+
+    .main {
         padding-bottom: 5rem;
     }
 }

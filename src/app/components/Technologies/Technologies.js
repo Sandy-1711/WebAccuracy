@@ -8,5 +8,10 @@ export default function Technologies() {
         <div className={techcss.techtext}><h1>Technologies We Use</h1></div>
 
         <Circle />
+        <div className={techcss.textbelow}>
+            <span>Scroll Down</span>
+            <span>&#8595;</span>
+        </div>
+
     </div>)
 }
