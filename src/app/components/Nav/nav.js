@@ -41,7 +41,7 @@ export default function Nav() {
     return <nav id="nav" className={navcss.navbar}>
         <div className={navcss.navinner}>
 
-            <div className={navcss.logo}><Image height={100} width={100} src='https://zimed.netlify.app/assets/images/logo-1-1.png' alt="logo" /></div>
+            <div className={navcss.logo}><Image height={100} width={100} src='/logo.png' alt="logo" /></div>
 
 
             <ul className={navcss.menu}>
