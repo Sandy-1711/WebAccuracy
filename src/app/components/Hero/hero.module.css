@@ -18,7 +18,7 @@
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     position: relative;
     flex-wrap: wrap;
@@ -76,7 +76,7 @@
     /* transform: translateY(-50%); */
     /* left: 0%; */
     width: 50%;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .textBox h3 {
