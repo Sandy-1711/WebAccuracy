@@ -30,19 +30,18 @@ export default function Circle() {
                 trigger: `#techPage`,
                 scroller: `body`,
                 start: 'top top',
-                end: 'top -100%',
+                end: 'top -120%',
                 pin: true,
                 scrub: 5,
 
             }
 
         })
-
+        
         tl.from('#outerCircle', {
             opacity: 0,
             stagger: 1,
             rotate: '100deg',
-
             scrollTrigger: {
                 trigger: `#techPage`,
                 scroller: 'body',

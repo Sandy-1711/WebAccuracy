@@ -10,15 +10,15 @@ export default function Nav() {
     useEffect(function () {
 
 
-        window.addEventListener('mousemove', function (e) {
-            const mousePosition = e.clientX / window.innerWidth * 100;
-            console.log(mousePosition);
-            if (mousePosition > 55) {
-                document.getElementById("menubar").style.display = "block";
-                document.getElementById("menuclose").style.display = "none";
-                document.getElementById("menumobile").style.transform = "translate(-50dvw)"
-            }
-        })
+        // window.addEventListener('mousemove', function (e) {
+        //     const mousePosition = e.clientX / window.innerWidth * 100;
+        //     console.log(mousePosition);
+        //     if (mousePosition > 55) {
+        //         document.getElementById("menubar").style.display = "block";
+        //         document.getElementById("menuclose").style.display = "none";
+        //         document.getElementById("menumobile").style.transform = "translate(-50dvw)"
+        //     }
+        // })
         if (window.innerWidth > 900) {
             gsap.registerPlugin(ScrollTrigger);
             var tl = gsap.timeline();
@@ -92,12 +92,12 @@ export default function Nav() {
                 <li>
                     <a>Pricing</a>
                 </li>
-                <li>
+                {/* <li>
                     <a>Get In Touch</a>
-                </li>
+                </li> */}
 
             </ul>
-            <button>Start Now</button>
+            <button>Get In Touch</button>
         </div>
         <div id="menumobile" className={navcss.menumobile}>
 

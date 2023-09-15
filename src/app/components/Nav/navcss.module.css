@@ -25,7 +25,7 @@
     width: 1200px;
     justify-content: space-evenly;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 
 }
 
@@ -33,9 +33,10 @@
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
     list-style: none;
-    margin-left: 7rem;
+    margin-left: 10rem;
+
 }
 
 .menu li {
@@ -68,15 +69,18 @@
 }
 
 .navbar button {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
+    min-width: max-content;
     outline: none;
     border: none;
-    border: 1px solid white;
+    border: 2px solid white;
     background-color: transparent;
     color: white;
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
     transition: 200ms ease-in-out;
 }
 
@@ -104,9 +108,10 @@
 
 .logo {
     position: absolute;
-    height: 25px;
+    height: 35px;
+    margin-bottom: 10px;
     /* margin-right: 100px; */
-    left: 20px;
+    left: 5px;
 }
 
 .menubar {
