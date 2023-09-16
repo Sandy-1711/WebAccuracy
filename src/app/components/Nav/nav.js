@@ -4,6 +4,7 @@ import navcss from './navcss.module.css'
 import { gsap } from "gsap/dist/gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import { useEffect } from "react"
+import Link from "next/link"
 
 export default function Nav() {
 
@@ -39,48 +40,48 @@ export default function Nav() {
     return <nav id="nav" className={navcss.navbar}>
         <div className={navcss.navinner}>
 
-            <div className={navcss.logo}><a href="/"><Image height={100} width={100} src='/logo.png' alt="logo" /></a></div>
+            <div className={navcss.logo}><Link href='/'><Image height={100} width={100} src='/logo.png' alt="logo" /></Link></div>
 
 
             <ul className={navcss.menu}>
                 <li>
-                    <a href="/">Home</a>
+                    <Link href='/'>Home</Link>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <Link href='/about'>About</Link>
                 </li>
                 <li className={navcss.servicestab}>
-                    <a href="/services">Services</a>
+                    <Link href='/services'>Services</Link>
                     <div className={navcss.submenu}>
                         <ul>
-                            <li><a href='/services#app-dev'>App Development</a></li>
-                            <li><a href='/services#web-dev'>Web Development</a></li>
-                            <li><a href='/services#ui-ux'>UI/UX Design</a></li>
-                            <li><a href='/services#digital-marketing'>Digital Marketing</a></li>
-                            <li><a href='/services#adshooting-photography'>Ad shooting/Photography</a></li>
+                            <Link href="/services#app-dev">App Development</Link>
+                            <Link href="/services#web-dev">App Development</Link>
+                            <Link href="/services#ui-ux">App Development</Link>
+                            <Link href="/services#digital-marketing">App Development</Link>
+                            <Link href="/services#adshooting-photography">App Development</Link>
                         </ul>
                     </div>
                 </li>
 
                 <li className={navcss.trendstab}>
-                    <a href="/trends">Web 3.0 & trends</a>
+                    <Link href='/trends'>Web 3.0 & trends</Link>
                     <div className={navcss.submenu}>
 
                         <ul>
-                            <li><a href='/trends#iot'>IOT</a></li>
-                            <li><a href='/trends#ai/ml'>AI/ML</a></li>
-                            <li><a href='/trends#blockchain'>Blockchain</a></li>
+                            <Link href='/trends#iot'>IOT</Link>
+                            <Link href='/trends#ai/ml'>AI/ML</Link>
+                            <Link href='/trends#blockchain'>Blockchain</Link>
                         </ul>
                     </div>
                 </li>
                 <li className={navcss.threedtechtab}>
-                    <a href="/3dtech">3D reality</a>
+                    <Link href='/3dtech'>3D reality</Link>
                     <div className={navcss.submenu}>
                         <ul>
-                            <li><a href='/3dtech#ar'>AR</a></li>
-                            <li><a href='/3dtech#vr'>VR</a></li>
-                            <li><a href='/3dtech#mr'>MR</a></li>
-                            <li><a href='/3dtech#dolbyatmos'>Dolby Atmos</a></li>
+                            <Link href='/3dtech#ar'>AR</Link>
+                            <Link href='/3dtech#vr'>VR</Link>
+                            <Link href='/3dtech#mr'>MR</Link>
+                            <Link href='/3dtech#dolbyatmos'>Dolby Atmos</Link>
                         </ul>
                     </div>
                 </li>
