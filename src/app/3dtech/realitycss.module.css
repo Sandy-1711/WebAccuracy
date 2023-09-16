@@ -9,7 +9,7 @@
 .nav {
     position: sticky;
     top: 0;
-    height: 10vh;
+    height: 12vh;
     width: 100vw;
     background: url('https://zimed.netlify.app/assets/images/background/banner-bg-1-1.png');
 }
@@ -17,7 +17,7 @@
 .servicenav {
 
     position: sticky;
-    top: 10vh;
+    top: 12vh;
     height: 5dvh;
     width: 100dvw;
     display: flex;
