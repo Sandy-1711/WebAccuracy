@@ -5,13 +5,14 @@
     background: linear-gradient(-45deg, #354289, #03A9DB);
     text-transform: uppercase;
     color: white;
-    position:relative;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.textbelow{
-    position: absolute ;
+
+.textbelow {
+    position: absolute;
     bottom: 50px;
     font-size: 20px;
     opacity: 0.9;
@@ -24,21 +25,27 @@
     animation: scrolltext 2s infinite;
     text-shadow: 0px 0px 5px black;
 }
+
 @keyframes scrolltext {
-    0%,100%{
+
+    0%,
+    100% {
         transform: translateY(-4px);
     }
-    50%{
+
+    50% {
         transform: translateY(0);
     }
-    
+
 }
+
 .techAnimation {
 
     position: absolute;
     /* bottom: 30%; */
 
 }
+
 .techtext {
     top: 20%;
     font-size: 40px;
@@ -48,6 +55,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .innerCircle {
     position: absolute;
     top: 50%;
@@ -101,17 +109,19 @@
 }
 
 .imgimgbox img {
-    height: 60%;
-    width: 60%;
+    height: auto;
+    width: 70%;
     transform: rotate(calc(-360deg / 3 * var(--i) - 45deg));
 }
-.line{
+
+.line {
     height: 50vh;
     position: absolute;
     bottom: 0;
     width: 2px;
     background-color: white;
 }
+
 .outerCircle2 {
     position: absolute;
     left: 50%;
@@ -182,7 +192,7 @@
 
 }
 
-.outerCircle4{
+.outerCircle4 {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -194,14 +204,66 @@
     background-color: rgb(150, 150, 150);
     z-index: 96;
 }
-.outerCircle4 .imageBox .imgimgbox{
+
+.outerCircle4 .imageBox .imgimgbox {
     transform: rotate(calc(360deg / 2 * var(--i)));
     transform-origin: 275px;
     left: 20px;
 }
+
 .outerCircle4 .imageBox .imgimgbox img {
 
     transform: rotate(calc(-360deg / 2 * var(--i)));
 
 }
 
+@media screen and (width<500px) {
+    .innerCircle {
+        height: 40px;
+        width: 40px;
+    }
+
+    .outerCircle1 {
+        height: 100px;
+        width: 100px;
+    }
+
+    .imgimgbox {
+        height: 35px;
+        width: 35px;
+        transform-origin: 65px;
+    }
+
+    .imgimgbox img {
+        height: auto;
+        width: 60%;
+    }
+
+    .outerCircle2 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .outerCircle2 .imageBox .imgimgbox {
+        transform-origin: 120px;
+    }
+
+    .outerCircle3 {
+        height: 300px;
+        width: 300px;
+    }
+
+    .outerCircle3 .imageBox .imgimgbox {
+        transform-origin: 165px;
+    }
+
+    .outerCircle4 {
+        height: 400px;
+        width: 400px;
+    }
+
+    .outerCircle4 .imageBox .imgimgbox {
+        transform-origin: 220px;
+    }
+
+}

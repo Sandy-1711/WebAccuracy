@@ -42,7 +42,7 @@ export default function Circle() {
             opacity: 0,
             scale:0.5,
             stagger: 1,
-            rotate: '100deg',
+            // rotate: '100deg',
             scrollTrigger: {
                 trigger: `#techPage`,
                 scroller: 'body',
