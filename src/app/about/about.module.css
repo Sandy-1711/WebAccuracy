@@ -3,9 +3,11 @@
 .aboutPage {
     background: url('https://zimed.netlify.app/assets/images/background/banner-bg-1-1.png');
     width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 10vh;
     /* background: black; */
     color: wheat;
-    height: 200vh;
+    height: 100vh;
     font-family: 'Barlow', sans-serif;
 }

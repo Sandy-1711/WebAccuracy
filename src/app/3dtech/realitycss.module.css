@@ -12,6 +12,8 @@
     height: 12vh;
     width: 100vw;
     background: url('https://zimed.netlify.app/assets/images/background/banner-bg-1-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .servicenav {
