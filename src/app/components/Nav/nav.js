@@ -8,8 +8,6 @@ import { useEffect } from "react"
 export default function Nav() {
 
     useEffect(function () {
-
-
         // window.addEventListener('mousemove', function (e) {
         //     const mousePosition = e.clientX / window.innerWidth * 100;
         //     console.log(mousePosition);

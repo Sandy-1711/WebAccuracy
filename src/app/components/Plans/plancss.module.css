@@ -71,7 +71,7 @@
     border: none;
     outline: none;
     font-size: 18px;
-    padding: 16px;
+    padding: 16px 32px;
     /* border: calc(100dvw / 932.5) solid white; */
     cursor: pointer;
     border-radius: 5px;
@@ -94,8 +94,7 @@
 }
 
 .planCards {
-    width: 80%;
-
+    width: 99%;
     height: max-content;
     padding: 5rem 0;
     display: flex;
@@ -106,14 +105,16 @@
 }
 
 .planCard {
-    min-width: 30%;
-
-    flex: 0 0 30%;
+    min-width: 450px;
+    /* flex: 0 0 30%; */
     overflow: hidden;
+    background-color: white;
     height: max-content;
     border: 1px solid rgb(232, 232, 239);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
 }
+
+
 
 .planCardImage {
     background-color: white;
@@ -142,6 +143,7 @@
 }
 
 .features {
+    background-color: white;
     padding: 25px 0;
     color: #7c7d8a;
     text-align: center;
@@ -238,6 +240,14 @@
     }
 }
 
+@media screen and (width<1600px) {
+    .planCard {
+
+        min-width: 400px;
+        max-width: 400px;
+    }
+}
+
 @media screen and (width<1200px) {
     .buttondiv button {
         font-size: 12px;
@@ -267,6 +277,7 @@
 
     .planCard {
         min-width: 300px;
+        max-width: 300px;
     }
 
     .buttondiv button {
@@ -304,20 +315,25 @@
         width: 0%;
         height: 0%;
     }
-    .floatingobject3 img{
+
+    .floatingobject3 img {
         width: 0;
     }
-    .planButton button{
+
+    .planButton button {
         padding: 15px 20px;
     }
-    .planCards{
+
+    .planCards {
         padding: 1rem 0;
         gap: 1rem;
     }
-    .planPage{
+
+    .planPage {
         padding: 1rem 0;
     }
-    .belowPlanPage{
+
+    .belowPlanPage {
         padding: 2rem 0;
     }
 }

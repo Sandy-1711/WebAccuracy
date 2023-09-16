@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem 0 4rem 0;
     /* border-bottom: 1px solid #272839; */
 
 }
@@ -57,16 +57,12 @@
     transform: perspective(500px) rotateY(0deg);
 }
 
-.servicesCard:first-child {
-    
-}
+
 
 .servicesCardFront {
     border: 1px solid #e8e8ef;
-
     position: absolute;
     transition: 400ms ease-in-out;
-
     display: flex;
     width: 100%;
     height: 100%;
@@ -77,8 +73,6 @@
     text-align: center;
     backface-visibility: hidden;
     background: linear-gradient(90deg, #4352AC, #03A9DB);
-    
-
     transform: perspective(500px) rotateY(0deg);
 
 }
@@ -90,7 +84,6 @@
     position: absolute;
     backface-visibility: hidden;
     transition: 400ms ease-in-out;
-
     height: 100%;
     width: 100%;
     text-align: left;
