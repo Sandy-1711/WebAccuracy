@@ -25,7 +25,22 @@
     transform: translateY(-50%);
     left: 19%;
     width: 25%;
+    animation: fadein 500ms forwards linear;
 }
+
+@keyframes fadein {
+    from {
+        transform: translate(-20%, -50%);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: translate(0, -50%);
+        opacity: 1;
+    }
+}
+
 
 .text h1 {
     font-size: 42px;
