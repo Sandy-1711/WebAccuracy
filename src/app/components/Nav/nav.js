@@ -55,10 +55,10 @@ export default function Nav() {
                     <div className={navcss.submenu}>
                         <ul>
                             <Link href="/services#app-dev">App Development</Link>
-                            <Link href="/services#web-dev">App Development</Link>
-                            <Link href="/services#ui-ux">App Development</Link>
-                            <Link href="/services#digital-marketing">App Development</Link>
-                            <Link href="/services#adshooting-photography">App Development</Link>
+                            <Link href="/services#web-dev">Web Development</Link>
+                            <Link href="/services#ui-ux">UI/UX</Link>
+                            <Link href="/services#digital-marketing">Digital Marketing</Link>
+                            <Link href="/services#adshooting-photography">Photography</Link>
                         </ul>
                     </div>
                 </li>
