@@ -8,6 +8,7 @@ import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Head from 'next/head'
 import Nav from './components/Nav/nav'
+import Script from 'next/script';
 // import { useIsomorphicLayoutEffect } from './helpers/isomorphicEffect'
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -38,9 +39,8 @@ export default function RootLayout({ children }) {
       <body className='mainBody'>
         <Nav />
         {children}
-        <script src='https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/blob/master/dat.gui.min.js' type='module'></script>
-        <script src='/scripts.js'></script>
-        <script src='/dat.gui.min.js'></script>
+        <script src='/scripts.js' async></script>
+        <script src='/dat.gui.min.js' async></script>
       </body>
     </html>
   )
