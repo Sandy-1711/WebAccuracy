@@ -5,7 +5,7 @@ export default function UIUX() {
     return (<div className={uiux.homePage}>
         <div className={uiux.hero}>
 
-            <div className={uiux.text}>
+            <div className={uiux.text+' '+uiux.herotext}>
 
                 <h1>Premium
                     <span>UI/UX</span>
