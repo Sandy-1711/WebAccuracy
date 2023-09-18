@@ -7,7 +7,6 @@ import { useEffect } from "react"
 import Link from "next/link"
 
 export default function Nav() {
-
     useEffect(function () {
         // window.addEventListener('mousemove', function (e) {
         //     const mousePosition = e.clientX / window.innerWidth * 100;
@@ -56,7 +55,7 @@ export default function Nav() {
                         <ul>
                             <Link href="/services#app-dev">App Development</Link>
                             <Link href="/services#web-dev">Web Development</Link>
-                            <Link href="/services#ui-ux">UI/UX</Link>
+                            <Link href="/services/ui-ux">UI/UX</Link>
                             <Link href="/services#digital-marketing">Digital Marketing</Link>
                             <Link href="/services#adshooting-photography">Photography</Link>
                         </ul>

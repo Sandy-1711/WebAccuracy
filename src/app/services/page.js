@@ -67,7 +67,7 @@ export default function ServicesPage() {
 
                 </p>
             </section>
-            <section id='ui-ux'>
+            {/* <section id='ui-ux'>
                 <h1>UI/UX FIgma</h1>
                 <p>
                     Welcome to Web Accuracy- Premier UI/UX Designers in Ranchi.
@@ -83,7 +83,7 @@ export default function ServicesPage() {
                 <p><strong>Web Design:</strong>Whether you need a brand-new website or a redesign, we&apos;ve got you covered. Our web design services combine aesthetics with functionality to deliver a website that aligns with your business goals.</p>
                 <p><strong>Mobile App Design:</strong> In the age of mobile, having a user-friendly and visually appealing mobile app is crucial. Our designers are skilled in crafting mobile app interfaces that provide a consistent experience across devices.</p>
                 <p><strong>Responsive Design:</strong>Every website we design is fully responsive, ensuring optimal performance and visual appeal on various devices, including smartphones, tablets, and desktops.</p>
-            </section>
+            </section> */}
             <section id='digital-marketing'>
                 <h1>Digital Marketing</h1>
                 <p>Welcome to the premier destination for Digital Marketing and Marketers in Ranchi! Explore a wide spectrum of result-driven strategies and services meticulously designed to amplify your online footprint and drive unparalleled business expansion. Our seasoned team of Digital Marketing experts harnesses an extensive arsenal of advanced marketing tools, combined with the latest technological innovations, to ensure your brand achieves remarkable visibility within the digital sphere. From high-impact SEO tactics to laser-focused social media campaigns, compelling content creation, and data-centric approaches, our Digital Marketing tab is your gateway to comprehensive online success. Partner with us to unlock the true potential of contemporary marketing strategies and propel your brand to new heights.</p>

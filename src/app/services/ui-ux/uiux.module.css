@@ -1,0 +1,396 @@
+.homePage {
+    background-color: black;
+    /* height: 200vh; */
+    width: 100vw;
+    color: #ff6347;
+}
+
+
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.hero canvas {
+    user-select: none;
+    background-color: transparent;
+}
+
+.text {
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 19%;
+    width: 25%;
+}
+
+.text h1 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 54.6px;
+    margin-bottom: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.text h1 span {
+    color: black;
+    background-color: #FCD702;
+    padding: 0px 10px;
+    font-weight: 600;
+    margin: auto 10px;
+
+}
+
+.text p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 28px;
+    color: #b1b1b1;
+
+}
+
+.text button {
+    background-color: #FCD702;
+    padding: 16px 34px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #090909;
+    line-height: 20px;
+    outline: none;
+    margin-top: 18px;
+    border-radius: 4px;
+    transition: all 0.175s ease 0s;
+}
+
+.text button:hover {
+    transform: translate(2px, 2px);
+}
+
+.homePage canvas {
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #FCD702;
+
+}
+
+.sec1 {
+    height: max-content;
+    width: 100vw;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.carousel {
+    width: 100vw;
+    height: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+.carousel::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 350px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+}
+
+.carousel::after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+}
+
+.carousel:hover .carouselslider {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.carouselslider {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.carouselslider img {
+    height: 350px;
+    margin: 0 10px;
+    border-radius: 5px;
+
+}
+
+.sec2 {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.sec2 .text {
+    top: unset;
+    bottom: unset;
+    left: unset;
+    right: unset;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    transform: translateY(0);
+}
+
+.sec2 .text p {
+    width: 80%;
+
+    margin: auto;
+}
+
+.services {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+
+
+.left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left .text {
+    width: 80%;
+    padding: 0;
+    margin: 0 0 0 40px;
+    position: relative;
+    top: unset;
+    left: unset;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateY(0);
+}
+
+
+.left .text span {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 19px;
+    line-height: 30.4px;
+    color: #FCD702;
+}
+
+.left .text p {
+    width: 100%;
+}
+
+.left .text h1 {
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 58.8px;
+}
+
+
+
+.right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.right img {
+
+    margin: 0 40px 0 0;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    position: relative;
+    border-bottom: 4px solid #FCD702;
+}
+
+.even {
+    flex-direction: row-reverse;
+}
+
+.even .left {
+    justify-content: flex-end;
+}
+
+.even .right {
+    justify-content: flex-start;
+}
+
+.even .text {
+    margin: 0 40px 0 0;
+}
+
+.even .right img {
+    margin: 0 0 0 40px;
+}
+
+@media screen and (width<1200px) {
+    .text {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10%;
+        width: 90%;
+    }
+
+    .text p {
+        width: 60%;
+    }
+
+    .text h1 {
+        font-size: 32px;
+    }
+
+    .services {
+        width: 100%;
+    }
+}
+
+@media screen and (width<960px) {
+    .text p {
+        width: 100%;
+    }
+
+    .text {
+        left: 5%;
+    }
+
+    .carouselslider img {
+        height: 200px;
+    }
+
+    .carouselslider {
+        animation: 10s slide infinite linear;
+        height: 200px;
+
+    }
+
+    .sec2 .text {
+        padding-top: 1rem;
+    }
+
+    .sec2 .text {
+        width: 100%;
+    }
+
+    .sec2 .text h1 {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .sec2 .text p {
+        font-size: 18px;
+        width: 90%;
+        line-height: normal;
+    }
+
+    .left {
+        width: 100%;
+        height: max-content;
+
+    }
+
+    .right {
+        width: 100%;
+        height: max-content;
+    }
+
+    .right img {
+        height: 200px;
+        width: 95%;
+    }
+
+
+
+    .left .text p {
+        width: 100%;
+    }
+
+    .even {
+        flex-direction: row;
+    }
+
+    .even .left {
+        justify-content: center;
+    }
+
+    .even .right {
+        justify-content: center;
+    }
+
+    .even .text {
+        margin: 0;
+    }
+
+    .even .right img {
+        margin: 0;
+    }
+
+    .left .text {
+        margin: 0 16px;
+    }
+
+    .right img {
+        margin: 0 16px;
+    }
+
+    .services {
+        gap: 1rem;
+    }
+
+    .service {
+        gap: 1rem;
+    }
+}

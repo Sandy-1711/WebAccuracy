@@ -38,6 +38,9 @@ export default function RootLayout({ children }) {
       <body className='mainBody'>
         <Nav />
         {children}
+        <script src='https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/blob/master/dat.gui.min.js' type='module'></script>
+        <script src='/scripts.js'></script>
+        <script src='/dat.gui.min.js'></script>
       </body>
     </html>
   )
