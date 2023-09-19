@@ -1,3 +1,4 @@
+import Footer from '@/app/components/Footer/Footer'
 import Canvas from './Canvas'
 import uiux from './uiux.module.css'
 export default function UIUX() {
@@ -91,5 +92,6 @@ export default function UIUX() {
                 </div>
             </div>
         </div>
+        <Footer />
     </div>)
 }

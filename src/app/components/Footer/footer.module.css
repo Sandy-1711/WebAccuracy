@@ -48,7 +48,7 @@
 
 .py1 {
     position: absolute;
-    top: -2.5%;
+    top: 1%;
     left: 3%;
     -webkit-animation-name: shapeMover;
     animation-name: shapeMover;

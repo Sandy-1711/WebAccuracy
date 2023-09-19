@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import footercss from './footer.module.css'
+import uiux from '../../services/ui-ux/uiux.module.css'
 export default function Footer() {
     const data1 = [
         {
@@ -37,7 +38,7 @@ export default function Footer() {
 
     ]
 
-    return (<div className={footercss.footerPage}>
+    return (<div className={footercss.footerPage + ' ' + uiux.footerPage}>
 
         <div className={footercss.linksContainer}>
             <div className={footercss.lefttext}>
@@ -102,6 +103,6 @@ export default function Footer() {
         </div>
         <div className={footercss.py2}><img src='https://zimed.netlify.app/assets/images/shapes/footer-shape-2.png' alt='py2' /></div>
         <div className={footercss.circleAtBottom}><img src='https://zimed.netlify.app/assets/images/shapes/footer-shape-3.png' alt='circleatbottom' /></div>
-      
+
     </div>)
 }

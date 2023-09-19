@@ -5,8 +5,9 @@ import { gsap } from "gsap/dist/gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import { useEffect } from "react"
 import Link from "next/link"
-
+import uiux from '../../services/ui-ux/uiux.module.css'
 export default function Nav() {
+    
     useEffect(function () {
         // window.addEventListener('mousemove', function (e) {
         //     const mousePosition = e.clientX / window.innerWidth * 100;
@@ -17,6 +18,10 @@ export default function Nav() {
         //         document.getElementById("menumobile").style.transform = "translate(-50dvw)"
         //     }
         // })
+        console.log(window.location.pathname);
+        const path=window.location.pathname;
+        const bool=path==='/services/ui-ux';
+        console.log(bool);
         if (window.innerWidth > 900) {
             gsap.registerPlugin(ScrollTrigger);
             var tl = gsap.timeline();
@@ -24,7 +29,7 @@ export default function Nav() {
                 position: 'fixed',
                 top: 0,
                 y: 0,
-                backgroundColor: '#272839',
+                backgroundColor:bool?'#000000':'#272839',
                 scrollTrigger: {
                     target: '#nav',
                     scroller: 'body',
@@ -36,7 +41,7 @@ export default function Nav() {
         }
     }, [])
 
-    return <nav id="nav" className={navcss.navbar}>
+    return <nav id="nav" className={navcss.navbar+" "+uiux.navbar}>
         <div className={navcss.navinner}>
 
             <div className={navcss.logo}><Link href='/'><Image height={100} width={100} src='/logo.png' alt="logo" /></Link></div>
