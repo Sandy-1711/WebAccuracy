@@ -53,11 +53,11 @@ export default function Nav() {
                     <Link href='/services'>Services</Link>
                     <div className={navcss.submenu}>
                         <ul>
-                            <Link href="/services#app-dev">App Development</Link>
-                            <Link href="/services#web-dev">Web Development</Link>
+                            <Link href="/services/app-dev">App Development</Link>
+                            <Link href="/services/web-dev">Web Development</Link>
                             <Link href="/services/ui-ux">UI/UX</Link>
-                            <Link href="/services#digital-marketing">Digital Marketing</Link>
-                            <Link href="/services#adshooting-photography">Photography</Link>
+                            <Link href="/services/digital-marketing">Digital Marketing</Link>
+                            <Link href="/services/adshooting-photography">Photography</Link>
                         </ul>
                     </div>
                 </li>
@@ -67,9 +67,9 @@ export default function Nav() {
                     <div className={navcss.submenu}>
 
                         <ul>
-                            <Link href='/trends#iot'>IOT</Link>
-                            <Link href='/trends#ai/ml'>AI/ML</Link>
-                            <Link href='/trends#blockchain'>Blockchain</Link>
+                            <Link href='/trends/iot'>IOT</Link>
+                            <Link href='/trends/ai-ml'>AI/ML</Link>
+                            <Link href='/trends/blockchain'>Blockchain</Link>
                         </ul>
                     </div>
                 </li>
@@ -77,10 +77,10 @@ export default function Nav() {
                     <Link href='/3dtech'>3D reality</Link>
                     <div className={navcss.submenu}>
                         <ul>
-                            <Link href='/3dtech#ar'>AR</Link>
-                            <Link href='/3dtech#vr'>VR</Link>
-                            <Link href='/3dtech#mr'>MR</Link>
-                            <Link href='/3dtech#dolbyatmos'>Dolby Atmos</Link>
+                            <Link href='/3dtech/ar'>AR</Link>
+                            <Link href='/3dtech/vr'>VR</Link>
+                            <Link href='/3dtech/mr'>MR</Link>
+                            <Link href='/3dtech/dolby-atmos'>Dolby Atmos</Link>
                         </ul>
                     </div>
                 </li>
@@ -132,11 +132,11 @@ export default function Nav() {
 
                     <div className={navcss.submenu}>
                         <ul>
-                            <li><a href='/services#app-dev'>App Development</a></li>
-                            <li><a href='/services#web-dev'>Web Development</a></li>
+                            <li><a href='/services/app-dev'>App Development</a></li>
+                            <li><a href='/services/web-dev'>Web Development</a></li>
                             <li><a href='/services/ui-ux'>UI/UX Design</a></li>
-                            <li><a href='/services#digital-marketing'>Digital Marketing</a></li>
-                            <li><a href='/services#adshooting-photography'>Ad shooting/Photography</a></li>
+                            <li><a href='/services/digital-marketing'>Digital Marketing</a></li>
+                            <li><a href='/services/adshooting-photography'>Ad/Photography</a></li>
                         </ul>
                     </div>
                 </li>
@@ -146,9 +146,9 @@ export default function Nav() {
                     <div className={navcss.submenu}>
 
                         <ul>
-                            <li><a href='/trends#iot'>IOT</a></li>
-                            <li><a href='/trends#ai/ml'>AI/ML</a></li>
-                            <li><a href='/trends#blockchain'>Blockchain</a></li>
+                            <li><a href='/trends/iot'>IOT</a></li>
+                            <li><a href='/trends/ai-ml'>AI/ML</a></li>
+                            <li><a href='/trends/blockchain'>Blockchain</a></li>
                         </ul>
                     </div>
                 </li>
@@ -156,10 +156,10 @@ export default function Nav() {
                     <a>3D reality <i class="fa-solid fa-chevron-right"></i></a>
                     <div className={navcss.submenu}>
                         <ul>
-                            <li><a href='/3dtech#ar'>AR</a></li>
-                            <li><a href='/3dtech#vr'>VR</a></li>
-                            <li><a href='/3dtech#mr'>MR</a></li>
-                            <li><a href='/3dtech#dolbyatmos'>Dolby Atmos</a></li>
+                            <li><a href='/3dtech/ar'>AR</a></li>
+                            <li><a href='/3dtech/vr'>VR</a></li>
+                            <li><a href='/3dtech/mr'>MR</a></li>
+                            <li><a href='/3dtech/dolby-atmos'>Dolby Atmos</a></li>
                         </ul>
                     </div>
                 </li>
