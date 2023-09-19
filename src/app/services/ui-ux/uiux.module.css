@@ -337,12 +337,29 @@
 
     }
 
-    .sec2 .text {
+    .carousel {
+        height: 200px;
+    }
+
+    .carousel::before {
+        height: 200px;
+    }
+
+    .carousel::after {
+        height: 200px;
+    }
+
+    .sec2 {
         padding-top: 1rem;
     }
 
     .sec2 .text {
-        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .sec2 .text {
+        width: 95%;
     }
 
     .sec2 .text h1 {
@@ -352,7 +369,7 @@
 
     .sec2 .text p {
         font-size: 18px;
-        width: 90%;
+        width: 100%;
         line-height: normal;
     }
 
@@ -373,6 +390,9 @@
     }
 
 
+    .left .text {
+        width: 95%;
+    }
 
     .left .text p {
         width: 100%;

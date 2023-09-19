@@ -134,7 +134,7 @@ export default function Nav() {
                         <ul>
                             <li><a href='/services#app-dev'>App Development</a></li>
                             <li><a href='/services#web-dev'>Web Development</a></li>
-                            <li><a href='/services#ui-ux'>UI/UX Design</a></li>
+                            <li><a href='/services/ui-ux'>UI/UX Design</a></li>
                             <li><a href='/services#digital-marketing'>Digital Marketing</a></li>
                             <li><a href='/services#adshooting-photography'>Ad shooting/Photography</a></li>
                         </ul>
