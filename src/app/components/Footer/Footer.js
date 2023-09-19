@@ -1,6 +1,8 @@
+'use client'
 import Image from 'next/image'
 import footercss from './footer.module.css'
 import uiux from '../../services/ui-ux/uiux.module.css'
+import { useEffect } from 'react'
 export default function Footer() {
     const data1 = [
         {
@@ -37,8 +39,15 @@ export default function Footer() {
         },
 
     ]
+    var path;
+    useEffect(function () {
+        path = window.location.pathname;
+        if (path === '/services/ui-ux') {
 
-    return (<div className={footercss.footerPage + ' ' + uiux.footerPage}>
+            document.getElementById(`footerPage`).style.backgroundColor = "black";
+        }
+    })
+    return (<div id='footerPage' className={footercss.footerPage}>
 
         <div className={footercss.linksContainer}>
             <div className={footercss.lefttext}>
