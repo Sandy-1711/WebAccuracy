@@ -6,11 +6,11 @@ import { useEffect } from 'react';
 export default function appdevpage() {
     LocoScroll(true);
 
-    useEffect(function(){
-        
+    useEffect(function () {
+
         document.getElementById('body').style.overflowY = "hidden"
-        
-    },[])
+
+    })
     return (<main data-scroll-container className={appcss.main}>
         <section className={appcss.section1}>
             <div className={appcss.sec1text}>
