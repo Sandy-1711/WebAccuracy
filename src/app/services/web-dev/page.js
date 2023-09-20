@@ -1,8 +1,7 @@
 'use client'
-import { useEffect, useLayoutEffect } from 'react'
 import webcss from './webcss.module.css'
 import LocoScroll from '@/app/hooks/LocoScroll';
-export default function webdevpage() {
+export default function WebDevPage() {
     LocoScroll(true);
 
 

@@ -3,7 +3,7 @@ import Footer from '@/app/components/Footer/Footer'
 import appcss from './appcss.module.css'
 import LocoScroll from '@/app/hooks/LocoScroll'
 import { useEffect } from 'react';
-export default function appdevpage() {
+export default function AppDevPage() {
     LocoScroll(true);
 
     useEffect(function () {
