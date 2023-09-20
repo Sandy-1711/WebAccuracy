@@ -87,6 +87,6 @@ export default function appdevpage() {
             </div>
         </section>
         <hr style={{ width: '100%', color: 'black' }} />
-        {/* <Footer /> */}
+        <Footer />
     </main>)
 }
