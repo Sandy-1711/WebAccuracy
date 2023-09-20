@@ -1,9 +1,8 @@
 'use client'
-import { Smooch } from "next/font/google";
 import { useEffect } from "react";
 import './locomotive-scroll.css';
 
-export default function useLocoScroll(start) {
+export default function LocoScroll(start) {
     useEffect(function () {
         if (!start) {
             return;

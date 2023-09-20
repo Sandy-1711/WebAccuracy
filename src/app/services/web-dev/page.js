@@ -1,9 +1,9 @@
 'use client'
 import { useEffect, useLayoutEffect } from 'react'
 import webcss from './webcss.module.css'
-import useLocoScroll from '@/app/hooks/useLocoScroll';
+import LocoScroll from '@/app/hooks/LocoScroll';
 export default function webdevpage() {
-    useLocoScroll(true);
+    LocoScroll(true);
 
 
     return (<div id='main' data-scroll-container className={webcss.homePage}>

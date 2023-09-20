@@ -1,10 +1,10 @@
 'use client'
 import Footer from '@/app/components/Footer/Footer'
 import appcss from './appcss.module.css'
-import useLocoScroll from '@/app/hooks/useLocoScroll'
+import LocoScroll from '@/app/hooks/LocoScroll'
 import { useEffect } from 'react';
 export default function appdevpage() {
-    useLocoScroll(true);
+    LocoScroll(true);
 
     useEffect(function(){
         
