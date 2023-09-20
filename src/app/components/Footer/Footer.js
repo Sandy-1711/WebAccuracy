@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import footercss from './footer.module.css'
 import uiux from '../../services/ui-ux/uiux.module.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 export default function Footer() {
     const data1 = [
         {
@@ -39,12 +39,24 @@ export default function Footer() {
         },
 
     ]
+    const [style, setStyle] = useState({});
+    const [style1,setStyle1]=useState({});
     var path;
+
     useEffect(function () {
         path = window.location.pathname;
         if (path === '/services/ui-ux') {
 
             document.getElementById(`footerPage`).style.backgroundColor = "black";
+        }
+        if (path === '/services/app-dev') {
+            document.getElementById(`footerPage`).style.backgroundColor = "transparent";
+            document.getElementById('py1').style.display = "none";
+            document.getElementById('py2').style.display = "none";
+            document.getElementById('circleAtBottom').style.display = "none";
+            document.getElementById('copy').style.color = "black";
+            setStyle({ color: 'black' })
+            setStyle1({filter:'invert(1)'});
         }
     })
     return (<div id='footerPage' className={footercss.footerPage}>
@@ -52,12 +64,12 @@ export default function Footer() {
         <div className={footercss.linksContainer}>
             <div className={footercss.lefttext}>
                 <div className={footercss.imageBox}>
-                    <img src='/logo.png' alt='logo' />
+                    <img style={style1} src='/logo.png' alt='logo' />
                 </div>
-                <p>lorem iu ia ougf hah hvi igav gha i <br />yguy fty dty ytdt gvagi vigaigvagi  havgavigv agh<br /> ghav ghavhghghga hgagh</p>
-                <a href='/'>webaccuracy@gmail.com</a>
+                <p style={style}>lorem iu ia ougf hah hvi igav gha i <br />yguy fty dty ytdt gvagi vigaigvagi  havgavigv agh<br /> ghav ghavhghghga hgagh</p>
+                <a style={style} href='/'>webaccuracy@gmail.com</a>
                 <br />
-                <a href='/'>666 888 0000</a>
+                <a style={style} href='/'>666 888 0000</a>
             </div>
             {/* <div className={footercss.links}>
                 <div>
@@ -66,17 +78,17 @@ export default function Footer() {
                     </ul>
                 </div>
             </div> */}
-            <div className={footercss.links}>
-                <h2>Features</h2>
+            <div   className={footercss.links}>
+                <h2 style={style}>Features</h2>
                 <div className={footercss.lists}>
                     <ul>
                         {data1.map(function (el, index) {
-                            return <li key={index}><span>&#10148; </span><a>{el.title}</a></li>
+                            return <li style={style} className='footerli' key={index}><span>&#10148; </span><a>{el.title}</a></li>
                         })}
                     </ul>
                     <ul>
                         {data2.map(function (el, index) {
-                            return <li key={index}><span>&#10148; </span><a>{el.title}</a></li>
+                            return <li style={style} className='footerli' key={index}><span>&#10148; </span><a>{el.title}</a></li>
                         })}
                     </ul>
                 </div>
@@ -105,13 +117,13 @@ export default function Footer() {
                     <img height={'22px'} src='/instagram.svg' alt='instagram' />
                 </div>
             </div>
-            <div className={footercss.copyright}>© 2023: Webaccuracy | Designed by: <span><a>Web Accuracy</a></span> | Powered by: <span><a>Web Accuracy Web Development Group</a></span></div>
+            <div id='copy' className={footercss.copyright}>© 2023: Webaccuracy | Designed by: <span><a>Web Accuracy</a></span> | Powered by: <span><a>Web Accuracy Web Development Group</a></span></div>
         </div>
-        <div className={footercss.py1}>
+        <div id='py1' className={footercss.py1}>
             <img src='https://zimed.netlify.app/assets/images/shapes/footer-shape-1.png' />
         </div>
-        <div className={footercss.py2}><img src='https://zimed.netlify.app/assets/images/shapes/footer-shape-2.png' alt='py2' /></div>
-        <div className={footercss.circleAtBottom}><img src='https://zimed.netlify.app/assets/images/shapes/footer-shape-3.png' alt='circleatbottom' /></div>
+        <div id='py2' className={footercss.py2}><img src='https://zimed.netlify.app/assets/images/shapes/footer-shape-2.png' alt='py2' /></div>
+        <div id='circleAtBottom' className={footercss.circleAtBottom}><img src='https://zimed.netlify.app/assets/images/shapes/footer-shape-3.png' alt='circleatbottom' /></div>
 
     </div>)
 }
