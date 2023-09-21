@@ -15,7 +15,8 @@ export default function LocoScroll(start) {
                 const scroll = new locoScroll({
                     el: document.querySelector('[data-scroll-container]'),
                     smooth: true,
-                    // multiplier: 1,
+                    multiplier: 0.8,
+                    
                     // class: 'is-reveal',
 
                 });

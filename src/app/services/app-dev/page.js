@@ -2,17 +2,23 @@
 import Footer from '@/app/components/Footer/Footer'
 import appcss from './appcss.module.css'
 import LocoScroll from '@/app/hooks/LocoScroll'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 export default function AppDevPage() {
+    const [width, setWidth] = useState();
     LocoScroll(true);
 
     useEffect(function () {
+        setWidth(window.innerWidth)
+        if (width > 900) {
 
-        document.getElementById('body').style.overflowY = "hidden"
-
+            document.getElementById('body').style.overflowY = "hidden"
+        }
+        window.addEventListener('resize', function () {
+            setWidth(window.innerWidth);
+        })
     })
     return (<main data-scroll-container className={appcss.main}>
-        <section className={appcss.section1}>
+        {width > 900 && <section className={appcss.section1}>
             <div className={appcss.sec1text}>
                 <p>App Development</p>
                 <p></p>
@@ -34,7 +40,7 @@ export default function AppDevPage() {
                     <img className={appcss.img} src='https://framerusercontent.com/images/GtO7c1DreUXQAkBcudzbkIJtOss.png' />
                 </div>
             </div>
-        </section>
+        </section>}
         <section id='section2' className={appcss.section2}>
             <div className={appcss.parallax2}>
                 <div className={appcss.container}>
@@ -52,7 +58,7 @@ export default function AppDevPage() {
                 <p>Speedtest: making it convenient for 100m+ people</p>
             </div>
         </section>
-        <section id='section3' className={appcss.section2}>
+        <section id='section3' className={appcss.section2 + ' ' + appcss.section3}>
             <div className={appcss.sec2text}>
                 <p>UX/UI design, direction, research, user testing, motion design</p>
                 <p>Speedtest: making it convenient for 100m+ people</p>
