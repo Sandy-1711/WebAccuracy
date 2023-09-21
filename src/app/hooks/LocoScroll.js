@@ -16,7 +16,12 @@ export default function LocoScroll(start) {
                     el: document.querySelector('[data-scroll-container]'),
                     smooth: true,
                     multiplier: 0.8,
-                    
+                    mobile: {
+                        smooth: true
+                    },
+                    tablet: {
+                        smooth: true
+                    },
                     // class: 'is-reveal',
 
                 });
