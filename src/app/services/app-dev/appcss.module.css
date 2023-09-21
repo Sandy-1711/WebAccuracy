@@ -236,7 +236,7 @@
 }
 
 @media screen and (width<768px) {
-    
+
     .parallax2 {
         width: 90%;
         margin: auto;
@@ -249,57 +249,72 @@
         width: 300px;
     }
 
-    .section2{
+    .section2 {
         padding: 0;
         gap: 0;
     }
+
     .section2:nth-child(1) {
         padding: 0;
         padding-top: 5rem;
         gap: 0;
     }
-    .p2c1{
+
+    .p2c1 {
         width: 100%;
         left: -10%;
     }
-    .p2c2{
+
+    .p2c2 {
         width: 100%;
     }
-    .p2c1 img{
-        width: 90%;  
-        border-radius: 25px;      
-    }
-    .p2c2 img{
+
+    .p2c1 img {
         width: 90%;
-        border-radius: 25px;      
+        border-radius: 25px;
+    }
+
+    .p2c2 img {
+        width: 90%;
+        border-radius: 25px;
 
     }
-    .container4{
+
+    .container4 {
         width: 300px;
     }
-    .container4 .p2c1{
+
+    .container4 .p2c1 {
         left: -10%;
     }
-    .container4 .p2c2{
+
+    .container4 .p2c2 {
         right: -30%;
     }
-    .p4c1{
+
+    .p4c1 {
         width: 100%;
     }
-    .p4c2{
+
+    .p4c2 {
         width: 100%;
     }
-    .p4c1 img{
+
+    .p4c1 img {
         width: 90%;
     }
-    .p4c2 img{
+
+    .p4c2 img {
         width: 90%;
     }
-    .container4 .p2c1{
+
+    .container4 .p2c1 {
 
         width: 100%;
     }
-    .container4 .p2c2{
+
+    .container4 .p2c2 {
         width: 100%;
     }
+
 }

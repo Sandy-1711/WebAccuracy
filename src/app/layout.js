@@ -39,8 +39,8 @@ export default function RootLayout({ children }) {
       <body id='body' className='mainBody'>
         <Nav />
         {children}
-        <script src='/scripts.js' async></script>
-        <script src='/dat.gui.min.js' async></script>
+        {/* <script src='/scripts.js' async></script> */}
+        {/* <script src='/dat.gui.min.js' async></script> */}
       </body>
     </html>
   )

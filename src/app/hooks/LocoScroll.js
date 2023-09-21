@@ -16,11 +16,17 @@ export default function LocoScroll(start) {
                     el: document.querySelector('[data-scroll-container]'),
                     smooth: true,
                     multiplier: 0.8,
-                    mobile: {
-                        smooth: true
+                    smartphone: {
+                        smooth: true,
+                        direction: 'vertical',
+                        gestureDirection: 'vertical'
                     },
+                    resetNativeScroll: true,
                     tablet: {
-                        smooth: true
+                        smooth: true,
+                        direction: 'vertical',
+                        gestureDirection: 'vertical',
+                        breakpoint: 1024
                     },
                     // class: 'is-reveal',
 
