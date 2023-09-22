@@ -33,6 +33,10 @@
     transform: translate(0, -50%);
     left: 19%;
     width: 25%;
+    backdrop-filter: blur(25px) ;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: #ffffff08;
 }
 
 .herotext {
