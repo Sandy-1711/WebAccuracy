@@ -31,7 +31,7 @@ export default function AppDevPage() {
                     <img className={appcss.img} src='https://framerusercontent.com/images/KV3tMFWhNZZ2whw411sVwm6qI.png' />
                     <img className={appcss.img} src='https://framerusercontent.com/images/Gy27YxkY90Upc01050lnDHCOVqE.png' />
                 </div>
-                <div className={appcss.column3}>
+                <div data-scroll data-scroll-speed='-3' className={appcss.column3}>
                     <img className={appcss.img} src='https://framerusercontent.com/images/N4DS9jet0Rb2X5oK6rbPG8l3g.png' />
                 </div>
                 <div data-scroll data-scroll-speed='3' className={appcss.column4}>

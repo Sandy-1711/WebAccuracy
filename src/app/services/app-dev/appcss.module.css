@@ -9,7 +9,7 @@
 }
 
 .section1 {
-    padding-top: 30vh;
+    padding-top: 300px;
 
 }
 
@@ -25,7 +25,7 @@
 }
 
 .parallax1 {
-    height: 1000px;
+    height: 45vw;
     width: calc(100vw - 80px);
     margin: auto;
     border-radius: 15px;
@@ -61,8 +61,8 @@
 .img {
     max-width: 100%;
     margin-bottom: 30px;
-    box-shadow: 0px 0px 50px 0px rgb(61, 61, 61);
-    border-radius: 45px;
+    /* box-shadow: 0px 0px 50px 0px rgb(61, 61, 61); */
+    /* border-radius: 45px; */
     user-select: none;
 
 }
@@ -79,8 +79,10 @@
 
 .column3 {
     position: relative;
-    top: 525px;
-    transform: translate(0, -50%);
+    /* top: 25%; */
+    /* margin-top: 10px; */
+    /* transform: translate(0,-50%); */
+    
 }
 
 .column4 {
@@ -92,7 +94,7 @@
     width: 100%;
     height: max-content;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 60px 0;
     justify-content: space-between;
 
@@ -103,10 +105,12 @@
     height: 100%;
     margin: 40px;
 }
-.sec1text p:nth-child(2){
+
+.sec1text p:nth-child(2) {
     font-size: 28px;
     margin-bottom: 10px;
 }
+
 .sec2text p:nth-child(2) {
     font-size: 40px;
     letter-spacing: -1px;
@@ -118,7 +122,7 @@
     width: 50%;
     position: relative;
     margin: 0 40px;
-    height: 110vh;
+    height: 50vw;
     background-color: #4B514F;
     border-radius: 15px;
     overflow: hidden;
@@ -141,7 +145,7 @@
 }
 
 .container4 {
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -163,8 +167,8 @@
 
 .p2c1 img {
     width: 100%;
-    border-radius: 45px;
-    box-shadow: 0px 0px 20px 0 black;
+    /* border-radius: 45px; */
+    /* box-shadow: 0px 0px 20px 0 black; */
 }
 
 .p2c2 {
@@ -191,8 +195,8 @@
 
 .p2c2 img {
     width: 100%;
-    border-radius: 45px;
-    box-shadow: 0px 0px 20px 0 black;
+    /* border-radius: 45px; */
+    /* box-shadow: 0px 0px 20px 0 black; */
 
 }
 
@@ -200,7 +204,7 @@
     .section2 {
         flex-direction: column-reverse;
         gap: 1rem;
-        padding-top: 2rem;
+        padding-top: 80px;
     }
 
     .section3 {
@@ -209,6 +213,7 @@
 
     .parallax2 {
         width: 80%;
+        height: 750px;
     }
 
     .parallax3 {
@@ -242,7 +247,7 @@
         width: 90%;
         margin: auto;
         /* margin: auto; */
-        height: 60vh;
+        height: 500px;
         /* padding: 0 10px; */
     }
 
@@ -283,17 +288,17 @@
     }
 
     .section2:nth-child(3) {
-        padding-bottom: 2rem;
+        padding-bottom: 50px;
     }
 
     .p2c1 img {
         width: 200px;
-        border-radius: 25px;
+        /* border-radius: 25px; */
     }
 
     .p2c2 img {
         width: 200px;
-        border-radius: 25px;
+        /* border-radius: 25px; */
 
     }
 
