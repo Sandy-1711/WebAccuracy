@@ -59,7 +59,7 @@ export default function AppDevPage() {
         </section>
         <section id='section3' className={appcss.section2 + ' ' + appcss.section3}>
             <div className={appcss.sec2text}>
-                <p>Hailing from our Ranchi-based development hub, our adept team is fluent in a spectrum of the most up-to-date technologies and industry trends, ensuring your app remains at the forefront of innovation. Drawing on languages such as Node.js, Python, and Java for back-end development, we ensure fluid user experiences supported by unmatched speed and efficiency across both iOS and Android. Whether you're envisioning a dynamic e-commerce powerhouse, a feature-rich social networking platform, or a groundbreaking utility app, rest assured, we have you covered.</p>
+                <p>Hailing from our Ranchi-based development hub, our adept team is fluent in a spectrum of the most up-to-date technologies and industry trends, ensuring your app remains at the forefront of innovation. Drawing on languages such as Node.js, Python, and Java for back-end development, we ensure fluid user experiences supported by unmatched speed and efficiency across both iOS and Android. Whether you&apos;re envisioning a dynamic e-commerce powerhouse, a feature-rich social networking platform, or a groundbreaking utility app, rest assured, we have you covered.</p>
                 <p>React Native and Flutter for captivating cross-platform interfaces on iOS and Android</p>
             </div>
             <div className={appcss.parallax2 + ' ' + appcss.parallax3}>
