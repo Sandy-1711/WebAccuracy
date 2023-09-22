@@ -2,7 +2,7 @@
 
 .homePage {
     background-color: black;
-    /* height: 200vh; */
+    height: max-content;
     width: 100vw;
     color: #ff6347;
 }
