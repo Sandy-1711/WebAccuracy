@@ -35,7 +35,7 @@ export default function Canvas() {
             SPLAT_KEY: 'Space',
             SHADING: true,
             COLORFUL: true,
-            COLOR_UPDATE_SPEED: 5,
+            COLOR_UPDATE_SPEED: 15,
             COLOR_PALETTE: [],
             HOVER: true,
             BACK_COLOR: '#000000',
