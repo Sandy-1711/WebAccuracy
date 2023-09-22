@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 export default function AppDevPage() {
     const [width, setWidth] = useState();
     LocoScroll(true);
-
     useEffect(function () {
         setWidth(window.innerWidth)
         if (width > 900) {
@@ -21,7 +20,7 @@ export default function AppDevPage() {
         {width > 900 && <section className={appcss.section1}>
             <div className={appcss.sec1text}>
                 <p>App Development</p>
-                <p></p>
+                <p >React Native and Flutter for captivating cross-platform interfaces on iOS and Android</p>
             </div>
             <div className={appcss.parallax1}>
                 <div data-scroll data-scroll-speed='6' className={appcss.column1}>
@@ -54,14 +53,14 @@ export default function AppDevPage() {
                 </div>
             </div>
             <div data-scroll data-scroll-speed='1' className={appcss.sec2text}>
-                <p>UX/UI design, direction, research, user testing, motion design</p>
-                <p>Speedtest: making it convenient for 100m+ people</p>
+                <p>Elevate your competitive edge in the digital landscape with apps that seamlessly blend creative prowess, functional ingenuity, and a design philosophy rooted in user-centricity across multiple platforms. Join forces with us to embark on your app journey, guided by the zleading app developers in Ranchi!</p>
+                <p>Cloud integration for scalable and flexible app architecture</p>
             </div>
         </section>
         <section id='section3' className={appcss.section2 + ' ' + appcss.section3}>
             <div className={appcss.sec2text}>
-                <p>UX/UI design, direction, research, user testing, motion design</p>
-                <p>Speedtest: making it convenient for 100m+ people</p>
+                <p>Hailing from our Ranchi-based development hub, our adept team is fluent in a spectrum of the most up-to-date technologies and industry trends, ensuring your app remains at the forefront of innovation. Drawing on languages such as Node.js, Python, and Java for back-end development, we ensure fluid user experiences supported by unmatched speed and efficiency across both iOS and Android. Whether you're envisioning a dynamic e-commerce powerhouse, a feature-rich social networking platform, or a groundbreaking utility app, rest assured, we have you covered.</p>
+                <p>React Native and Flutter for captivating cross-platform interfaces on iOS and Android</p>
             </div>
             <div className={appcss.parallax2 + ' ' + appcss.parallax3}>
                 <div className={appcss.container}>
@@ -69,7 +68,7 @@ export default function AppDevPage() {
                     <div data-scroll data-scroll-speed='1.5' className={appcss.p2c1 + ' ' + appcss.p3c1}>
                         <img src='https://framerusercontent.com/images/LrbnXprPfPD5RFyVd7gwXAqpGY.png' />
                     </div>
-                    <div data-scroll data-scroll-speed='1' className={appcss.p2c2}>
+                    <div data-scroll data-scroll-speed='1' className={appcss.p2c2+' '+appcss.p3c2}>
                         <img src='https://framerusercontent.com/images/2IFGrfquCalyJJmwTffgtNYPgH4.png' />
                     </div>
                 </div>
@@ -88,8 +87,8 @@ export default function AppDevPage() {
                 </div>
             </div>
             <div className={appcss.sec2text}>
-                <p>UX/UI design, direction, research, user testing, motion design</p>
-                <p>Speedtest: making it convenient for 100m+ people</p>
+                <p>AI-powered features for personalized user experiences</p>
+                <p>Back-end languages such as Node.js, Python, and Java for robust operations</p>
             </div>
         </section>
         <hr style={{ width: '100%', color: 'black' }} />

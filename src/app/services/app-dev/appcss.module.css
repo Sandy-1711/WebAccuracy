@@ -103,7 +103,10 @@
     height: 100%;
     margin: 40px;
 }
-
+.sec1text p:nth-child(2){
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 .sec2text p:nth-child(2) {
     font-size: 40px;
     letter-spacing: -1px;
@@ -152,9 +155,7 @@
 
 }
 
-.p3c1 {}
 
-.p3c2 {}
 
 .p4c1 {
     left: 10%;
@@ -241,7 +242,7 @@
         width: 90%;
         margin: auto;
         /* margin: auto; */
-        height: 70vh;
+        height: 60vh;
         /* padding: 0 10px; */
     }
 
@@ -256,26 +257,42 @@
 
     .section2:nth-child(1) {
         padding: 0;
-        padding-top: 5rem;
+        padding-top: 3.5rem;
         gap: 0;
     }
 
     .p2c1 {
         width: 100%;
-        left: -10%;
+        left: -5%;
+        top: 60px;
     }
 
     .p2c2 {
         width: 100%;
+        left: unset;
+        right: -40%;
+        top: 10px;
+
+    }
+
+
+    .sec2text p:nth-child(2) {
+        font-size: 28px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+
+    .section2:nth-child(3) {
+        padding-bottom: 2rem;
     }
 
     .p2c1 img {
-        width: 90%;
+        width: 200px;
         border-radius: 25px;
     }
 
     .p2c2 img {
-        width: 90%;
+        width: 200px;
         border-radius: 25px;
 
     }
@@ -284,16 +301,43 @@
         width: 300px;
     }
 
+    .container4 .p2c1 img {
+        width: 200px;
+    }
+
+    .container4 .p2c2 img {
+        width: 200px;
+    }
+
     .container4 .p2c1 {
-        left: -10%;
+        left: -5%;
     }
 
     .container4 .p2c2 {
-        right: -30%;
+        right: -35%;
     }
 
     .p4c1 {
         width: 100%;
+    }
+
+    .p3c1 {
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        bottom: 30px;
+
+    }
+
+
+    .p3c2 {
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        right: -100px;
+        top: 30px;
     }
 
     .p4c2 {
@@ -301,11 +345,11 @@
     }
 
     .p4c1 img {
-        width: 90%;
+        width: 200px;
     }
 
     .p4c2 img {
-        width: 90%;
+        width: 200px;
     }
 
     .container4 .p2c1 {

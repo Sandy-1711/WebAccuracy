@@ -12,25 +12,28 @@ export default function LocoScroll(start) {
             (async () => {
 
                 const locoScroll = (await (import('locomotive-scroll'))).default;
-                const scroll = new locoScroll({
-                    el: document.querySelector('[data-scroll-container]'),
-                    smooth: true,
-                    multiplier: 0.8,
-                    smartphone: {
-                        smooth: true,
-                        direction: 'vertical',
-                        gestureDirection: 'vertical'
-                    },
-                    resetNativeScroll: true,
-                    tablet: {
-                        smooth: true,
-                        direction: 'vertical',
-                        gestureDirection: 'vertical',
-                        breakpoint: 1024
-                    },
-                    // class: 'is-reveal',
+                if (window.innerWidth > 900) {
 
-                });
+                    const scroll = new locoScroll({
+                        el: document.querySelector('[data-scroll-container]'),
+                        smooth: true,
+                        multiplier: 0.8,
+                        smartphone: {
+                            smooth: true,
+                            // direction: 'vertical',
+                            // gestureDirection: 'vertical'
+                        },
+                        // resetNativeScroll: true,
+                        // tablet: {
+                        //     smooth: true,
+                        //     direction: 'vertical',
+                        //     gestureDirection: 'vertical',
+                        //     breakpoint: 1024
+                        // },
+                        // class: 'is-reveal',
+
+                    });
+                }
             })()
         }
     }, [start])
