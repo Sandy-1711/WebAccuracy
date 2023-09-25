@@ -52,7 +52,7 @@ export default function digitalmarketing() {
                         <div className={digitalcss.card}>
                             <img src="/customer.svg" alt="cardImage" />
                             <h2>Difficulties in attracting customers</h2>
-                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you'll miss out on potential business</p>
+                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you&apos;ll miss out on potential business</p>
 
                         </div>
                     </div>
@@ -62,7 +62,7 @@ export default function digitalmarketing() {
                         <div className={digitalcss.card}>
                             <img src="/customer.svg" alt="cardImage" />
                             <h2>Difficulties in attracting customers</h2>
-                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you'll miss out on potential business</p>
+                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you&apos;ll miss out on potential business</p>
 
                         </div>
                     </div>
@@ -72,7 +72,7 @@ export default function digitalmarketing() {
                         <div className={digitalcss.card}>
                             <img src="/customer.svg" alt="cardImage" />
                             <h2>Difficulties in attracting customers</h2>
-                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you'll miss out on potential business</p>
+                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you&apos;ll miss out on potential business</p>
                         </div>
 
                     </div>
@@ -82,7 +82,7 @@ export default function digitalmarketing() {
                         <div className={digitalcss.card}>
                             <img src="/customer.svg" alt="cardImage" />
                             <h2>Difficulties in attracting customers</h2>
-                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you'll miss out on potential business</p>
+                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you&apos;ll miss out on potential business</p>
 
                         </div>
                     </div>
@@ -91,7 +91,7 @@ export default function digitalmarketing() {
                         <div className={digitalcss.card}>
                             <img src="/customer.svg" alt="cardImage" />
                             <h2>Difficulties in attracting customers</h2>
-                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you'll miss out on potential business</p>
+                            <p>Without a targeted digital strategy that prioritizes your expertise and quality, you&apos;ll miss out on potential business</p>
                         </div>
 
                     </div>
@@ -167,8 +167,8 @@ export default function digitalmarketing() {
                     <div className={digitalcss.sec5inner}>
 
                         <p>STRATEGIC SEO SOLUTIONS FOR THE CONSTRUCTION INDUSTRY</p>
-                        <h2>Where others stop, let's get started: SEO for construction</h2>
-                        <p>At Canes Digital, we don't just focus on technical aspects and rankings. Our holistic SEO solutions are designed to noticeably increase your sales and conversions.</p>
+                        <h2>Where others stop, let&apos;s get started: SEO for construction</h2>
+                        <p>At Canes Digital, we don&apos;t just focus on technical aspects and rankings. Our holistic SEO solutions are designed to noticeably increase your sales and conversions.</p>
                         <div className={digitalcss.list}>
 
                             <div className={digitalcss.listitem}>
