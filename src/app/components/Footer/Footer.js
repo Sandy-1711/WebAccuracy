@@ -40,7 +40,7 @@ export default function Footer() {
 
     ]
     const [style, setStyle] = useState({});
-    const [style1,setStyle1]=useState({});
+    const [style1, setStyle1] = useState({});
     var path;
 
     useEffect(function () {
@@ -48,6 +48,14 @@ export default function Footer() {
         if (path === '/services/ui-ux') {
 
             document.getElementById(`footerPage`).style.backgroundColor = "black";
+
+        }
+        if (path === '/services/digital-marketing') {
+            document.getElementById(`footerPage`).style.backgroundColor = "black";
+            document.getElementById('footerPage').style.position = "fixed";
+            document.getElementById('footerPage').style.zIndex = "-2";
+            document.getElementById('footerPage').style.bottom = "0";
+
         }
         if (path === '/services/app-dev') {
             document.getElementById(`footerPage`).style.backgroundColor = "transparent";
@@ -56,7 +64,7 @@ export default function Footer() {
             document.getElementById('circleAtBottom').style.display = "none";
             document.getElementById('copy').style.color = "black";
             setStyle({ color: 'black' })
-            setStyle1({filter:'invert(1)'});
+            setStyle1({ filter: 'invert(1)' });
         }
     })
     return (<div id='footerPage' className={footercss.footerPage}>
@@ -78,7 +86,7 @@ export default function Footer() {
                     </ul>
                 </div>
             </div> */}
-            <div   className={footercss.links}>
+            <div className={footercss.links}>
                 <h2 style={style}>Features</h2>
                 <div className={footercss.lists}>
                     <ul>

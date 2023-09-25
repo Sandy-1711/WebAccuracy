@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+.navbar {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 12vh;
+    width: 100dvw;
+
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    /* font-size: calc(100dvw / 103); */
+    font-size: 16px;
+    background: transparent;
+    border-bottom: 1px solid rgb(174, 171, 171, 0.2);
+    color: white;
+    background-color: transparent;
+}
+
+.navinner {
+    position: relative;
+    margin: auto;
+    display: flex;
+    height: 12vh;
+    width: 1200px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.navbar .menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+    margin-left: 10rem;
+
+}
+
+.menu li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    width: max-content;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.menu>li a::before {
+    content: '';
+    transition: 0.3s linear;
+    height: 1.5px;
+    width: 0%;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    background-color: white;
+}
+
+.menu>li:hover a::before {
+    width: 100%;
+    right: unset;
+    left: 0;
+}
+
+.navbar button {
+    padding: 1rem 1.5rem;
+    min-width: max-content;
+    outline: none;
+    border: none;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    transition: 200ms ease-in-out;
+}
+
+.navbar button:hover {
+
+    background-color: white;
+    color: #272839;
+}
+
+.navbar form input {
+    padding: 0.5rem 0.75rem;
+    outline: none;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.navbar form button {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.logo {
+    position: absolute;
+    height: 35px;
+    margin-bottom: 10px;
+    /* margin-right: 100px; */
+    left: 10px;
+}
+
+.menubar {
+    display: none;
+    height: 30px;
+    position: absolute;
+    right: 25%;
+    z-index: 99991;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.menuclose {
+    display: none;
+    position: absolute;
+    /* left: 0; */
+    height: 25px;
+    right: 25%;
+    z-index: 99999;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menuicon {
+    background-color: #272839;
+    height: 50px;
+    width: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    left: 50vw;
+    top: 12%;
+
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.servicestab,
+.trendstab,
+.threedtechtab {
+    position: relative;
+
+}
+
+.submenu {
+    position: absolute;
+    top: 12vh;
+    background-color: #272839;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(1vh);
+    transition: 200ms ease-in-out;
+}
+
+.trendstab:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.threedtechtab:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.servicestab:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu ul {
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.submenu ul li :hover {
+    color: red;
+
+}
+
+.menumobile {
+    display: none;
+}
+
+@media screen and (width<1200px) {
+    .navinner {
+        width: 960px;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .navinner .menu {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+
+    .servicestab,
+    .trendstab,
+    .threedtechtab {
+        position: relative;
+
+    }
+
+    .submenu {
+        top: 0;
+        left: unset;
+        right: 0;
+        z-index: 999;
+        background-color: black;
+    }
+
+    .submenu ul {
+        position: absolute;
+        left: 1rem;
+        background-color: black;
+        align-items: flex-start !important;
+        justify-content: flex-start;
+    }
+
+    .menumobile {
+        display: block;
+        transform: translate(-50vw);
+        transition: 300ms ease-in-out;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: #272839;
+        color: white;
+        padding: 1.25rem;
+        padding-right: 1rem;
+
+    }
+
+    .logomobile {
+        height: 45px;
+        width: 100%;
+        width: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .logomobile img {
+        height: 50%;
+        width: auto;
+
+    }
+
+    .menumobile ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 10px;
+        font-size: 25px;
+        list-style: none;
+    }
+
+    .menumobile ul li a:focus {
+        outline: none;
+    }
+
+    .menumobile ul li a {
+        color: white;
+        user-select: none;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .menumobile ul li a:hover {
+        color: grey;
+    }
+
+    .menumobile ul li a i {
+        font-size: 15px;
+    }
+
+    .navbar button {
+        padding: 0.1rem 0.5rem;
+        position: absolute;
+        right: 4%;
+        font-weight: 400;
+    }
+}
+
+@media screen and (width<960px) {
+
+    .navinner {
+        width: 100%;
+    }
+
+    .menumobile ul {
+        font-size: 25px;
+    }
+}
+
+@media screen and (width<500px) {
+    .navbar {
+        height: 6vh;
+        background: url('https://zimed.netlify.app/assets/images/background/banner-bg-1-1.png');
+    }
+
+    .navinner {
+        height: 100%;
+    }
+
+    .menumobile ul {
+        font-size: 18px;
+    }
+
+    .logo {
+        height: 25px;
+    }
+
+    .menuicon {
+        top: 7%;
+    }
+
+}
+
+/* 
+@media screen and (width<=1024px) {
+    .navbar ul {
+        gap: 1dvw;
+    }
+
+    .navbar {
+        gap: 2dvw;
+    }
+} */
+
+/* @media screen and (width<=900px) {
+    .menuicon {
+        background-color: #272839;
+        height: 50px;
+        width: 70px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: absolute;
+        right: -15%;
+        top: 2%;
+
+    }
+
+    
+
+    .navbar ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 0;
+        list-style: none;
+        margin-left: 0;
+        margin-top: 3%;
+    }
+
+    .logo {
+        position: absolute;
+        height: 25px;
+        margin-right: 0;
+        left: 5.5%;
+        top: 2.5%;
+    }
+
+    .navbar ul li {
+        height: 40px;
+    }
+
+    .navbar button {
+
+        position: absolute;
+        right: 6%;
+        bottom: 5.5%;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+} */

@@ -6,10 +6,12 @@ import Technologies from './components/Technologies/Technologies'
 import Plans from './components/Plans/Plans'
 import Footer from './components/Footer/Footer'
 import Feature2 from './components/Feature2/Feature2'
+import Nav from './components/Nav/nav'
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      {/* <Nav /> */}
       <Hero />
       <Features />
       <Feature2 />

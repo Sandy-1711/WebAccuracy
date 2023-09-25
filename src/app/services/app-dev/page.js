@@ -3,6 +3,7 @@ import Footer from '@/app/components/Footer/Footer'
 import appcss from './appcss.module.css'
 import LocoScroll from '@/app/hooks/LocoScroll'
 import { useEffect, useState } from 'react';
+import Nav from '@/app/components/Nav/nav';
 export default function AppDevPage() {
     const [width, setWidth] = useState();
     LocoScroll(true);
@@ -17,6 +18,7 @@ export default function AppDevPage() {
         })
     })
     return (<main data-scroll-container className={appcss.main}>
+        {/* <Nav /> */}
         {width > 900 && <section className={appcss.section1}>
             <div className={appcss.sec1text}>
                 <p>App Development</p>
@@ -68,7 +70,7 @@ export default function AppDevPage() {
                     <div data-scroll data-scroll-speed='1.5' className={appcss.p2c1 + ' ' + appcss.p3c1}>
                         <img src='https://framerusercontent.com/images/LrbnXprPfPD5RFyVd7gwXAqpGY.png' />
                     </div>
-                    <div data-scroll data-scroll-speed='1' className={appcss.p2c2+' '+appcss.p3c2}>
+                    <div data-scroll data-scroll-speed='1' className={appcss.p2c2 + ' ' + appcss.p3c2}>
                         <img src='https://framerusercontent.com/images/2IFGrfquCalyJJmwTffgtNYPgH4.png' />
                     </div>
                 </div>
