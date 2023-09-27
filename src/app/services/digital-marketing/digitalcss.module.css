@@ -22,8 +22,9 @@
 }
 
 .section3 {
+    padding: 10rem 0;
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     border-bottom: 1px solid black;
 
 }
@@ -42,6 +43,7 @@
     /* border-bottom: 1px solid black; */
 
 }
+
 .section6 {
     margin-top: 100px;
     height: 80vh;
@@ -76,6 +78,8 @@
     margin: auto;
     width: 1200px;
 }
+
+
 
 .buttondiv button {
     /* transition: 500ms ease-in-out; */
@@ -189,7 +193,7 @@
 
 .cardsContainer {
     display: flex;
-    width: 70%;
+    width: 100%;
     margin: auto;
     flex-wrap: wrap;
     height: max-content;
@@ -202,7 +206,7 @@
 .cardContainer1 {
     height: max-content;
 
-    width: 50%;
+    width: 500px;
     /* background-color: #D8FF36; */
     display: flex;
     justify-content: flex-end;
@@ -211,7 +215,7 @@
 
 .cardContainer2 {
     height: max-content;
-    width: 50%;
+    width: 500px;
     /* background-color: #D8FF36; */
 
     display: flex;
@@ -221,14 +225,15 @@
 
 .cardContainer {
     height: max-content;
-    width: 30%;
+    width: 500px;
     /* background-color: #D8FF36; */
 }
 
 .card {
+    margin: auto;
     position: relative;
-    width: 425px;
-    height: 425px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -322,11 +327,17 @@
 }
 
 .sec3leftinner {
+
     display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
     gap: 3rem;
     margin-right: 50px;
     margin-bottom: 25px;
+}
+
+.sec3leftinnerinner {
+    width: 45%;
 }
 
 .sec3leftinnerinner h2 {
@@ -502,26 +513,30 @@
     margin: auto;
     margin-bottom: 50px;
 }
-.numbers{
+
+.numbers {
     display: flex;
     justify-content: space-between;
 }
-.number{
+
+.number {
     width: 30%;
 }
-.number h2{
+
+.number h2 {
     margin: 0;
     font-size: 80px;
     font-weight: 900;
 }
-.number p{
+
+.number p {
     margin: 0;
     font-size: 20px;
     font-weight: 700;
     color: #666666;
 }
 
-.section6 img{
+.section6 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -529,4 +544,99 @@
     top: 0;
     left: 0;
     filter: saturate(0.5) brightness(0.5);
+}
+
+@media screen and (width<1200px) {
+
+    .text {
+        width: 90%;
+        font-size: 50px;
+    }
+
+    .secdiv {
+        width: 90%;
+        margin: auto;
+    }
+
+    .sec3right {
+        height: 100%;
+    }
+
+    .sec3rightinner img {
+        height: 100px;
+    }
+
+    .carousalContainer {
+        width: 100%;
+    }
+
+    .section2>h2 {
+        font-size: 28px;
+        width: 80%;
+    }
+}
+
+@media screen and (width<768px) {
+    .sec3left {
+        width: 100%;
+    }
+
+    .sec3leftinner {
+        width: 100%;
+    }
+
+    .sec3left h2 span {
+        font-size: 30px;
+    }
+
+    .sec3leftinnerinner h2 {
+        margin: 10px auto;
+    }
+
+    .sec3leftinner {
+        gap: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .sec3rightinner img {
+        height: 50px;
+    }
+
+    .sec3leftinnerinner {
+        width: 100%;
+    }
+
+    .sec3right {
+        height: max-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec3rightinner {
+        height: max-content;
+        padding: 2rem 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* gap: 2rem; */
+        align-items: center;
+    }
+
+    .secdiv {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .section3 {
+        padding: 3rem 0;
+    }
+
+
+    /* .sec3rightinner {
+        height: 100%;
+    } */
 }

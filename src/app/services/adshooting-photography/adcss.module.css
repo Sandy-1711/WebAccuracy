@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+.main {
+    height: max-content;
+    width: 100vw;
+    z-index: 100;
+    scroll-snap-type: y mandatory;
+}
+
+.section1 {
+    padding-top: 200px;
+    height: max-content;
+    width: 100%;
+    background-color: white;
+}
+
+.sec1Text {
+    height: max-content;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1Text p {
+    text-align: center;
+}
+
+.sec1Text span {
+    font-family: norwester;
+    /* padding: 100px 0; */
+    font-size: 108px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.sec1Image {
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sec1Image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section2 {
+    height: max-content;
+    background-color: white;
+    width: 100vw;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.sec2Text h2 {
+    font-size: 40px;
+    font-family: norwester;
+}
+
+.sec2Text p {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 600;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.mouseCursor {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    top: -15px;
+    left: -15px;
+    z-index: 100;
+    user-select: none;
+}
+
+.button {
+    position: relative;
+    z-index: 999;
+    height: 50px;
+    width: max-content;
+    margin: 40px auto;
+}
+
+.button button {
+    position: relative;
+    z-index: 999;
+    padding: 15px 30px;
+    transition: 100ms ease-in-out;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.button button:hover {
+    border: none;
+    transform: translate(0, -2px);
+    box-shadow: 12px 28px 30px rgba(0, 0, 0, .12);
+}
+
+
+
+.button button img {
+    transition: 100ms ease-in-out;
+    height: 15px;
+}
+
+.button button img:nth-child(1) {
+    transform: translate(-20px, 0) scale(0);
+}
+
+.button button:hover img:nth-child(2) {
+    transform: translate(20px, 0) scale(0);
+}
+
+.button button:hover img:nth-child(1) {
+    transform: translate(0px, 0) scale(1);
+}
+
+.section3 {
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    /* scroll-snap-type: y proximity; */
+    scroll-snap-align: start;
+    /* overflow-y: scroll; */
+}
+
+.section4 {
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.section4 .secInner {
+    flex-direction: row-reverse;
+}
+
+.section5 {
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.secInner {
+    display: flex;
+    width: 100%;
+}
+
+
+.sec3InLeft {
+    width: 50%;
+    position: relative;
+
+}
+
+.sec3InLeft p:nth-child(1) {
+    position: absolute;
+    rotate: -90deg;
+    top: 30%;
+    font-size: 40px;
+    left: -3%;
+}
+
+.sec3InLeft p:nth-child(1) span {
+
+    font-family: norwester;
+}
+
+.sec3InLeft p:nth-child(2) {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 65%;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sec3InRight {
+    height: 100vh;
+    width: 50%;
+}
+
+.sec3InRight img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Section 6 */
+
+.section6 {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec6Text {
+    text-align: center;
+}
+
+.sec6Text h2 {
+    font-family: norwester;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.sec6Text p {
+    font-weight: 600;
+    width: 90%;
+    /* margin: auto; */
+    margin: 40px auto;
+}
+
+.sec6Inner {
+    width: 1200px;
+}
+
+.imagesbox {
+    margin-top: 50px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imagebox {
+    height: 400px;
+    width: 300px;
+    position: relative;
+}
+
+.imageboxtext {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+}
+
+.imageboxtext h2 {
+    font-size: 35px;
+    /* font-weight: 600; */
+    text-transform: uppercase;
+
+}
+
+.imageboxtext p {
+    font-size: 15px;
+}
+
+.imagebox {
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagebox img {
+    transition: 150ms ease-in-out;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imagebox:hover img {
+    filter: blur(1px) saturate(0.5) brightness(0.4);
+    height: 120%;
+    width: 120%;
+}
+
+.imagebox:hover .imageboxtext {
+    opacity: 1;
+}
+
+/* section 7 */
+
+.section7 {
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    margin-bottom: 60vh;
+}
+
+.section7>h2 {
+    position: absolute;
+    z-index: 2;
+    font-family: norwester;
+    font-size: 100px;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.sec7ImageBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.sec7ImageBox img {
+    height: 100%;
+    width: 100%;
+}
+
+.sec7ImageBox>h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-family: norwester;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+}
+
+.footer {
+    height: max-content;
+    width: 100%;
+    position: fixed;
+    z-index: -4;
+    bottom: 0;
+    left: 0;
+}

@@ -131,7 +131,7 @@ export default function digitalmarketing() {
                 </div>
 
             </section>
-            <section className={digitalcss.section4}>
+            {/* <section className={digitalcss.section4}>
                 <div className={digitalcss.sliderOuter}>
 
                     <div className={digitalcss.sec4slider}>
@@ -241,7 +241,7 @@ export default function digitalmarketing() {
             </section>
             <section className={digitalcss.section6}>
                 <img src="/2.jpg"/>
-            </section>
+            </section> */}
         </main>
         <div></div>
     </div>)

@@ -57,7 +57,7 @@ export default function Footer() {
             document.getElementById('footerPage').style.bottom = "0";
 
         }
-        if (path === '/services/app-dev') {
+        if (path === '/services/app-dev' || path === '/services/adshooting-photography') {
             document.getElementById(`footerPage`).style.backgroundColor = "transparent";
             document.getElementById('py1').style.display = "none";
             document.getElementById('py2').style.display = "none";
@@ -65,6 +65,9 @@ export default function Footer() {
             document.getElementById('copy').style.color = "black";
             setStyle({ color: 'black' })
             setStyle1({ filter: 'invert(1)' });
+        }
+        if (path === '/services/adshooting-photography') {
+            document.getElementById(`footerPage`).style.backgroundColor = "rgb(225,225,225)";
         }
     })
     return (<div id='footerPage' className={footercss.footerPage}>

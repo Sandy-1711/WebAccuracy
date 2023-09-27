@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
 
+@font-face {
+  font-family: norwester;
+  src: url('/norwester.otf');
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +12,10 @@
 
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   width: 100dvw;
-  height: 100dvh;
+  height: max-content;
   overflow-x: hidden;
   /* background-color: black; */
 }

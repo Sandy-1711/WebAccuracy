@@ -10,6 +10,8 @@ import Nav from './components/Nav/nav'
 
 export default function Home() {
   return (
+    <div className='wrapper'>
+
     <main className={styles.main}>
       {/* <Nav /> */}
       <Hero />
@@ -19,5 +21,6 @@ export default function Home() {
       <Plans />
       <Footer />
     </main>
+    </div>
   )
 }

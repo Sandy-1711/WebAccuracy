@@ -2,13 +2,13 @@
 import Footer from '@/app/components/Footer/Footer'
 import Canvas from './Canvas'
 import uiux from './uiux.module.css'
-import LocoScroll from '../../hooks/LocoScroll'
+import LocoScroll from '../../../../hooks/LocoScroll'
 import { useEffect } from 'react'
 export default function UIUX() {
-    LocoScroll(true);
+    // LocoScroll(true);
     useEffect(function () {
         if (window.innerWidth > 900) {
-            document.getElementById('body').style.overflowY = 'hidden';
+            // document.getElementById('body').style.overflowY = 'hidden';
         }
     })
     return (

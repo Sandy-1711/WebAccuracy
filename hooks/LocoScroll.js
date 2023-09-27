@@ -17,7 +17,7 @@ export default function LocoScroll(start) {
                     const scroll = new locoScroll({
                         el: document.querySelector('[data-scroll-container]'),
                         smooth: true,
-                        multiplier: 0.7,
+                        multiplier: 1,
                         smartphone: {
                             smooth: true,
                             // direction: 'vertical',

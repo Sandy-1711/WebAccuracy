@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import './globals.css'
 export const metadata = {
@@ -9,10 +10,12 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Head from 'next/head'
 import Nav from './components/Nav/nav'
 import Script from 'next/script';
+import LocoScroll from '../../hooks/LocoScroll';
 // import { useIsomorphicLayoutEffect } from './helpers/isomorphicEffect'
 // gsap.registerPlugin(ScrollTrigger);
 
 export default function RootLayout({ children }) {
+  LocoScroll(true);
   // useIsomorphicLayoutEffect(function () {
 
   //   console.log(document.querySelector('#serviceBox'));
@@ -37,8 +40,11 @@ export default function RootLayout({ children }) {
         <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css' />
       </Head>
       <body id='body' className='mainBody'>
-        <Nav />
-        {children}
+        <div data-scroll-container>
+
+          <Nav />
+          {children}
+        </div>
         {/* <script src='/scripts.js' async></script> */}
         {/* <script src='/dat.gui.min.js' async></script> */}
       </body>

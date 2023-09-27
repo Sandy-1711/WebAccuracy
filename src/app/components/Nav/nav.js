@@ -8,6 +8,7 @@ import Link from "next/link"
 import uiux from '../../services/ui-ux/uiux.module.css'
 export default function Nav() {
     const [color, setColor] = useState('');
+    const [textColor, setTextColor] = useState('');
     useEffect(function () {
         // window.addEventListener('mousemove', function (e) {
         //     const mousePosition = e.clientX / window.innerWidth * 100;
@@ -26,6 +27,11 @@ export default function Nav() {
         }
         else if (path === '/services/ui-ux') {
             setColor('black');
+        }
+        else if (path === '/services/adshooting-photography') {
+            // setColor('black');
+            document.getElementById('nav').style.backgroundColor = "black";
+            document.getElementById('nav').style.zIndex = "999";
         }
         else {
             setColor('#272839');
@@ -47,8 +53,8 @@ export default function Nav() {
                 }
             })
         }
-        
-    },[color])
+
+    }, [color])
 
     return <nav id="nav" className={navcss.navbar + " " + uiux.navbar}>
         <div className={navcss.navinner}>

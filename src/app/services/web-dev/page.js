@@ -1,6 +1,6 @@
 'use client'
 import webcss from './webcss.module.css'
-import LocoScroll from '@/app/hooks/LocoScroll';
+import LocoScroll from '../../../../hooks/LocoScroll';
 import { useEffect, useState } from 'react';
 export default function WebDevPage() {
     // const [width, setWidth] = useState();
