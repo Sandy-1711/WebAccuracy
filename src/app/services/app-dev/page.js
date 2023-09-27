@@ -6,7 +6,7 @@ import { useEffect, useLayoutEffect, useState } from 'react';
 import Nav from '@/app/components/Nav/nav';
 export default function AppDevPage() {
     const [width, setWidth] = useState();
-    // LocoScroll(true);
+    LocoScroll(true);
     useLayoutEffect(function () {
         setWidth(window.innerWidth)
         // if (width > 900) {
@@ -17,7 +17,7 @@ export default function AppDevPage() {
             setWidth(window.innerWidth);
         })
     })
-    return (<main className={appcss.main}>
+    return (<main data-scroll-container className={appcss.main}>
         {/* <Nav /> */}
         {width > 900 && <section className={appcss.section1}>
             <div className={appcss.sec1text}>
@@ -54,7 +54,7 @@ export default function AppDevPage() {
                     </div>
                 </div>
             </div>
-            <div  className={appcss.sec2text}>
+            <div className={appcss.sec2text}>
                 <p>Elevate your competitive edge in the digital landscape with apps that seamlessly blend creative prowess, functional ingenuity, and a design philosophy rooted in user-centricity across multiple platforms. Join forces with us to embark on your app journey, guided by the zleading app developers in Ranchi!</p>
                 <p>Cloud integration for scalable and flexible app architecture</p>
             </div>

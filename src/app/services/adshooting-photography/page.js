@@ -6,9 +6,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Button from "./Button";
 import Footer from "@/app/components/Footer/Footer";
-// import LocoScroll from "../../../../hooks/LocoScroll";
+import LocoScroll from "../../../../hooks/LocoScroll";
 export default function Adshootingpage() {
-    // LocoScroll(true);
+    LocoScroll(true);
     useLayoutEffect(function () {
 
         window.addEventListener('mousemove', function (e) {

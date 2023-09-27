@@ -1,11 +1,14 @@
+'use client'
 import Footer from "@/app/components/Footer/Footer";
 import Button from "./Button";
 import DigitalNav from "./DigitalNav";
 import digitalcss from './digitalcss.module.css'
+import LocoScroll from "../../../../hooks/LocoScroll";
 export default function digitalmarketing() {
+    LocoScroll(true);
     return (<div>
         {/* <DigitalNav /> */}
-        <main className={digitalcss.main}>
+        <main data-scroll-container className={digitalcss.main}>
             <section className={digitalcss.section1}>
                 <video muted src="https://canesdigital.de/wp-content/uploads/2023/09/Design-ohne-Titel-12-1.mp4">
                 </video>
