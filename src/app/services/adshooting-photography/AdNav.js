@@ -10,7 +10,7 @@ export default function AdNav() {
 
             window.addEventListener('scroll', function (e) {
                 // print "false" if direction is down and "true" if up
-                console.log(this.oldScroll > this.scrollY);
+                // console.log(this.oldScroll > this.scrollY);
                 var scrollingUp = this.oldScroll > this.scrollY;
                 var nav = document.getElementById('nav');
                 if (nav) {

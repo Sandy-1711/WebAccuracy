@@ -12,14 +12,14 @@ export default function Adshootingpage() {
 
     useLayoutEffect(function () {
 
-        window.addEventListener('mousemove', function (e) {
-            let x = e.clientX + 10;
-            let y = e.clientY + 10;
-            gsap.to(`.${adcss.mouseCursor}`, {
-                x: x,
-                y: y,
-            })
-        })
+        // window.addEventListener('mousemove', function (e) {
+        //     let x = e.clientX + 10;
+        //     let y = e.clientY + 10;
+        //     gsap.to(`.${adcss.mouseCursor}`, {
+        //         x: x,
+        //         y: y,
+        //     })
+        // })
         // document.getElementById('body').style.overflowY = "hidden"
         gsap.registerPlugin(ScrollTrigger);
         var tl = gsap.timeline();
