@@ -10,7 +10,7 @@ export default function DigitalNav() {
 
             window.addEventListener('scroll', function (e) {
                 // print "false" if direction is down and "true" if up
-                console.log(this.oldScroll > this.scrollY);
+                // console.log(this.oldScroll > this.scrollY);
                 // console.log(document.getElementById('nav').children[0].childNodes[1].childNodes);
                 const nav = document.getElementById('nav');
                 const button = document.getElementById('button');
@@ -18,7 +18,7 @@ export default function DigitalNav() {
                     nav.style.backgroundColor = 'white';
                     nav.children[0].childNodes[1].childNodes.forEach(function (li) {
                         li.children[0].style.color = 'black';
-                        console.log(li.children[0]);
+                        // console.log(li.children[0]);
                     });
                     document.getElementById('logo').style.filter = 'invert(1)';
                     button.style.borderColor = "black";
@@ -37,7 +37,7 @@ export default function DigitalNav() {
                     nav.style.backgroundColor = 'transparent';
                     nav.children[0].childNodes[1].childNodes.forEach(function (li) {
                         li.children[0].style.color = 'white';
-                        console.log(li.children[0]);
+                        // console.log(li.children[0]);
                     });
                     document.getElementById('logo').style.filter = 'invert(0)';
 
