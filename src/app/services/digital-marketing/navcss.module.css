@@ -171,6 +171,7 @@
     background-color: #272839;
     left: 0;
     opacity: 0;
+    z-index: 9999;
     visibility: hidden;
     transform: translateY(1vh);
     transition: 200ms ease-in-out;
