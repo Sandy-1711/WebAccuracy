@@ -19,6 +19,7 @@
     width: 100vw;
     height: max-content;
     border-bottom: 1px solid black;
+    background-color: white;
 }
 
 .section3 {
@@ -26,7 +27,7 @@
     width: 100vw;
     height: max-content;
     border-bottom: 1px solid black;
-
+    background-color: white;
 }
 
 .section4 {
@@ -35,12 +36,16 @@
     /* background-color: transparent; */
     border-bottom: 1px solid black;
     /* margin-bottom: 10vh; */
+    background-color: white;
+
 }
 
 .section5 {
     width: 100vw;
     height: max-content;
     /* border-bottom: 1px solid black; */
+    background-color: white;
+
 
 }
 
@@ -49,9 +54,17 @@
     height: 80vh;
     width: 100vw;
     position: relative;
+    background-color: white;
+
+
     /* height: max-content; */
     /* border-bottom: 1px solid black; */
 
+}
+
+.section7 {
+    height: 60vh;
+    width: 100%;
 }
 
 .section1 video {
@@ -78,7 +91,6 @@
     margin: auto;
     width: 1200px;
 }
-
 
 
 .buttondiv button {
@@ -142,7 +154,7 @@
 }
 
 .section2>p {
-    margin: 50px auto;
+    padding-top: 50px;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -369,6 +381,10 @@
     height: 150px;
 }
 
+.sec3button button {
+    color: black;
+    border: 1px solid black;
+}
 
 .sliderOuter {
     white-space: nowrap;
@@ -635,8 +651,38 @@
         padding: 3rem 0;
     }
 
+    .buttondiv button {
+        background-color: #D8FF36;
+        font-size: 18px;
+        height: max-content;
+        padding: 10px 20px;
+        margin-top: 10px;
+        color: black;
+
+    }
+
+    .buttondiv button::before {
+        width: 100%;
+    }
 
     /* .sec3rightinner {
         height: 100%;
+    } */
+}
+
+@media screen and (width<400px) {
+    .card {
+        width: 100%;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+
+    /* .buttondiv button {
+        font-size: 18px;
+        height: max-content;
+        padding: 10px 20px;
+        margin-top: 10px;
     } */
 }

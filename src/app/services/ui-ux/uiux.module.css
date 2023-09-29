@@ -31,14 +31,14 @@
     color: white;
     top: 50%;
     transform: translate(0, -50%);
-    left: 19%;
-    width: 25%;
+    left: calc((100vw - 1200px) / 2);
+    width: 500px;
 }
 
 .herotext {
     animation: fadein 500ms forwards linear;
-    
-    backdrop-filter: blur(25px) ;
+
+    backdrop-filter: blur(25px);
     padding: 20px 10px;
     border-radius: 10px;
     background-color: #ffffff08;
@@ -313,7 +313,7 @@
         top: 50%;
         transform: translate(0, -50%);
         left: 10%;
-        width: 90%;
+        width: 50%;
     }
 
     .text p {
@@ -330,6 +330,10 @@
 }
 
 @media screen and (width<960px) {
+    .text {
+        width: 70%;
+    }
+
     .text p {
         width: 100%;
     }
@@ -443,5 +447,11 @@
 
     .service {
         gap: 1rem;
+    }
+}
+
+@media screen and (width<400px) {
+    .text {
+        width: 90%;
     }
 }

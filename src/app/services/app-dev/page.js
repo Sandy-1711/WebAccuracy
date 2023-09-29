@@ -18,7 +18,7 @@ export default function AppDevPage() {
         })
     })
     return (<main data-scroll-container className={appcss.main}>
-        {/* <Nav /> */}
+        <Nav />
         {width > 900 && <section className={appcss.section1}>
             <div className={appcss.sec1text}>
                 <p>App Development</p>

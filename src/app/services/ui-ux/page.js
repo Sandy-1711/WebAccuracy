@@ -4,6 +4,7 @@ import Canvas from './Canvas'
 import uiux from './uiux.module.css'
 import LocoScroll from '../../../../hooks/LocoScroll'
 import { useEffect } from 'react'
+import Nav from '@/app/components/Nav/nav'
 export default function UIUX() {
     LocoScroll(true);
     useEffect(function () {
@@ -11,12 +12,14 @@ export default function UIUX() {
             // document.getElementById('body').style.overflowY = 'hidden';
         }
     })
-    return (
+    return (<>
 
+        <Nav />
 
         <div data-scroll-container className={uiux.homePage}>
             <div className={uiux.hero}>
 
+                
                 <div className={uiux.text + ' ' + uiux.herotext}>
 
                     <h1>Premium
@@ -104,5 +107,7 @@ export default function UIUX() {
                 </div>
             </div>
             <Footer />
-        </div>)
+        </div>
+    </>
+    )
 }

@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       <body id='body' className='mainBody'>
         <div >
 
-          <Nav />
+          {/* <Nav /> */}
           {children}
         </div>
         {/* <script src='/scripts.js' async></script> */}

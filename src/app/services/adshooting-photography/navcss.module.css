@@ -2,6 +2,7 @@
 
 .navbar {
     position: absolute;
+    transition: 250ms ease-in-out;
     z-index: 9999;
     top: 0;
     left: 50%;
@@ -15,8 +16,19 @@
     font-size: 16px;
     background: transparent;
     border-bottom: 1px solid rgb(174, 171, 171, 0.2);
-    color: black;
-    background-color: transparent;
+    color: white;
+    background-color: black;
+}
+
+.scrolldown {
+    transform: translate(0, -12vh);
+}
+
+.scrollup {
+    transform: translate(0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .navinner {

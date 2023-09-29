@@ -9,6 +9,7 @@ import Footer from "@/app/components/Footer/Footer";
 import LocoScroll from "../../../../hooks/LocoScroll";
 export default function Adshootingpage() {
     LocoScroll(true);
+
     useLayoutEffect(function () {
 
         window.addEventListener('mousemove', function (e) {
@@ -38,6 +39,16 @@ export default function Adshootingpage() {
                 scrub: true,
             }
         })
+        gsap.to(`.${adcss.button}`, {
+            opacity: 0,
+            scrollTrigger: {
+                scroller: 'body',
+                trigger: `.${adcss.sec1Image}`,
+                start: 'top 75%',
+                end: 'top 50%',
+                scrub: true,
+            }
+        })
         gsap.to(`.${adcss.sec7ImageBox}`, {
             scale: 0.7,
             y: 100,
@@ -63,10 +74,11 @@ export default function Adshootingpage() {
                 scrub: 2,
             }
         })
+
     })
     return (<main className={adcss.main} >
 
-        <div className={adcss.mouseCursor}></div>
+        {/* <div className={adcss.mouseCursor}></div> */}
         <section className={adcss.section1}>
             <div data-scroll data-scroll-speed='-1' className={adcss.sec1Text}>
                 <p>
@@ -132,9 +144,9 @@ export default function Adshootingpage() {
                     <span>i</span>
                     <span>!</span>
                 </p>
-                <Button text="Creative services" />
                 {/* <button>CREATIVE SERVICES &rarr;</button> */}
             </div>
+            <Button className={adcss.fixbutton} text="Creative services" />
             <div className={adcss.sec1Image}>
                 <img src="/2.jpg" />
             </div>
@@ -147,7 +159,7 @@ export default function Adshootingpage() {
 
             </div>
         </section>
-        <section className={adcss.section3}>
+        <section id="section3" className={adcss.section3}>
             {/* <div className={adcss.secOuter}> */}
 
 
@@ -182,7 +194,7 @@ export default function Adshootingpage() {
             {/* </div> */}
 
         </section>
-        <section className={adcss.section4}>
+        <section id="section4" className={adcss.section4}>
             <div className={adcss.secInner}>
                 <div className={adcss.sec3InLeft}>
                     <p>
@@ -211,7 +223,7 @@ export default function Adshootingpage() {
                 </div>
             </div>
         </section>
-        <section className={adcss.section5}>
+        <section id="section5" className={adcss.section5}>
             <div className={adcss.secInner}>
                 <div className={adcss.sec3InLeft}>
                     <p>

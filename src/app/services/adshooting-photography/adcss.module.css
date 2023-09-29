@@ -3,7 +3,7 @@
 .main {
     height: max-content;
     width: 100vw;
-    z-index: 100;
+    z-index: 9999;
     scroll-snap-type: y mandatory;
 }
 
@@ -22,6 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .sec1Text p {
@@ -38,7 +39,7 @@
 }
 
 .sec1Image {
-    z-index: 100;
+    z-index: 9999;
     height: 100vh;
     width: 100vw;
 }
@@ -86,7 +87,7 @@
 
 .button {
     position: relative;
-    z-index: 999;
+    z-index: 99999;
     height: 50px;
     width: max-content;
     margin: 40px auto;
@@ -94,7 +95,7 @@
 
 .button button {
     position: relative;
-    z-index: 999;
+    z-index: 99999;
     padding: 15px 30px;
     transition: 100ms ease-in-out;
     outline: none;
@@ -280,7 +281,7 @@
 
 .imagebox {
     height: 400px;
-    width: 300px;
+    width: 25%;
     overflow: hidden;
     display: flex;
     justify-content: center;

@@ -2,57 +2,17 @@
 import navcss from './navcss.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect } from 'react';
-export default function DigitalNav() {
+import { useEffect, useState } from 'react';
+export default function AdNav() {
     useEffect(function () {
 
-        if (window.location.pathname === '/services/digital-marketing' && window.innerWidth > 768) {
+        if (window.location.pathname === '/services/adshooting-photography') {
 
             window.addEventListener('scroll', function (e) {
                 // print "false" if direction is down and "true" if up
                 console.log(this.oldScroll > this.scrollY);
-                // console.log(document.getElementById('nav').children[0].childNodes[1].childNodes);
-                const nav = document.getElementById('nav');
-                const button = document.getElementById('button');
-                if (scrollY > window.innerHeight) {
-                    nav.style.backgroundColor = 'white';
-                    nav.children[0].childNodes[1].childNodes.forEach(function (li) {
-                        li.children[0].style.color = 'black';
-                        console.log(li.children[0]);
-                    });
-                    document.getElementById('logo').style.filter = 'invert(1)';
-                    button.style.borderColor = "black";
-                    button.style.color = "black";
-                    button.addEventListener('mouseout', function () {
-                        button.style.color = "black";
-                        button.style.backgroundColor = "transparent";
-                    })
-                    button.addEventListener('mouseover', function () {
-                        button.style.backgroundColor = "black";
-                        button.style.color = "white";
-                    })
-
-                }
-                else {
-                    nav.style.backgroundColor = 'transparent';
-                    nav.children[0].childNodes[1].childNodes.forEach(function (li) {
-                        li.children[0].style.color = 'white';
-                        console.log(li.children[0]);
-                    });
-                    document.getElementById('logo').style.filter = 'invert(0)';
-
-                    button.style.borderColor = "white";
-                    button.style.color = "white";
-                    button.addEventListener('mouseout', function () {
-                        button.style.color = "white";
-                        button.style.backgroundColor = "transparent";
-                    })
-                    button.addEventListener('mouseover', function () {
-                        button.style.color = "black";
-                        button.style.backgroundColor = "white";
-                    })
-                }
                 var scrollingUp = this.oldScroll > this.scrollY;
+                var nav = document.getElementById('nav');
                 if (nav) {
 
                     if (!scrollingUp) {
@@ -72,7 +32,7 @@ export default function DigitalNav() {
     return (<nav id="nav" className={navcss.navbar}>
         <div className={navcss.navinner}>
 
-            <div className={navcss.logo}><Link href='/'><Image id='logo' height={100} width={100} src='/logo.png' alt="logo" /></Link></div>
+            <div className={navcss.logo}><Link href='/'><Image height={100} width={100} src='/logo.png' alt="logo" /></Link></div>
 
 
             <ul className={navcss.menu}>
@@ -127,7 +87,7 @@ export default function DigitalNav() {
             </li> */}
 
             </ul>
-            <button id='button'>Get In Touch</button>
+            <button>Get In Touch</button>
         </div>
         <div id="menumobile" className={navcss.menumobile}>
 
@@ -137,7 +97,7 @@ export default function DigitalNav() {
                 <img className={navcss.menubar} id="menubar" onClick={function () {
                     document.getElementById("menuclose").style.display = "block";
                     document.getElementById("menubar").style.display = "none";
-                    document.getElementById("menumobile").style.transform = "translate(-1px)"
+                    document.getElementById("menumobile").style.transform = "translate(0)"
                 }} src="/menu.svg" alt="menu" />
             </div>
             <div className={navcss.menuicon}>
@@ -178,7 +138,7 @@ export default function DigitalNav() {
                     <div className={navcss.submenu}>
 
                         <ul>
-                            <li><a href='/trends/ai-ml'>AI/ML</a></li>
+\                            <li><a href='/trends/ai-ml'>AI/ML</a></li>
                             <li><a href='/trends/blockchain'>Blockchain</a></li>
                         </ul>
                     </div>

@@ -51,13 +51,12 @@ export default function Footer() {
 
         }
         if (path === '/services/digital-marketing') {
-            document.getElementById(`footerPage`).style.backgroundColor = "black";
             document.getElementById('footerPage').style.position = "fixed";
             document.getElementById('footerPage').style.zIndex = "-2";
             document.getElementById('footerPage').style.bottom = "0";
 
         }
-        if (path === '/services/app-dev' || path === '/services/adshooting-photography') {
+        if (path === '/services/app-dev' || path === '/services/adshooting-photography' || path==='/services/digital-marketing') {
             document.getElementById(`footerPage`).style.backgroundColor = "transparent";
             document.getElementById('py1').style.display = "none";
             document.getElementById('py2').style.display = "none";
@@ -66,7 +65,7 @@ export default function Footer() {
             setStyle({ color: 'black' })
             setStyle1({ filter: 'invert(1)' });
         }
-        if (path === '/services/adshooting-photography') {
+        if (path === '/services/adshooting-photography' || path === '/services/digital-marketing') {
             document.getElementById(`footerPage`).style.backgroundColor = "rgb(225,225,225)";
         }
     })

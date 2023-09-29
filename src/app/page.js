@@ -12,7 +12,7 @@ import Nav from './components/Nav/nav'
 export default function Home() {
   return (
     <div>
-
+      <Nav />
       <main className={styles.main}>
         {/* <Nav /> */}
         <Hero />

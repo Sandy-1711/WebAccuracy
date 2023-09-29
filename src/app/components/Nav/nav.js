@@ -87,7 +87,6 @@ export default function Nav() {
                     <div className={navcss.submenu}>
 
                         <ul>
-                            <Link href='/trends/iot'>IOT</Link>
                             <Link href='/trends/ai-ml'>AI/ML</Link>
                             <Link href='/trends/blockchain'>Blockchain</Link>
                         </ul>
@@ -166,7 +165,6 @@ export default function Nav() {
                     <div className={navcss.submenu}>
 
                         <ul>
-                            <li><a href='/trends/iot'>IOT</a></li>
                             <li><a href='/trends/ai-ml'>AI/ML</a></li>
                             <li><a href='/trends/blockchain'>Blockchain</a></li>
                         </ul>
