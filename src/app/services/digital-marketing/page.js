@@ -242,6 +242,6 @@ export default function DigitalMarketing() {
                 <img src="/2.jpg"/>
             </section> */}
         </main>
-        <div className={digitalcss.section7}><Footer/></div>
+        <div className={digitalcss.section7}><Footer /></div>
     </div>)
 }

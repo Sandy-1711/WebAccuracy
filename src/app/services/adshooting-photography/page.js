@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/all";
 import Button from "./Button";
 import Footer from "@/app/components/Footer/Footer";
 import LocoScroll from "../../../../hooks/LocoScroll";
+import Image from "next/image";
 export default function Adshootingpage() {
     LocoScroll(true);
 
@@ -29,39 +30,47 @@ export default function Adshootingpage() {
             duration: '1',
             stagger: '0.05',
         })
-        gsap.from(`.${adcss.sec1Image}`, {
-            transform: 'scale(0.8)',
-            scrollTrigger: {
-                scroller: 'body',
-                trigger: `.${adcss.sec1Image}`,
-                start: 'top 75%',
-                end: 'top 25%',
-                scrub: true,
-            }
-        })
-        gsap.to(`.${adcss.button}`, {
-            opacity: 0,
-            scrollTrigger: {
-                scroller: 'body',
-                trigger: `.${adcss.sec1Image}`,
-                start: 'top 75%',
-                end: 'top 50%',
-                scrub: true,
-            }
-        })
-        gsap.to(`.${adcss.sec7ImageBox}`, {
-            scale: 0.7,
-            y: 100,
-            scrollTrigger: {
-                scroller: 'body',
-                trigger: `.${adcss.section7}`,
-                start: 'top top',
-                end: 'top -50%',
-                // markers: true,
-                pin: true,
-                scrub: 2,
-            }
-        })
+        if (window.innerWidth > 768) {
+
+            gsap.from(`.${adcss.sec1Image}`, {
+                transform: 'scale(0.8)',
+                scrollTrigger: {
+                    scroller: 'body',
+                    trigger: `.${adcss.sec1Image}`,
+                    start: 'top 75%',
+                    end: 'top 25%',
+                    scrub: true,
+                }
+            })
+            gsap.to(`.${adcss.sec7ImageBox}`, {
+                scale: 0.7,
+                y: 100,
+                scrollTrigger: {
+                    scroller: 'body',
+                    trigger: `.${adcss.section7}`,
+                    start: 'top top',
+                    end: 'top -50%',
+                    // markers: true,
+                    pin: true,
+                    scrub: 2,
+                }
+            })
+        }
+
+        if (window.innerWidth > 1200) {
+
+            gsap.to(`.${adcss.button}`, {
+                opacity: 0,
+                scrollTrigger: {
+                    scroller: 'body',
+                    trigger: `.${adcss.sec1Image}`,
+                    start: 'top 75%',
+                    end: 'top 50%',
+                    scrub: true,
+                }
+            })
+
+        }
         gsap.to(`.${adcss.sec7ImageBox} h2`, {
             opacity: 0,
             scrollTrigger: {
@@ -148,7 +157,7 @@ export default function Adshootingpage() {
             </div>
             <Button className={adcss.fixbutton} text="Creative services" />
             <div className={adcss.sec1Image}>
-                <img src="/2.jpg" />
+                <Image height={5000} width={5000} src="/4.jpg" />
             </div>
         </section>
         <section className={adcss.section2}>
@@ -187,7 +196,7 @@ export default function Adshootingpage() {
                     <p>The world of social media is transitioning to video. CO-DA Studios is here to make sure your brand is at the forefront of that change.</p>
                 </div>
                 <div className={adcss.sec3InRight}>
-                    <img src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2022/12/Video-2048x2048.jpg" />
+                    <Image height={1000} width={1000} src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2022/12/Video-2048x2048.jpg" />
                 </div>
             </div>
 
@@ -219,7 +228,7 @@ export default function Adshootingpage() {
                     <p>The world of social media is transitioning to video. CO-DA Studios is here to make sure your brand is at the forefront of that change.</p>
                 </div>
                 <div className={adcss.sec3InRight}>
-                    <img src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2022/12/Video-2048x2048.jpg" />
+                    <Image height={1000} width={1000} src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2022/12/Video-2048x2048.jpg" />
                 </div>
             </div>
         </section>
@@ -248,7 +257,7 @@ export default function Adshootingpage() {
                     <p>The world of social media is transitioning to video. CO-DA Studios is here to make sure your brand is at the forefront of that change.</p>
                 </div>
                 <div className={adcss.sec3InRight}>
-                    <img src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2022/12/Video-2048x2048.jpg" />
+                    <Image height={1000} width={1000} src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2022/12/Video-2048x2048.jpg" />
                 </div>
             </div>
         </section>
@@ -265,7 +274,7 @@ export default function Adshootingpage() {
                             <h2>Animation</h2>
                             <p>Seamlessly looping content</p>
                         </div>
-                        <img src="/2.jpg" />
+                        <Image height={1000} width={1000} src="/2.jpg" />
                     </div>
                     <div className={adcss.imagebox}>
                         <div className={adcss.imageboxtext}>
@@ -273,7 +282,7 @@ export default function Adshootingpage() {
                             <h2>Animation</h2>
                             <p>Seamlessly looping content</p>
                         </div>
-                        <img src="/3.jpg" />
+                        <Image height={1000} width={1000} src="/3.jpg" />
                     </div>
                     <div className={adcss.imagebox}>
                         <div className={adcss.imageboxtext}>
@@ -281,7 +290,7 @@ export default function Adshootingpage() {
                             <h2>Animation</h2>
                             <p>Seamlessly looping content</p>
                         </div>
-                        <img src="/4.jpg" />
+                        <Image height={1000} width={1000} src="/4.jpg" />
                     </div>
                 </div>
             </div>
@@ -289,12 +298,11 @@ export default function Adshootingpage() {
         <section className={adcss.section7}>
             <h2>Talk to a creative</h2>
             <div className={adcss.sec7ImageBox}>
-                <img src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2023/01/Studios-SubHeader-copy-22-2.jpg" />
+                <Image height={1000} width={1000} src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2023/01/Studios-SubHeader-copy-22-2.jpg" />
                 <h2>Have a project in mind?</h2>
             </div>
         </section>
         <section className={adcss.footer}>
-
             <Footer />
         </section>
     </main>)

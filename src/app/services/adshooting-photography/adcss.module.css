@@ -32,7 +32,7 @@
 .sec1Text span {
     font-family: norwester;
     /* padding: 100px 0; */
-    font-size: 108px;
+    font-size: 6vw;
     text-align: center;
     margin: auto;
 
@@ -54,8 +54,8 @@
     height: max-content;
     background-color: white;
     width: 100vw;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .section3 {
-    height: 100vh;
+    height: max-content;
     background-color: white;
     width: 100%;
     /* scroll-snap-type: y proximity; */
@@ -147,7 +147,7 @@
 }
 
 .section4 {
-    height: 100vh;
+    height: max-content;
     background-color: white;
     width: 100%;
     scroll-snap-align: start;
@@ -155,10 +155,11 @@
 
 .section4 .secInner {
     flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 .section5 {
-    height: 100vh;
+    height: max-content;
     background-color: white;
     width: 100%;
     scroll-snap-align: start;
@@ -199,12 +200,12 @@
 }
 
 .sec3InRight {
-    height: 100vh;
+    height: max-content;
     width: 50%;
 }
 
 .sec3InRight img {
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
@@ -247,6 +248,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .imagebox {
@@ -281,11 +284,12 @@
 
 .imagebox {
     height: 400px;
-    width: 25%;
+    min-width: 25%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .imagebox img {
@@ -313,14 +317,17 @@
     width: 100%;
     position: relative;
     border-bottom: 2px solid rgb(173, 173, 173);
-    margin-bottom: 60vh;
+    margin-bottom: 550px;
 }
 
 .section7>h2 {
     position: absolute;
+    text-align: center;
     z-index: 2;
     font-family: norwester;
     font-size: 100px;
+    width: 80%;
+    margin: auto;
     top: 5%;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -358,4 +365,171 @@
     z-index: -4;
     bottom: 0;
     left: 0;
+}
+
+@media screen and (width<1200px) {
+
+    .sec2Text p{
+        width: 80%;
+    }
+    .section3 {
+        margin: 0;
+        padding: 0;
+        height: max-content;
+    }
+
+    .section4 {
+        height: max-content;
+    }
+
+    .section5 {
+        height: max-content;
+    }
+
+    .sec3InRight {
+        height: max-content;
+    }
+
+    .sec3InRight img {
+        height: auto;
+    }
+
+    .sec3InLeft p:nth-child(1) {
+        font-size: 22px;
+    }
+
+    .sec3InLeft p:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .section6 {
+        height: max-content;
+        padding: 20px 0;
+    }
+
+    .sec6Text h2 {
+        font-size: 24px;
+    }
+
+    .sec6Text p {
+        font-size: 16px;
+        margin: auto;
+    }
+
+
+
+    .section7>h2 {
+        top: 10%;
+        font-size: 10vw;
+    }
+
+    .sec6Inner {
+        width: 100%;
+        margin: auto;
+    }
+
+    .section7 {
+        height: max-content;
+        padding-bottom: 50px;
+        margin-bottom: 730px;
+    }
+
+    .sec7ImageBox h2 {
+        font-size: 10vw;
+    }
+
+    .sec7ImageBox img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (width<935px) {
+    .imagebox {
+        min-width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (width<=768px) {
+    .section1 {
+        padding-top: 120px;
+        height: 100vh;
+    }
+
+    .sec1Image {
+        height: 500px;
+    }
+
+    .section2 {
+        padding-bottom: 100px;
+        padding-top: 40px;
+
+    }
+
+    .sec2Text h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .sec2Text p {
+        margin: 10px auto;
+        width: 90%;
+        line-height: normal;
+        font-size: 18px;
+    }
+
+    .imagesbox {
+        gap: 1rem;
+    }
+
+    .imagebox {
+        height: 400px;
+        min-width: 90%;
+        margin: auto;
+    }
+
+    .section3 {
+        margin: 0;
+        padding: 0;
+        height: max-content;
+    }
+
+    .section4 {
+        height: max-content;
+    }
+
+    .section5 {
+        height: max-content;
+    }
+
+    .sec3InRight {
+        height: max-content;
+    }
+
+    .sec3InRight img {
+        height: auto;
+    }
+
+    .sec3InLeft {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .sec3InLeft p:nth-child(1) {
+        position: relative;
+        font-size: 18px;
+        transform: rotate(90deg);
+        left: unset;
+        top: unset;
+    }
+
+    .sec3InLeft p:nth-child(2) {
+        font-size: 14px;
+        width: 80%;
+
+        position: relative;
+        bottom: unset;
+        left: unset;
+    }
+
 }
