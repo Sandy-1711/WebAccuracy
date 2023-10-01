@@ -75,6 +75,9 @@ export default function Nav() {
                         <ul>
                             <Link href="/services/app-dev">App Development</Link>
                             <Link href="/services/web-dev">Web Development</Link>
+
+                        </ul>
+                        <ul>
                             <a href="/services/ui-ux">UI/UX</a>
                             <Link href="/services/digital-marketing">Digital Marketing</Link>
                             <Link href="/services/adshooting-photography">Photography</Link>

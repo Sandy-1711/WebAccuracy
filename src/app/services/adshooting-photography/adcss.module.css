@@ -369,9 +369,10 @@
 
 @media screen and (width<1200px) {
 
-    .sec2Text p{
+    .sec2Text p {
         width: 80%;
     }
+
     .section3 {
         margin: 0;
         padding: 0;
@@ -416,41 +417,54 @@
         margin: auto;
     }
 
-
-
+    
+    
     .section7>h2 {
         top: 10%;
         font-size: 10vw;
     }
-
+    
     .sec6Inner {
         width: 100%;
         margin: auto;
     }
 
     .section7 {
-        height: max-content;
+        height: 100vh;
         padding-bottom: 50px;
-        margin-bottom: 730px;
+        margin-bottom: 0;
     }
 
     .sec7ImageBox h2 {
         font-size: 10vw;
     }
+    
 
+    .footer {
+        position: relative;
+        z-index: 0;
+    }
     .sec7ImageBox img {
         object-fit: cover;
+    }
+
+    .button {
+        z-index: 100;
     }
 }
 
 @media screen and (width<935px) {
     .imagebox {
-        min-width: 90%;
+        width: 30%;
         margin: auto;
     }
 }
 
 @media screen and (width<=768px) {
+
+    .section7{
+        height: max-content;
+    }
     .section1 {
         padding-top: 120px;
         height: 100vh;
@@ -479,12 +493,12 @@
     }
 
     .imagesbox {
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     .imagebox {
-        height: 400px;
-        min-width: 90%;
+        height: 300px;
+        min-width: 200px;
         margin: auto;
     }
 
@@ -532,4 +546,28 @@
         left: unset;
     }
 
+}
+
+@media screen and (width<600px) {
+    .imagesbox {
+        gap: 0rem;
+    }
+
+    .imagebox {
+        margin: 0;
+        height: 200px;
+        min-width: 90px;
+    }
+
+    .imageboxtext {
+        bottom: 20px;
+    }
+
+    .imageboxtext h2 {
+        font-size: 22px;
+    }
+
+    .imageboxtext p {
+        font-size: 9px;
+    }
 }

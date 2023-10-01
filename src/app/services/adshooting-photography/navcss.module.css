@@ -186,6 +186,8 @@
     visibility: hidden;
     transform: translateY(1vh);
     transition: 200ms ease-in-out;
+    display: flex;
+    align-items: flex-start;
 }
 
 .trendstab:hover .submenu {
@@ -279,6 +281,7 @@
         color: white;
         padding: 1.25rem;
         padding-right: 1rem;
+        z-index: 9999;
 
     }
 

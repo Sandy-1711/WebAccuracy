@@ -6,7 +6,8 @@ import { useEffect } from 'react';
 export default function DigitalNav() {
     useEffect(function () {
 
-        if (window.location.pathname === '/services/digital-marketing' && window.innerWidth > 768) {
+        if (window.location.pathname === '/services/digital-marketing' && window.innerWidth > 1200) {
+
 
             window.addEventListener('scroll', function (e) {
                 // print "false" if direction is down and "true" if up
@@ -53,7 +54,7 @@ export default function DigitalNav() {
                     })
                 }
                 var scrollingUp = this.oldScroll > this.scrollY;
-                if (nav) {
+                if (nav && window.innerWidth > 1200) {
 
                     if (!scrollingUp) {
                         nav.style.top = '-12vh';
@@ -72,12 +73,12 @@ export default function DigitalNav() {
     return (<nav id="nav" className={navcss.navbar}>
         <div className={navcss.navinner}>
 
-            <div className={navcss.logo}><Link href='/'><Image id='logo' height={100} width={100} src='/logo.png' alt="logo" /></Link></div>
+            <div className={navcss.logo}><a href='/'><Image id='logo' height={100} width={100} src='/logo.png' alt="logo" /></a></div>
 
 
             <ul className={navcss.menu}>
                 <li>
-                    <Link href='/'>Home</Link>
+                    <a href='/'>Home</a>
                 </li>
                 <li>
                     <Link href='/about'>About</Link>
@@ -88,9 +89,12 @@ export default function DigitalNav() {
                         <ul>
                             <Link href="/services/app-dev">App Development</Link>
                             <Link href="/services/web-dev">Web Development</Link>
+                        </ul>
+                        <ul>
                             <a href="/services/ui-ux">UI/UX</a>
                             <Link href="/services/digital-marketing">Digital Marketing</Link>
                             <Link href="/services/adshooting-photography">Photography</Link>
+
                         </ul>
                     </div>
                 </li>
@@ -131,7 +135,7 @@ export default function DigitalNav() {
         </div>
         <div id="menumobile" className={navcss.menumobile}>
 
-            <div className={navcss.logomobile}><Image height={100} width={100} src='https://zimed.netlify.app/assets/images/logo-1-1.png' alt="logo" /></div>
+            <div className={navcss.logomobile}><Image height={100} width={100} src='/logo.png' alt="logo" /></div>
             <div className={navcss.menuicon}>
 
                 <img className={navcss.menubar} id="menubar" onClick={function () {

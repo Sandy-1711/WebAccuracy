@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 export default function AdNav() {
     useEffect(function () {
 
-        if (window.location.pathname === '/services/adshooting-photography') {
+        if (window.location.pathname === '/services/adshooting-photography' && window.innerWidth > 1200) {
 
             window.addEventListener('scroll', function (e) {
                 // print "false" if direction is down and "true" if up
@@ -48,6 +48,9 @@ export default function AdNav() {
                         <ul>
                             <Link href="/services/app-dev">App Development</Link>
                             <Link href="/services/web-dev">Web Development</Link>
+                        </ul>
+                        <ul>
+
                             <a href="/services/ui-ux">UI/UX</a>
                             <Link href="/services/digital-marketing">Digital Marketing</Link>
                             <Link href="/services/adshooting-photography">Photography</Link>
@@ -138,7 +141,7 @@ export default function AdNav() {
                     <div className={navcss.submenu}>
 
                         <ul>
-\                            <li><a href='/trends/ai-ml'>AI/ML</a></li>
+                            <li><a href='/trends/ai-ml'>AI/ML</a></li>
                             <li><a href='/trends/blockchain'>Blockchain</a></li>
                         </ul>
                     </div>

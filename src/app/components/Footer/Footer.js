@@ -50,13 +50,13 @@ export default function Footer() {
             document.getElementById(`footerPage`).style.backgroundColor = "black";
 
         }
-        if (path === '/services/digital-marketing') {
-            document.getElementById('footerPage').style.position = "fixed";
-            document.getElementById('footerPage').style.zIndex = "-2";
-            document.getElementById('footerPage').style.bottom = "0";
+        // if (path === '/services/digital-marketing') {
+        //     document.getElementById('footerPage').style.position = "fixed";
+        //     document.getElementById('footerPage').style.zIndex = "-2";
+        //     document.getElementById('footerPage').style.bottom = "0";
 
-        }
-        if (path === '/services/app-dev' || path === '/services/adshooting-photography' || path==='/services/digital-marketing') {
+        // }
+        if (path === '/services/app-dev' || path === '/services/adshooting-photography' || path === '/services/digital-marketing') {
             document.getElementById(`footerPage`).style.backgroundColor = "transparent";
             document.getElementById('py1').style.display = "none";
             document.getElementById('py2').style.display = "none";
