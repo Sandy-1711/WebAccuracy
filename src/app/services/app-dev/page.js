@@ -3,11 +3,30 @@ import Footer from '@/app/components/Footer/Footer'
 import appcss from './appcss.module.css'
 import LocoScroll from '../../../../hooks/LocoScroll'
 import { useEffect, useLayoutEffect, useState } from 'react';
+import loadcss from './loading.module.css'
 import Nav from '@/app/components/Nav/nav';
 export default function AppDevPage() {
     const [width, setWidth] = useState();
     LocoScroll(true);
     useLayoutEffect(function () {
+        document.querySelector('main').style.height = "100vh";
+        document.querySelector('main').style.overflowY = "hidden";
+        var a = 0;
+        setInterval(function () {
+            a += Math.floor(Math.random() * 10)
+            if (a < 100) {
+                document.querySelector(`.${loadcss.loading} h2`).innerHTML = a + " %";
+            }
+            else {
+                a = 100;
+                document.querySelector(`.${loadcss.loading} h2`).innerHTML = a + " %";
+                document.getElementById('loading').style.transform = "translate(0,-100vh)";
+
+                document.querySelector('main').style.height = "max-content";
+                document.querySelector('main').style.overflowY = "scroll";
+
+            }
+        }, 100)
         setWidth(window.innerWidth)
         // if (width > 900) {
 
@@ -16,8 +35,11 @@ export default function AppDevPage() {
         window.addEventListener('resize', function () {
             setWidth(window.innerWidth);
         })
-    })
-    return (<main data-scroll-container className={appcss.main}>
+    }, [])
+    return (<main id='main' data-scroll-container className={appcss.main}>
+        <div id='loading' className={loadcss.loading}>
+            <h2>0%</h2>
+        </div>
         <Nav />
         {width > 900 && <section className={appcss.section1}>
             <div className={appcss.sec1text}>

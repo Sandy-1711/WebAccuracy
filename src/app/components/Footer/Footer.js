@@ -68,7 +68,7 @@ export default function Footer() {
         if (path === '/services/adshooting-photography' || path === '/services/digital-marketing') {
             document.getElementById(`footerPage`).style.backgroundColor = "rgb(225,225,225)";
         }
-    })
+    },[])
     return (<div id='footerPage' className={footercss.footerPage}>
 
         <div className={footercss.linksContainer}>

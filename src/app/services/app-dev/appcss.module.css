@@ -6,6 +6,7 @@
     height: max-content;
     width: 100vw;
     background: linear-gradient(#A2A9A3, #A2A9A3, #A2A9A3, #98938E, #E1DFDD, #EDBFAB);
+    overflow-x: hidden;
 }
 
 .section1 {

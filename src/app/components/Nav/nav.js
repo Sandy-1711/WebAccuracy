@@ -148,7 +148,9 @@ export default function Nav() {
                 </li>
                 <li className={navcss.servicestab}>
 
-                    <a>Services <i class="fa-solid fa-chevron-right"></i></a>
+                    <a>Services
+                        {/* <i class="fa-solid fa-chevron-right"></i> */}
+                    </a>
 
                     <div className={navcss.submenu}>
                         <ul>
