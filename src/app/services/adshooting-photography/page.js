@@ -59,7 +59,7 @@ export default function Adshootingpage() {
 
         if (window.innerWidth > 1200) {
 
-            gsap.to(`.${adcss.button}`, {
+            gsap.to(`.${adcss.fixbutton}`, {
                 opacity: 0,
                 scrollTrigger: {
                     scroller: 'body',

@@ -59,50 +59,48 @@ export default function Nav() {
     return <nav id="nav" className={navcss.navbar + " " + uiux.navbar}>
         <div className={navcss.navinner}>
 
-            <div className={navcss.logo}><Link href='/'><Image height={100} width={100} src='/logo.png' alt="logo" /></Link></div>
+            <div className={navcss.logo}><a href='/'><Image height={100} width={100} src='/logo.png' alt="logo" /></a></div>
 
 
             <ul className={navcss.menu}>
                 <li>
-                    <Link href='/'>Home</Link>
+                    <a href='/'>Home</a>
                 </li>
                 <li>
-                    <Link href='/about'>About</Link>
+                    <a href='/about'>About</a>
                 </li>
                 <li className={navcss.servicestab}>
-                    <Link href='/services'>Services</Link>
+                    <a href='/services'>Services</a>
                     <div className={navcss.submenu}>
                         <ul>
-                            <Link href="/services/app-dev">App Development</Link>
-                            <Link href="/services/web-dev">Web Development</Link>
+                            <a href="/services/app-dev">App Development</a>
+                            <a href="/services/web-dev">Web Development</a>
 
                         </ul>
                         <ul>
                             <a href="/services/ui-ux">UI/UX</a>
-                            <Link href="/services/digital-marketing">Digital Marketing</Link>
-                            <Link href="/services/adshooting-photography">Photography</Link>
+                            <a href="/services/digital-marketing">Digital Marketing</a>
+                            <a href="/services/adshooting-photography">Photography</a>
                         </ul>
                     </div>
                 </li>
 
                 <li className={navcss.trendstab}>
-                    <Link href='/trends'>Web 3.0 & trends</Link>
+                    <a href='/trends'>Web 3.0 & trends</a>
                     <div className={navcss.submenu}>
 
                         <ul>
-                            <Link href='/trends/ai-ml'>AI/ML</Link>
-                            <Link href='/trends/blockchain'>Blockchain</Link>
+                            <a href='/trends/ai-ml'>AI/ML</a>
+                            <a href='/trends/blockchain'>Blockchain</a>
                         </ul>
                     </div>
                 </li>
                 <li className={navcss.threedtechtab}>
-                    <Link href='/3dtech'>3D reality</Link>
+                    <a href='/3dtech'>3D reality</a>
                     <div className={navcss.submenu}>
                         <ul>
-                            <Link href='/3dtech/ar'>AR</Link>
-                            <Link href='/3dtech/vr'>VR</Link>
-                            <Link href='/3dtech/mr'>MR</Link>
-                            <Link href='/3dtech/dolby-atmos'>Dolby Atmos</Link>
+                            <a href='/3dtech/ar-vr-mr'>AR/VR/MR</a>
+                            <a href='/3dtech/immersive-audio'>Immersive Audio</a>
                         </ul>
                     </div>
                 </li>
@@ -177,10 +175,8 @@ export default function Nav() {
                     <a>3D reality <i class="fa-solid fa-chevron-right"></i></a>
                     <div className={navcss.submenu}>
                         <ul>
-                            <li><a href='/3dtech/ar'>AR</a></li>
-                            <li><a href='/3dtech/vr'>VR</a></li>
-                            <li><a href='/3dtech/mr'>MR</a></li>
-                            <li><a href='/3dtech/dolby-atmos'>Dolby Atmos</a></li>
+                            <li><a href='/3dtech/ar-vr-mr'>AR/VR/MR</a></li>
+                            <li><a href='/3dtech/immersive-audio'>Immersive Audio</a></li>
                         </ul>
                     </div>
                 </li>
