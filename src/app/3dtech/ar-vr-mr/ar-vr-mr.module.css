@@ -33,16 +33,49 @@
     height: 80vh;
     position: relative;
     width: 95vw;
-    background-color: rgba(70, 131, 180, 0.58);
     border-radius: 20px;
+    overflow: hidden;
+    color: white;
+}
+
+.container {
+    perspective: 25px;
+}
+
+.container img {
+    transition: transform 0.25s;
+    -webkit-transition: transform 0.25s;
+    -moz-transition: transform 0.25s;
+    -o-transition: transform 0.25s;
+}
+
+.container1 img {
+    position: absolute;
+    transition: transform 0.25s;
+    -webkit-transition: transform 0.25s;
+    -moz-transition: transform 0.25s;
+    -o-transition: transform 0.25s;
+    top: -25%;
+    left: -25%;
+    height: 150%;
+    width: 150%;
+    object-fit: cover;
+    filter: brightness(0.5);
+
+}
+
+.container1 .text {
+    color: white;
 }
 
 .text {
     position: absolute;
     bottom: 30%;
     color: #193047;
+    /* color: white; */
     left: 10%;
     max-width: 600px;
+    z-index: 10;
 }
 
 .text h1 {
@@ -69,6 +102,33 @@
     gap: 100px;
 }
 
+.dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    flex-wrap: wrap;
+}
+
+.dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dotinside {
+    height: 3px;
+    width: 3px;
+    background-color: rgb(183, 175, 175);
+    border-radius: 50%;
+
+}
+
 .container2 .text {
     width: 50%;
     position: relative;
@@ -93,8 +153,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 50%;
-    display: none;
+    top: 70%;
 }
 
 .card {
@@ -166,35 +225,44 @@
 
 }
 
-.sec3back img {
-    height: 100%;
-    width: 100%;
+.container3 img {
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    height: 140%;
+    width: 140%;
     object-fit: cover;
     filter: brightness(0.6);
 
 }
 
 .section4 {
-    height: 100vh;
+    height: max-content;
     width: 100vw;
     position: relative;
     overflow: hidden;
 }
 
 .section4 h1 {
-    font-size: 380px;
+    font-size: 350px;
     white-space: nowrap;
 }
 
-.section4 h1:nth-child(1) {
+.h11 {
+
     color: #C95638;
+    transform: translate(100px);
 }
 
-.section4 h1:nth-child(2) {
+.h12 {
+    transform: translate(-100px);
+
     color: #993117;
 }
 
-.section4 h1:nth-child(3) {
+.h13 {
+    transform: translate(200px);
+
     color: #C95638;
 }
 

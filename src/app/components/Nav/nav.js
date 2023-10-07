@@ -75,6 +75,7 @@ export default function Nav() {
                         <ul>
                             <a href="/services/app-dev">App Development</a>
                             <a href="/services/web-dev">Web Development</a>
+                            <a href="/services/bpo">BPO</a>
 
                         </ul>
                         <ul>
@@ -157,6 +158,7 @@ export default function Nav() {
                             <li><a href='/services/app-dev'>App Development</a></li>
                             <li><a href='/services/web-dev'>Web Development</a></li>
                             <li><a href='/services/ui-ux'>UI/UX Design</a></li>
+                            <a href="/services/bpo">BPO</a>
                             <li><a href='/services/digital-marketing'>Digital Marketing</a></li>
                             <li><a href='/services/adshooting-photography'>Ad/Photography</a></li>
                         </ul>
@@ -164,7 +166,7 @@ export default function Nav() {
                 </li>
 
                 <li className={navcss.trendstab}>
-                    <a>Web 3.0 & trends <i class="fa-solid fa-chevron-right"></i></a>
+                    <a>Web 3.0 & trends </a>
                     <div className={navcss.submenu}>
 
                         <ul>
@@ -174,7 +176,7 @@ export default function Nav() {
                     </div>
                 </li>
                 <li className={navcss.threedtechtab}>
-                    <a>3D reality <i class="fa-solid fa-chevron-right"></i></a>
+                    <a>3D reality</a>
                     <div className={navcss.submenu}>
                         <ul>
                             <li><a href='/3dtech/ar-vr-mr'>AR/VR/MR</a></li>
