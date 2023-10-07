@@ -236,7 +236,7 @@ export default function Page() {
                 <div className={arvrmrcss.container2}>
                     <div className={arvrmrcss.text}>
                         <h1>Crafting the future with our innovative tech solutions & services</h1>
-                        <p>We're a team of technology enthusiasts committed to delivering exceptional digital solutions that align with your business goals.</p>
+                        <p>We&apos;re a team of technology enthusiasts committed to delivering exceptional digital solutions that align with your business goals.</p>
                         <div className={arvrmrcss.textButtons}>
                             <Button color="white" text="About us" />
                             <Button2 color="#B14125" text="Meet the team" />
