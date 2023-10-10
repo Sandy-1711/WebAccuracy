@@ -257,6 +257,7 @@
     .section2 {
         padding: 0;
         gap: 0;
+        padding-top: 40px;
     }
 
     .section2:nth-child(1) {
