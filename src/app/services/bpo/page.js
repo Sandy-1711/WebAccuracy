@@ -9,7 +9,7 @@ export default function Page() {
         <Nav />
         <main data-scroll-container className={bpocss.main}>
             <section className={bpocss.section1}>
-                <video autoPlay muted src="/bpo.mp4"></video>
+                <video autoPlay loop muted src="/bpo.mp4"></video>
                 <text>
                     <h2>Welcome
                         to the premier destination for

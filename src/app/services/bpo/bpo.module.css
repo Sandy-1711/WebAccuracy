@@ -94,12 +94,14 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .sec2Inside {
     width: 100%;
     display: flex;
     margin: 50px auto;
+    flex-wrap: wrap;
 }
 
 .sec2Inside:nth-child(even) {
@@ -131,7 +133,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+
 }
 
 .right text {
@@ -147,10 +149,10 @@
 .right text p {
     width: 80%;
     font-size: 22px;
-    
+
 }
 
-.rsecond text{
+.rsecond text {
     flex-direction: column;
     display: flex;
     align-items: flex-end;
@@ -159,9 +161,10 @@
     margin-right: 200px;
 }
 
-.rsecond text p{
+.rsecond text p {
     text-align: end;
 }
+
 .something {
     padding: 100px 0;
     width: 100%;
@@ -175,4 +178,131 @@
 
 .contactSection {
     color: #000;
+}
+
+@media screen and (width<1200px) {
+    .section1 video {
+        height: 60vh;
+        width: 100vw;
+    }
+
+    .section1 text {
+        left: calc((100% - 968px) / 2);
+    }
+
+    .section1 text h2 {
+        font-size: 34px;
+    }
+
+    .section1 text button {
+        font-size: 18px;
+        padding: 15px 35px;
+    }
+
+    .sec2Wrapper {
+        width: 100%;
+        gap: 1rem;
+        padding-bottom: 20px;
+    }
+
+    .sec2Inside {
+        gap: 1rem;
+        margin: auto;
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left img {
+        width: 80%;
+        aspect-ratio: 1;
+        height: auto;
+    }
+
+    .something {
+        padding: 40px 0;
+    }
+
+    .something h2 {
+        font-size: 30px;
+    }
+
+    .right {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right text {
+        width: 80%;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        margin: auto;
+    }
+
+    .right text p {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (width<968px) {
+    .section1 text {
+        left: 10px;
+    }
+
+    .section1 video {
+        height: 50vh;
+    }
+}
+
+@media screen and (width<768px) {
+    .section1 video {
+        height: 40vh;
+    }
+
+    .section1 text {
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -60%);
+    }
+
+    .section1 text h2 {
+        font-weight: 100;
+        font-size: 22px;
+    }
+
+    .section1 text button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    .left img {
+        width: 80%;
+        aspect-ratio: unset;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .right text p {
+        font-size: 16px;
+    }
+
+    .right text h2 {
+        font-size: 22px;
+    }
+
+    .something {
+        padding: 20px 0;
+    }
+
+    .something h2 {
+        font-size: 22px;
+    }
 }
