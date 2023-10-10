@@ -37,10 +37,10 @@ export default function Page() {
                     </div>
                     <div className={bpocss.sec2Inside}>
 
-                        <div className={bpocss.left+' '+bpocss.second}>
+                        <div className={bpocss.left + ' ' + bpocss.second}>
                             <img src="/2.jpg" />
                         </div>
-                        <div className={bpocss.right+' '+bpocss.rsecond}>
+                        <div className={bpocss.right + ' ' + bpocss.rsecond}>
                             <text>
                                 <h2>BPO</h2>
                                 <p>lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg  ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd </p></text>
@@ -60,8 +60,8 @@ export default function Page() {
 
                 </div>
             </section>
-            
+
         </main>
-        <Footer/>
+        <Footer />
     </>)
 }
