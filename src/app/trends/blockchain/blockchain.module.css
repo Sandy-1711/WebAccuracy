@@ -1,0 +1,437 @@
+.main {
+    height: max-content;
+    width: 100vw;
+    background-color: #210C4B;
+    position: relative;
+}
+
+.sec1 {
+    position: relative;
+    background-color: #210C4B;
+    height: 740px;
+}
+
+.gradContainer {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.grad {
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    transform: translate(-50%, -40%);
+    height: 200%;
+    width: 120%;
+    background: radial-gradient(circle, #6B007E 0%, #210C4B 50%);
+    z-index: 0;
+}
+
+.main text {
+    position: absolute;
+    z-index: 1;
+    font-size: 55px;
+    text-shadow: 0px 0px 10px #B57B9F;
+    color: white;
+    top: 240px;
+    left: 15%;
+    transform: translate(-15%, -25%);
+}
+
+.main text h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 110px;
+}
+
+.main text h1 span {
+    position: absolute;
+    transform: translate(100px);
+}
+
+.middleText {
+    position: absolute;
+    top: 620px;
+    left: 45%;
+    transform: translate(-45%, -65%);
+    z-index: 1;
+    color: rgba(224, 215, 215, 0.697);
+    width: 25%;
+}
+
+.middleText button {
+    position: relative;
+    z-index: 1;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 100ms ease-in-out;
+    background: linear-gradient(45deg, rgba(171, 30, 146, 1) 0%, rgba(247, 36, 26, 1) 100%);
+    box-shadow: 0px 5px 10px #6E0860;
+}
+
+.middleText button:hover {
+    background: linear-gradient(-45deg, rgba(171, 30, 146, 1) 0%, rgba(247, 36, 26, 1) 100%);
+
+}
+
+.card {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -2%);
+    z-index: 1;
+    height: 200px;
+    width: 90vw;
+    border-radius: 20px;
+    background: #ffffff08;
+    backdrop-filter: blur(25px);
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.cardContainer {
+    position: relative;
+    top: 0;
+    padding-bottom: 40px;
+}
+
+.card2 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 90vw;
+    height: max-content;
+    border-radius: 20px;
+    background: #ffffff08;
+    backdrop-filter: blur(25px);
+    z-index: 1;
+    min-height: 350px;
+    flex-wrap: wrap;
+}
+
+.card2Image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2Text {
+    width: 50%;
+}
+
+.card2Text h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    width: 40%;
+    line-height: 30px;
+}
+
+.card2Text p {
+    color: #ffffff5d;
+    line-height: 22px;
+    width: 50%;
+}
+
+.card2 img {
+    height: 50%;
+    width: 50%;
+}
+
+.card2 button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #FEDD01;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0;
+    padding-right: 30px;
+}
+
+.card2 button span {
+    transition: 100ms ease-in-out;
+    position: absolute;
+    transform: translate(10px);
+}
+
+.card2 button:hover span {
+    transform: translate(20px);
+}
+
+.cardInner {
+    width: 350px;
+    max-height: 200px;
+}
+
+.cardInner img {
+    transform: translate(-10px);
+    height: 30px;
+}
+
+.cardInner h2 {
+    color: #D52150;
+    font-weight: 400;
+}
+
+.cardInner p {
+    color: #ffffff5d;
+    font-weight: 100;
+}
+
+.line {
+    height: 80%;
+    width: 2px;
+    background: radial-gradient(circle, rgb(155, 142, 142) 0%, rgba(255, 255, 255, 0) 80%);
+    border-radius: 20px;
+}
+
+.bitcoin {
+    position: absolute;
+    right: 5%;
+    top: 150px;
+    height: 550px;
+    width: 550px;
+}
+
+.bitcoin img {
+    rotate: -20deg;
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+    top: 0;
+}
+
+@media screen and (width<1400px) {
+    .card {
+        flex-wrap: wrap;
+    }
+
+    .cardInner {
+        width: 30%;
+    }
+}
+
+@media screen and (width<1200px) {
+    .main {
+        height: max-content;
+    }
+
+    .sec1 {
+        height: 650px;
+    }
+
+    .bitcoin {
+        right: 5%;
+        top: 180px;
+        overflow: hidden;
+        height: 380px;
+        width: 380px;
+    }
+
+
+
+    .cardInner img {
+        height: 28px;
+        transform: translate(-8px);
+    }
+
+    .cardInner h2 {
+        font-size: 18px;
+    }
+
+    .cardInner p {
+        font-size: 14px;
+    }
+
+    .card {
+        height: max-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        bottom: unset;
+        gap: 1rem;
+    }
+
+    .line {
+        height: 0;
+        display: none;
+    }
+
+    .cardInner {
+        width: max-content;
+    }
+
+    .main text {
+        top: 250px;
+        font-size: 30px;
+    }
+
+    .main text h1 {
+        line-height: normal;
+    }
+
+    .middleText {
+        top: 450px;
+        left: 15%;
+        width: 50%;
+        transform: translate(0, 0);
+    }
+
+
+
+    .card2Text h2 {
+        width: 80%;
+    }
+
+    .card2Text p {
+        width: 80%;
+    }
+
+}
+
+@media screen and (width<968px) {
+    .card2Image img {
+        min-height: 300px;
+        min-width: 300px;
+    }
+}
+
+@media screen and (width<768px) {
+
+    .sec1 {
+        height: 500px;
+    }
+
+    .main text {
+        top: 150px;
+        font-size: 22px;
+    }
+
+    .card2 {
+        gap: 10px;
+    }
+
+    .card2Image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card2Text {
+        width: 70%;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .card2Text h2 {
+        width: 100%;
+    }
+
+    .card2Text p {
+        width: 100%;
+    }
+
+    .bitcoin {
+        right: 0;
+        height: 250px;
+        width: 250px;
+        top: 80px;
+    }
+
+    .middleText {
+        top: 300px;
+        width: 60%;
+        left: 15%;
+
+    }
+
+
+}
+
+
+
+@media screen and (width<480px) {
+    .main {
+        height: max-content;
+    }
+
+    .middleText {
+        left: 5%;
+        width: 90%;
+    }
+
+    .card {
+        position: relative;
+    }
+
+    .card2 {
+        position: relative;
+        left: unset;
+        transform: translate(0, 0);
+    }
+
+    .main text {
+        top: 120px;
+    }
+
+    .footer {}
+}
+
+@media screen and (width<300px) {
+    .main text {
+        font-size: 5vw;
+    }
+
+    .sec1 {
+        height: 420px;
+    }
+
+    .card2Image {
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+    }
+
+    .card2Image img {
+        min-height: unset;
+        min-width: unset;
+        height: 250px;
+        width: 250px;
+
+    }
+
+    .bitcoin {
+        right: 0px;
+        top: 50px;
+    }
+
+    .bitcoin img {
+        transform: translate(40px) rotate(30deg);
+    }
+
+    .middleText {
+        top: 250px;
+    }
+
+    .middleText p {
+        font-size: 12px;
+    }
+}
