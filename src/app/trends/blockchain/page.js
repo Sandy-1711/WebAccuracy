@@ -19,7 +19,7 @@ export default function Blockchain() {
                 </text>
                 <div className={blockcss.middleText}>
                     <p>Leverage the efficiency and scalability of blockchain to optimize your business operations. From supply chain management to identify verification, our blockchain solutions can revolutionize the way you do business, saving time and reducing costs.</p>
-                    <button>Let's Connect</button>
+                    <button>Let&apos;s Connect</button>
                 </div>
                 <div className={blockcss.gradContainer}>
                     <div className={blockcss.grad} />
