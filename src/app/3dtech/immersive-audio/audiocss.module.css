@@ -25,7 +25,6 @@
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999;
     font-size: 18px;
     text-align: center;
     color: rgba(255, 255, 255, 0.526);
@@ -34,50 +33,50 @@
 
 .line1 {
     position: absolute;
-    background: linear-gradient(360deg,rgba(128,128,128,0.471), black);
+    background: linear-gradient(360deg, rgba(128, 128, 128, 0.471), black);
     height: 50vw;
     width: 1px;
     top: 50%;
     /* bottom: 0; */
     left: 20%;
-    transform:translate(-50%,-50%) rotate(50deg);
+    transform: translate(-50%, -50%) rotate(50deg);
 
 }
 
 .line2 {
     position: absolute;
     /* background-color: rgba(128, 128, 128, 0.471); */
-    background: linear-gradient(360deg,rgba(128,128,128,0.471), black);
+    background: linear-gradient(360deg, rgba(128, 128, 128, 0.471), black);
     height: 50vw;
     width: 1px;
     top: 50%;
     /* bottom: 0; */
     left: 80%;
-    transform:translate(-50%,-50%) rotate(-50deg);
+    transform: translate(-50%, -50%) rotate(-50deg);
 
 }
 
 .line3 {
     position: absolute;
-    background: linear-gradient(360deg,rgba(128,128,128,0.471), black);
+    background: linear-gradient(360deg, rgba(128, 128, 128, 0.471), black);
     height: 60vw;
     width: 1px;
     top: 70%;
     /* bottom: 0; */
     left: 25%;
-    
-    transform:translate(-50%,-50%) rotate(45deg);
+
+    transform: translate(-50%, -50%) rotate(45deg);
 
 }
 
 .line4 {
     position: absolute;
-    background: linear-gradient(360deg,rgba(128,128,128,0.471), black);
+    background: linear-gradient(360deg, rgba(128, 128, 128, 0.471), black);
     height: 60vw;
     width: 1px;
     top: 70%;
     left: 75%;
-    transform:translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .control {
@@ -209,16 +208,19 @@
     left: 50%;
     transform: translate(-50%);
 }
+
 @media screen and (width<1200px) {
-    .page{
+    .page {
         width: 100%;
     }
-    .heading{
+
+    .heading {
         font-size: 5vw;
         width: 100%;
         text-align: center;
     }
-    .instructions{
+
+    .instructions {
         width: 100%;
     }
 }
