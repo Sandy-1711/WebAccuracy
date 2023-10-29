@@ -1,0 +1,224 @@
+.pageWrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.page {
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.instructions {
+    /* height: fit-content;
+    width: fit-content; */
+    /* background-color: #e60073; */
+    /* background: transparent; */
+    /* backdrop-filter: blur(25px); */
+    /* padding: 40px 50px; */
+    /* border-radius: 20px; */
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.526);
+    /* border: 1px solid white; */
+}
+
+.line1 {
+    position: absolute;
+    background: linear-gradient(360deg,rgba(128,128,128,0.471), black);
+    height: 50vw;
+    width: 1px;
+    top: 50%;
+    /* bottom: 0; */
+    left: 20%;
+    transform:translate(-50%,-50%) rotate(50deg);
+
+}
+
+.line2 {
+    position: absolute;
+    /* background-color: rgba(128, 128, 128, 0.471); */
+    background: linear-gradient(360deg,rgba(128,128,128,0.471), black);
+    height: 50vw;
+    width: 1px;
+    top: 50%;
+    /* bottom: 0; */
+    left: 80%;
+    transform:translate(-50%,-50%) rotate(-50deg);
+
+}
+
+.line3 {
+    position: absolute;
+    background: linear-gradient(360deg,rgba(128,128,128,0.471), black);
+    height: 60vw;
+    width: 1px;
+    top: 70%;
+    /* bottom: 0; */
+    left: 25%;
+    
+    transform:translate(-50%,-50%) rotate(45deg);
+
+}
+
+.line4 {
+    position: absolute;
+    background: linear-gradient(360deg,rgba(128,128,128,0.471), black);
+    height: 60vw;
+    width: 1px;
+    top: 70%;
+    left: 75%;
+    transform:translate(-50%,-50%) rotate(-45deg);
+}
+
+.control {
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 100px;
+    width: 100px;
+    background: radial-gradient(grey, black);
+    border-radius: 50%;
+}
+
+.left {
+    top: 65%;
+    left: 40px;
+    z-index: 10;
+}
+
+.heading {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+/* .left::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50% 50%;
+    background: radial-gradient(rgba(128, 128, 128, 0.19), black);
+    top: 100%;
+    z-index: 1;
+} */
+
+.middle {
+    left: 50%;
+    transform: translate(-50%, -100px) scale(0.8);
+}
+
+.right {
+    top: 65%;
+    right: 40px;
+}
+
+.right.active {
+    background: transparent;
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+}
+
+.left.active {
+    background: #fff;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+
+.middle.active {
+    background: white;
+
+    animation: light-up 1s infinite ease-in-out alternate;
+}
+
+@keyframes light-up {
+    0% {
+        box-shadow: 0px 0px 50px 1px white;
+    }
+
+    100% {
+        box-shadow: 0px 0px 50px 30px white;
+    }
+
+    /* 100% {
+            box-shadow: 0px 0px 50px 1px white;
+        } */
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #f0f,
+            0 0 40px #0ff,
+            0 0 50px #e60073,
+            0 0 60px #e60073,
+            0 0 70px #e60073;
+    }
+
+    to {
+        box-shadow:
+            0 0 20px #fff,
+            0 0 30px #ff4da6,
+            0 0 40px #ff4da6,
+            0 0 50px #ff4da6,
+            0 0 60px #ff4da6,
+            0 0 70px #ff4da6,
+            0 0 80px #ff4da6;
+    }
+}
+
+.you {
+    height: 20px;
+    width: 20px;
+    background: greenyellow;
+    top: 60%;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.you span {
+    position: absolute;
+    color: greenyellow;
+    top: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+}
+@media screen and (width<1200px) {
+    .page{
+        width: 100%;
+    }
+    .heading{
+        font-size: 5vw;
+        width: 100%;
+        text-align: center;
+    }
+    .instructions{
+        width: 100%;
+    }
+}
