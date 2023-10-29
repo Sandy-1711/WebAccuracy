@@ -3,7 +3,7 @@ import Nav from "@/app/components/Nav/nav";
 import audiocss from "./audiocss.module.css";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
-export default function dolbyatmos() {
+export default function ImmersiveAudioPage() {
     const [start, setStart] = useState(false);
     useEffect(function () {
         var audio1 = document.querySelector(`.${audiocss.middle}`);
