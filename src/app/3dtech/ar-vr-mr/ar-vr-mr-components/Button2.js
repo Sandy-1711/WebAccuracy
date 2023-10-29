@@ -1,3 +1,4 @@
+'use client'
 import buttoncss from './buttoncss.module.css'
 export default function Button2(props) {
     return (<div className={buttoncss.button + ' ' + buttoncss.button2}>

@@ -43,7 +43,7 @@ export default function Page() {
   useLayoutEffect(function () {
     gsap.registerPlugin(ScrollTrigger);
     
-    if (window.innerWidth > 768) {
+    if (window !== 'undefined'  && window.innerWidth > 768) {
       gsap.from("#h11", {
         x: 1000,
         scrollTrigger: {
@@ -97,7 +97,7 @@ export default function Page() {
         },
       });
 
-      gsap.from(`#h12`, {
+      gsap.from('#h12', {
         x: -200,
         scrollTrigger: {
           trigger: `.${arvrmrcss.section4}`,
@@ -110,7 +110,7 @@ export default function Page() {
         },
       });
       gsap.registerPlugin(ScrollTrigger);
-      gsap.from(`#h13`, {
+      gsap.from('#h13', {
         x: 200,
         scrollTrigger: {
           trigger: `.${arvrmrcss.section4}`,
