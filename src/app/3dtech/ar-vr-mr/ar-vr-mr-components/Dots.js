@@ -1,6 +1,6 @@
 'use client'
 import { useEffect } from 'react'
-import arvrmrcss from './ar-vr-mr.module.css'
+import arvrmrcss from '../ar-vr-mr.module.css'
 export default function Dots() {
     useEffect(function () {
         // script.js

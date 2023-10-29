@@ -33,6 +33,7 @@
     transform: translate(0, -50%);
     left: calc((100vw - 1200px) / 2);
     width: 500px;
+    pointer-events: none;
 }
 
 .herotext {
@@ -97,6 +98,7 @@
     margin-top: 18px;
     border-radius: 4px;
     transition: all 0.175s ease 0s;
+    pointer-events: all;
 }
 
 .text button:hover {
