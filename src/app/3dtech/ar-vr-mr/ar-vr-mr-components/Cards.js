@@ -6,7 +6,7 @@ import gsap from "gsap";
 export default function Cards() {
   useLayoutEffect(function () {
     gsap.registerPlugin(ScrollTrigger);
-    if (window !=='undefined' && window.innerWidth > 768) {
+    if (window !=='undefined' && window.innerWidth >= 768) {
       gsap.to(`.${arvrmrcss.cards}`, {
         y: "-78%",
         scrollTrigger: {
