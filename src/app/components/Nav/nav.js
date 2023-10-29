@@ -36,7 +36,7 @@ export default function Nav() {
         else {
             setColor('#272839');
         }
-        if (window.innerWidth > 900) {
+        if (window!=='undefined' && window.innerWidth > 900) {
             gsap.registerPlugin(ScrollTrigger);
             var tl = gsap.timeline();
             tl.to('#nav', {

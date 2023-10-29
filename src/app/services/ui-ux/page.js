@@ -8,7 +8,7 @@ import Nav from '@/app/components/Nav/nav'
 export default function UIUX() {
     LocoScroll(true);
     useEffect(function () {
-        if (window.innerWidth > 900) {
+        if (window!=='undefined' && window.innerWidth > 900) {
             // document.getElementById('body').style.overflowY = 'hidden';
         }
     })

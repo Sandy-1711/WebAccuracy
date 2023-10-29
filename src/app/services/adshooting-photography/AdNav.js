@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 export default function AdNav() {
     useEffect(function () {
 
-        if (window.location.pathname === '/services/adshooting-photography' && window.innerWidth > 1200) {
+        if (window.location.pathname === '/services/adshooting-photography' && window!=='undefined' && window.innerWidth > 1200) {
 
             window.addEventListener('scroll', function (e) {
                 // print "false" if direction is down and "true" if up

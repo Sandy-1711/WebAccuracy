@@ -10,7 +10,7 @@ export default function Circle() {
     useEffect(function () {
         gsap.registerPlugin(ScrollTrigger);
         var tl = gsap.timeline();
-        if (window.innerWidth > 900) {
+        if (window!=='undefined' && window.innerWidth > 900) {
 
             tl.to("#nav", {
                 y: '-100%',

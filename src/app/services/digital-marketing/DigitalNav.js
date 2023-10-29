@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 export default function DigitalNav() {
     useEffect(function () {
 
-        if (window.location.pathname === '/services/digital-marketing' && window.innerWidth > 1200) {
+        if (window.location.pathname === '/services/digital-marketing' && window!=='undefined' && window.innerWidth > 1200) {
 
 
             window.addEventListener('scroll', function (e) {
@@ -54,7 +54,7 @@ export default function DigitalNav() {
                     })
                 }
                 var scrollingUp = this.oldScroll > this.scrollY;
-                if (nav && window.innerWidth > 1200) {
+                if (nav && window!=='undefined' && window.innerWidth > 1200) {
 
                     if (!scrollingUp) {
                         nav.style.top = '-12vh';
