@@ -1,0 +1,325 @@
+.pageWrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.page {
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.audios {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.audios audio {
+    transition: 100ms ease-in-out;
+}
+
+.instructions {
+    /* height: fit-content;
+    width: fit-content; */
+    /* background-color: #e60073; */
+    /* background: transparent; */
+    /* backdrop-filter: blur(25px); */
+    /* padding: 40px 50px; */
+    /* border-radius: 20px; */
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.526);
+    /* border: 1px solid white; */
+}
+
+.line1 {
+    position: absolute;
+    background: linear-gradient(360deg, rgba(128, 128, 128, 0.471), black);
+    height: 50vw;
+    width: 1px;
+    top: 50%;
+    /* bottom: 0; */
+    left: 20%;
+    transform: translate(-50%, -50%) rotate(50deg);
+
+}
+
+.line2 {
+    position: absolute;
+    /* background-color: rgba(128, 128, 128, 0.471); */
+    background: linear-gradient(360deg, rgba(128, 128, 128, 0.471), black);
+    height: 50vw;
+    width: 1px;
+    top: 50%;
+    /* bottom: 0; */
+    left: 80%;
+    transform: translate(-50%, -50%) rotate(-50deg);
+
+}
+
+.line3 {
+    position: absolute;
+    background: linear-gradient(360deg, rgba(128, 128, 128, 0.471), black);
+    height: 60vw;
+    width: 1px;
+    top: 70%;
+    /* bottom: 0; */
+    left: 25%;
+
+    transform: translate(-50%, -50%) rotate(45deg);
+
+}
+
+.line4 {
+    position: absolute;
+    background: linear-gradient(360deg, rgba(128, 128, 128, 0.471), black);
+    height: 60vw;
+    width: 1px;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.control {
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 100px;
+    width: 100px;
+    background: radial-gradient(grey, black);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control span {
+    color: white;
+}
+
+.left {
+    top: 50%;
+    left: 40px;
+    z-index: 10;
+}
+
+.heading {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.695);
+    backdrop-filter: blur(2px);
+}
+
+.overlaytext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.overlaytext p {
+    font-size: 32px;
+    width: 350px;
+    text-align: center;
+}
+
+.button {
+    background: none;
+    outline: none;
+    /* outline: linear-gradient(pink,salmon,blue); */
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60%;
+    color: white;
+    font-size: 22px;
+    z-index: 100;
+}
+
+.button:hover {
+    background: white;
+    color: black;
+}
+
+/* .left::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50% 50%;
+    background: radial-gradient(rgba(128, 128, 128, 0.19), black);
+    top: 100%;
+    z-index: 1;
+} */
+
+.top {
+    top: 10%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    transform: translate(-50%, 0);
+}
+
+.bottom {
+    top: unset;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 150px;
+    width: 150px;
+}
+
+.right {
+    top: 50%;
+    right: 40px;
+}
+
+.right.active {
+    background: transparent;
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+}
+
+.soundsource {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+}
+
+.left.active {
+    background: #fff;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+
+.middle.active {
+    background: white;
+
+    animation: light-up 1s infinite ease-in-out alternate;
+}
+
+@keyframes light-up {
+    0% {
+        box-shadow: 0px 0px 50px 1px white;
+    }
+
+    100% {
+        box-shadow: 0px 0px 50px 30px white;
+    }
+
+    /* 100% {
+            box-shadow: 0px 0px 50px 1px white;
+        } */
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #f0f,
+            0 0 40px #0ff,
+            0 0 50px #e60073,
+            0 0 60px #e60073,
+            0 0 70px #e60073;
+    }
+
+    to {
+        box-shadow:
+            0 0 20px #fff,
+            0 0 30px #ff4da6,
+            0 0 40px #ff4da6,
+            0 0 50px #ff4da6,
+            0 0 60px #ff4da6,
+            0 0 70px #ff4da6,
+            0 0 80px #ff4da6;
+    }
+}
+
+.you {
+    height: 20px;
+    width: 20px;
+    background: greenyellow;
+    top: 50%;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.you span {
+    position: absolute;
+    color: greenyellow;
+    top: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (width<1200px) {
+    .page {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 5vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .instructions {
+        width: 100%;
+    }
+}

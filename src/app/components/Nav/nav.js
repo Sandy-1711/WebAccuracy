@@ -102,6 +102,7 @@ export default function Nav() {
               <ul>
                 <a href="/3dtech/ar-vr-mr">AR/VR/MR</a>
                 <a href="/3dtech/immersive-audio">Immersive Audio</a>
+                <a href="/3dtech/immersive">Immersive Audio 1</a>
               </ul>
             </div>
           </li>

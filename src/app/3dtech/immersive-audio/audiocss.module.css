@@ -13,6 +13,16 @@
     position: relative;
 }
 
+.audios {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.audios audio {
+    transition: 100ms ease-in-out;
+}
+
 .instructions {
     /* height: fit-content;
     width: fit-content; */
@@ -102,7 +112,62 @@
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
+}
+
+.heading h2 {
     font-size: 50px;
+}
+
+.heading p {
+    font-size: 22px;
+    text-align: center;
+    color: grey;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.695);
+    backdrop-filter: blur(2px);
+}
+
+.overlaytext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.overlaytext p {
+    font-size: 32px;
+    width: 350px;
+    text-align: center;
+}
+
+.button {
+    background: none;
+    outline: none;
+    /* outline: linear-gradient(pink,salmon,blue); */
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60%;
+    color: white;
+    font-size: 22px;
+    z-index: 100;
+}
+
+.button:hover {
+    background: white;
+    color: black;
 }
 
 /* .left::before {
