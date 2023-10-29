@@ -42,7 +42,7 @@ export default function Footer() {
   const [style, setStyle] = useState({});
   const [style1, setStyle1] = useState({});
   var path = usePathname();
-  console.log(path);
+  // console.log(path);
   useEffect(function () {
     if (path === "/services/ui-ux") {
       document.getElementById(`footerPage`).style.backgroundColor = "black";
@@ -80,7 +80,13 @@ export default function Footer() {
       <div className={footercss.linksContainer}>
         <div className={footercss.lefttext}>
           <div className={footercss.imageBox}>
-            <img style={style1} src="/logo.png" alt="logo" />
+            <Image
+              height={100}
+              width={110}
+              style={style1}
+              src="/logo.png"
+              alt="logo"
+            />
           </div>
           <p style={style}>
             lorem iu ia ougf hah hvi igav gha i <br />
@@ -110,7 +116,7 @@ export default function Footer() {
                 return (
                   <li style={style} className="footerli" key={index}>
                     <span>&#10148; </span>
-                    <a>{el.title}</a>
+                    <a href="/">{el.title}</a>
                   </li>
                 );
               })}
@@ -120,7 +126,7 @@ export default function Footer() {
                 return (
                   <li style={style} className="footerli" key={index}>
                     <span>&#10148; </span>
-                    <a>{el.title}</a>
+                    <a href="/">{el.title}</a>
                   </li>
                 );
               })}
@@ -142,41 +148,56 @@ export default function Footer() {
       <div className={footercss.footerbottom}>
         <div className={footercss.social}>
           <div className={footercss.socialImageContainer}>
-            <img
-              height={"22px"}
+            <Image
+              width={100}
+              height={22}
               src="/facebook-app-symbol.svg"
               alt="facebook"
             />
           </div>
           <div className={footercss.socialImageContainer}>
-            <img height={"22px"} src="/twitter.svg" alt="twitter" />
+            <Image height={22} width={100} src="/twitter.svg" alt="twitter" />
           </div>
           <div className={footercss.socialImageContainer}>
-            <img height={"22px"} src="/instagram.svg" alt="instagram" />
+            <Image
+              height={22}
+              width={100}
+              src="/instagram.svg"
+              alt="instagram"
+            />
           </div>
         </div>
         <div id="copy" className={footercss.copyright}>
           © 2023: Webaccuracy | Designed by:{" "}
           <span>
-            <a>Web Accuracy</a>
+            <a href="/">Web Accuracy</a>
           </span>{" "}
           | Powered by:{" "}
           <span>
-            <a>Web Accuracy Web Development Group</a>
+            <a href="/">Web Accuracy Web Development Group</a>
           </span>
         </div>
       </div>
       <div id="py1" className={footercss.py1}>
-        <img src="https://zimed.netlify.app/assets/images/shapes/footer-shape-1.png" />
+        <Image
+          height={100}
+          width={100}
+          src="https://zimed.netlify.app/assets/images/shapes/footer-shape-1.png"
+          alt="py1"
+        />
       </div>
       <div id="py2" className={footercss.py2}>
-        <img
+        <Image
+          height={200}
+          width={200}
           src="https://zimed.netlify.app/assets/images/shapes/footer-shape-2.png"
           alt="py2"
         />
       </div>
       <div id="circleAtBottom" className={footercss.circleAtBottom}>
-        <img
+        <Image
+          height={500}
+          width={500}
           src="https://zimed.netlify.app/assets/images/shapes/footer-shape-3.png"
           alt="circleatbottom"
         />

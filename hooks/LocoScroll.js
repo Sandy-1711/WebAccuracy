@@ -10,7 +10,7 @@ export default function LocoScroll(start) {
       } else {
         (async () => {
           const locoScroll = (await import("locomotive-scroll")).default;
-          // if (window!=='undefined' && window.innerWidth > 900) {
+          // if (window.innerWidth > 900) {
 
           const scroll = new locoScroll({
             el: document.querySelector("[data-scroll-container]"),

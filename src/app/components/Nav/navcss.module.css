@@ -304,6 +304,12 @@
     .menumobile ul li a:focus {
         outline: none;
     }
+    .menumobile ul li span{
+        cursor: pointer;
+    }
+    .menumobile ul li:hover{
+        color: grey;
+    }
 
     .menumobile ul li a {
         color: white;
@@ -353,7 +359,7 @@
     .menumobile ul {
         font-size: 18px;
     }
-
+    
     .logo {
         height: 25px;
     }

@@ -1,17 +1,11 @@
-'use client'
 import Footer from '@/app/components/Footer/Footer'
 import Canvas from './Canvas'
 import uiux from './uiux.module.css'
 import LocoScroll from '../../../../hooks/LocoScroll'
-import { useEffect } from 'react'
 import Nav from '@/app/components/Nav/nav'
+import Image from 'next/image'
 export default function UIUX() {
-    LocoScroll(true);
-    useEffect(function () {
-        if (window!=='undefined' && window.innerWidth > 900) {
-            // document.getElementById('body').style.overflowY = 'hidden';
-        }
-    })
+    // LocoScroll(true);
     return (<>
 
         <Nav />
@@ -34,18 +28,18 @@ export default function UIUX() {
             <div className={uiux.sec1}>
                 <div className={uiux.carousel}>
                     <div className={uiux.carouselslider}>
-                        <img src='/1.jpg' />
-                        <img src='/2.jpg' />
-                        <img src='/3.jpg' />
-                        <img src='/4.jpg' />
-                        <img src='/5.jpg' />
+                        <img src='/1.jpg' alt='1'/>
+                        <img src='/2.jpg' alt='2'/>
+                        <img src='/3.jpg' alt='3'/>
+                        <img src='/4.jpg' alt='4'/>
+                        <img src='/5.jpg' alt='5'/>
                     </div>
                     <div className={uiux.carouselslider}>
-                        <img src='/1.jpg' />
-                        <img src='/2.jpg' />
-                        <img src='/3.jpg' />
-                        <img src='/4.jpg' />
-                        <img src='/5.jpg' />
+                        <img src='/1.jpg' alt='1'/>
+                        <img src='/2.jpg' alt='2'/>
+                        <img src='/3.jpg' alt='3'/>
+                        <img src='/4.jpg' alt='4'/>
+                        <img src='/5.jpg' alt='5'/>
                     </div>
                 </div>
             </div>
@@ -65,7 +59,7 @@ export default function UIUX() {
                             </div>
                         </div>
                         <div className={uiux.right}>
-                            <img src='/1.jpg' />
+                            <Image height={500} width={500} src='/1.jpg'  alt='service1' />
                         </div>
                     </div>
                     <div className={uiux.service + ' ' + uiux.even}>
@@ -77,7 +71,7 @@ export default function UIUX() {
                             </div>
                         </div>
                         <div className={uiux.right}>
-                            <img src='/2.jpg' />
+                            <Image height={500} width={500} src='/2.jpg' alt='service2' />
                         </div>
                     </div>
                     <div className={uiux.service}>
@@ -89,7 +83,7 @@ export default function UIUX() {
                             </div>
                         </div>
                         <div className={uiux.right}>
-                            <img src='/3.jpg' />
+                            <Image height={500} width={500} src='/3.jpg' alt='service3' />
                         </div>
                     </div>
                     <div className={uiux.service + ' ' + uiux.even}>
@@ -101,7 +95,7 @@ export default function UIUX() {
                             </div>
                         </div>
                         <div className={uiux.right}>
-                            <img src='/4.jpg' />
+                            <Image height={500} width={500} src='/4.jpg' alt='service4' />
                         </div>
                     </div>
                 </div>

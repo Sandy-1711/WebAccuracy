@@ -16,6 +16,7 @@
 
 .imageBox img {
     height: 40px;
+    width: auto;
     transform: translateX(-10px);
 }
 
@@ -163,6 +164,12 @@
     line-height: 34px;
 }
 
+.links ul li a {
+    text-decoration: none;
+    color: #7C7D8A;
+
+}
+
 .links ul li {
     transition: 100ms ease-in-out;
 }
@@ -178,6 +185,10 @@
 
 .links ul li:hover {
     transform: translateX(10px);
+    color: white;
+}
+
+.links ul li:hover a {
     color: white;
 }
 
@@ -240,9 +251,10 @@
     color: #bcbcbc;
 }
 
-.copyright span {
+.copyright span a {
     color: rgb(95, 95, 255);
     cursor: pointer;
+    text-decoration: none;
 }
 
 @media screen and (width<1200px) {

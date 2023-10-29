@@ -452,8 +452,15 @@
     }
 }
 
-@media screen and (width<400px) {
+@media screen and (width<480px) {
     .text {
         width: 90%;
+        margin: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .herotext {
+        animation: none;
     }
 }
