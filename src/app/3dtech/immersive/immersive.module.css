@@ -103,14 +103,10 @@
     align-items: center;
 }
 
-.control span {
-    color: white;
-}
 
 .left {
     top: 50%;
     left: 40px;
-    z-index: 10;
 }
 
 .heading {
@@ -235,6 +231,8 @@
         0 0 50px #fff,
         -10px 0 80px #f0f,
         10px 0 80px #0ff;
+    color: white;
+    user-select: none;
 }
 
 .left.active {
@@ -306,6 +304,14 @@
     text-align: center;
     left: 50%;
     transform: translate(-50%);
+
+}
+
+.control span {
+    color: white;
+    font-size: 90%;
+    user-select: none;
+    pointer-events: none;
 }
 
 @media screen and (width<1200px) {
@@ -322,4 +328,41 @@
     .instructions {
         width: 100%;
     }
+}
+
+@media screen and (width<480px) {
+    .control {
+        height: 50px;
+        width: 50px;
+    }
+
+    .left {
+        left: 10px;
+    }
+
+    .right {
+        right: 10px;
+    }
+
+    .top {
+        top: 30%;
+        height: 30px;
+        width: 30px;
+        background: radial-gradient(rgb(77, 77, 77), black);
+    }
+
+    .bottom {
+        height: 100px;
+        width: 100px;
+        bottom: 10%;
+    }
+
+    .line1 {
+        rotate: -5deg;
+    }
+
+    .line2 {
+        rotate: 5deg;
+    }
+
 }

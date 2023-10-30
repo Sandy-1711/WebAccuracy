@@ -25,8 +25,13 @@ export default function Immersive() {
                 if (x < -1) {
                     x = -1;
                 }
-                you.style.left = (x + 1) / 2 * 1200 + 'px';
                 you.style.top = y * window.innerHeight + 'px';
+                if (window.innerWidth < 480) {
+                    you.style.left = (x + 1) / 2 * window.innerWidth + 'px';
+                }
+                else {
+                    you.style.left = (x + 1) / 2 * 1200 + 'px';
+                }
                 // console.log("x: ", x, " y: ", y);
 
                 y = y * 2 - 1;
@@ -36,7 +41,7 @@ export default function Immersive() {
                 else {
                     y = 1 - y
                 }
-                var temp = -x / 1.5;
+                var temp = x / 1.5;
                 panNode.pan.setValueAtTime(temp, audioCtx.currentTime);
 
 
@@ -91,9 +96,9 @@ export default function Immersive() {
 
             </div>
             <div className={audiocss.left + " " + audiocss.control}><span>Left</span></div>
-            <div className={audiocss.top + " " + audiocss.control}><span>Front</span></div>
+            <div className={audiocss.top + " " + audiocss.control}><span>Back</span></div>
             <div className={audiocss.right + " " + audiocss.control}><span>Right</span></div>
-            <div className={audiocss.bottom + " " + audiocss.control}><span>Back</span></div>
+            <div className={audiocss.bottom + " " + audiocss.control}><span>Front</span></div>
             <div className={audiocss.soundsource}><span>Audio</span></div>
 
             <div className={audiocss.you}>
