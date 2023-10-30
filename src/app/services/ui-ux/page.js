@@ -1,3 +1,4 @@
+// 'use client'
 import Footer from '@/app/components/Footer/Footer'
 import Canvas from './Canvas'
 import uiux from './uiux.module.css'
@@ -10,10 +11,9 @@ export default function UIUX() {
 
         <Nav />
 
-        <div data-scroll-container className={uiux.homePage}>
+        <div className={uiux.homePage}>
             <div className={uiux.hero}>
 
-                
                 <div className={uiux.text + ' ' + uiux.herotext}>
 
                     <h1>Premium
@@ -28,18 +28,18 @@ export default function UIUX() {
             <div className={uiux.sec1}>
                 <div className={uiux.carousel}>
                     <div className={uiux.carouselslider}>
-                        <img src='/1.jpg' alt='1'/>
-                        <img src='/2.jpg' alt='2'/>
-                        <img src='/3.jpg' alt='3'/>
-                        <img src='/4.jpg' alt='4'/>
-                        <img src='/5.jpg' alt='5'/>
+                        <img src='/1.jpg' alt='1' />
+                        <img src='/2.jpg' alt='2' />
+                        <img src='/3.jpg' alt='3' />
+                        <img src='/4.jpg' alt='4' />
+                        <img src='/5.jpg' alt='5' />
                     </div>
                     <div className={uiux.carouselslider}>
-                        <img src='/1.jpg' alt='1'/>
-                        <img src='/2.jpg' alt='2'/>
-                        <img src='/3.jpg' alt='3'/>
-                        <img src='/4.jpg' alt='4'/>
-                        <img src='/5.jpg' alt='5'/>
+                        <img src='/1.jpg' alt='1' />
+                        <img src='/2.jpg' alt='2' />
+                        <img src='/3.jpg' alt='3' />
+                        <img src='/4.jpg' alt='4' />
+                        <img src='/5.jpg' alt='5' />
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ export default function UIUX() {
                             </div>
                         </div>
                         <div className={uiux.right}>
-                            <Image height={500} width={500} src='/1.jpg'  alt='service1' />
+                            <Image height={500} width={500} src='/1.jpg' alt='service1' />
                         </div>
                     </div>
                     <div className={uiux.service + ' ' + uiux.even}>

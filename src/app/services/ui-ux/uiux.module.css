@@ -322,6 +322,10 @@
         width: 60%;
     }
 
+    .text {
+        pointer-events: all;
+    }
+
     .text h1 {
         font-size: 32px;
     }
@@ -376,7 +380,7 @@
     }
 
     .sec2 .text {
-        width: 95%;
+        width: 85%;
     }
 
     .sec2 .text h1 {
@@ -385,7 +389,7 @@
     }
 
     .sec2 .text p {
-        font-size: 18px;
+        font-size: 16px;
         width: 100%;
         line-height: normal;
     }
@@ -402,7 +406,7 @@
     }
 
     .right img {
-        height: 200px;
+        height: 300px;
         width: 95%;
     }
 
@@ -432,15 +436,16 @@
     }
 
     .even .right img {
-        margin: 0;
+        width: 95%;
+        margin: 0 30px;
     }
 
     .left .text {
-        margin: 0 16px;
+        margin: 0 30px;
     }
 
     .right img {
-        margin: 0 16px;
+        margin: 0 30px;
     }
 
     .services {
@@ -449,6 +454,7 @@
 
     .service {
         gap: 1rem;
+        height: max-content;
     }
 }
 
@@ -460,7 +466,52 @@
         transform: translate(-50%, -50%);
     }
 
+    .text h1 {
+        line-height: normal;
+    }
+
+    .text p {
+        line-height: normal;
+    }
+    .herotext{
+        backdrop-filter: blur(15px);
+    }
+
+    .right img {
+        height: 200px;
+    }
+
+    .hero {
+        background: url('/1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .herotext {
         animation: none;
+    }
+
+    .sec2 .text {
+        width: 92%;
+    }
+
+    .canvas {
+        display: none;
+    }
+
+    .carousel::before {
+        width: 100px;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.266));
+
+    }
+
+    .carousel:hover .carouselslider {
+        animation-play-state: running;
+    }
+
+    .carousel::after {
+        width: 100px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.266));
+
     }
 }

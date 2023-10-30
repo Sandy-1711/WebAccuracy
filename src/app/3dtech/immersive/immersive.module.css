@@ -351,6 +351,10 @@
         background: radial-gradient(rgb(77, 77, 77), black);
     }
 
+    .top span {
+        font-size: 6px;
+    }
+
     .bottom {
         height: 100px;
         width: 100px;

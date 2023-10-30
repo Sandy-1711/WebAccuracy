@@ -52,5 +52,5 @@ export default function Canvas() {
             SUNRAYS_WEIGHT: 1.0,
         });
     }, []);
-    return (<canvas ref={canvasRef} id='canvas'></canvas>)
+    return (<canvas className={uiux.canvas} ref={canvasRef} id='canvas'></canvas>)
 }

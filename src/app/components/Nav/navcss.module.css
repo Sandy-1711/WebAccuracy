@@ -257,7 +257,7 @@
         justify-content: flex-start;
     }
 
-    
+
 
     .menumobile {
         display: block;
@@ -304,10 +304,14 @@
     .menumobile ul li a:focus {
         outline: none;
     }
-    .menumobile ul li span{
+
+    .menumobile ul li span {
         cursor: pointer;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
     }
-    .menumobile ul li:hover{
+
+    .menumobile ul li:hover {
         color: grey;
     }
 
@@ -321,6 +325,9 @@
 
     .menumobile ul li a:hover {
         color: grey;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+
     }
 
     .menumobile ul li a i {
@@ -359,7 +366,7 @@
     .menumobile ul {
         font-size: 18px;
     }
-    
+
     .logo {
         height: 25px;
     }
