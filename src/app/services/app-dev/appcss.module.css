@@ -12,17 +12,16 @@
 
 }
 
-.sec1text p {
-    font-family: sans-serif;
+.sec1text h1 {
     font-weight: 100;
     font-size: 70px;
     margin: 0 40px;
-    /* font-family: 'Inconsolata', monospace; */
     font-family: 'Source Code Pro', monospace;
-    /* background-color: #E1DFDD; */
-    animation: text 1s infinite;
 }
-
+.sec1text p{
+    margin: 0 40px;
+    font-family: 'Source Code Pro', monospace;
+}
 .parallax1 {
     height: 45vw;
     width: calc(100vw - 80px);

@@ -2,7 +2,7 @@
 import Footer from '@/app/components/Footer/Footer'
 import appcss from './appcss.module.css'
 import LocoScroll from '../../../../hooks/LocoScroll'
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import loadcss from './loading.module.css'
 import Nav from '@/app/components/Nav/nav';
 import Image from 'next/image';
@@ -44,24 +44,24 @@ export default function AppDevPage() {
         <Nav />
         {width > 900 && <section className={appcss.section1}>
             <div className={appcss.sec1text}>
-                <p>App Development</p>
-                <p >React Native and Flutter for captivating cross-platform interfaces on iOS and Android</p>
+                <h1>App Development</h1>
+                <p>React Native and Flutter for captivating cross-platform interfaces on iOS and Android</p>
             </div>
             <div className={appcss.parallax1}>
                 <div data-scroll data-scroll-speed='0.9' className={appcss.column1}>
-                    <Image height={400} width={400} className={appcss.img} src='https://framerusercontent.com/images/5lToVG0ayJSToMZALDqmRSO8bhM.png' alt="p1c1img1" />
-                    <Image height={400} width={400} alt="" className={appcss.img} src='https://framerusercontent.com/images/ooWW5gmbcriozqsjPbkbEYNvSno.png' />
+                    <Image height={400} width={400} className={appcss.img} src='https://framerusercontent.com/images/5lToVG0ayJSToMZALDqmRSO8bhM.png' alt="App developement, android, ios, responsive design" />
+                    <Image height={400} width={400} alt="App developement, android, ios, responsive design" className={appcss.img} src='https://framerusercontent.com/images/ooWW5gmbcriozqsjPbkbEYNvSno.png' />
                 </div>
                 <div data-scroll data-scroll-speed='0.4' className={appcss.column2}>
-                    <Image height={400} width={400} alt="" className={appcss.img} src='https://framerusercontent.com/images/KV3tMFWhNZZ2whw411sVwm6qI.png' />
-                    <Image height={400} width={400} alt="" className={appcss.img} src='https://framerusercontent.com/images/Gy27YxkY90Upc01050lnDHCOVqE.png' />
+                    <Image height={400} width={400} alt="App developement, android, ios, responsive design" className={appcss.img} src='https://framerusercontent.com/images/KV3tMFWhNZZ2whw411sVwm6qI.png' />
+                    <Image height={400} width={400} alt="App developement, android, ios, responsive design" className={appcss.img} src='https://framerusercontent.com/images/Gy27YxkY90Upc01050lnDHCOVqE.png' />
                 </div>
                 <div data-scroll data-scroll-speed='-0.3' className={appcss.column3}>
-                    <Image height={400} width={400} alt="" className={appcss.img} src='https://framerusercontent.com/images/N4DS9jet0Rb2X5oK6rbPG8l3g.png' />
+                    <Image height={400} width={400} alt="App developement, android, ios, responsive design" className={appcss.img} src='https://framerusercontent.com/images/N4DS9jet0Rb2X5oK6rbPG8l3g.png' />
                 </div>
                 <div data-scroll data-scroll-speed='0.8' className={appcss.column4}>
-                    <Image height={400} width={400} alt="" className={appcss.img} src='https://framerusercontent.com/images/wFSikuMlrdbYB15PCb2J9PHMJA.png' />
-                    <Image height={400} width={400} alt="" className={appcss.img} src='https://framerusercontent.com/images/GtO7c1DreUXQAkBcudzbkIJtOss.png' />
+                    <Image height={400} width={400} alt="App developement, android, ios, responsive design" className={appcss.img} src='https://framerusercontent.com/images/wFSikuMlrdbYB15PCb2J9PHMJA.png' />
+                    <Image height={400} width={400} alt="App developement, android, ios, responsive design" className={appcss.img} src='https://framerusercontent.com/images/GtO7c1DreUXQAkBcudzbkIJtOss.png' />
                 </div>
             </div>
         </section>}
@@ -70,10 +70,10 @@ export default function AppDevPage() {
                 <div className={appcss.container}>
 
                     <div data-scroll data-scroll-speed='-0.2' className={appcss.p2c1}>
-                        <Image height={400} width={400} alt="" src='https://framerusercontent.com/images/U6c3zcltFBM0PDsAkL1YFpZSSM.png' />
+                        <Image height={400} width={400} alt="App developement, android, ios, responsive design" src='https://framerusercontent.com/images/U6c3zcltFBM0PDsAkL1YFpZSSM.png' />
                     </div>
                     <div data-scroll data-scroll-speed='0.6' className={appcss.p2c2}>
-                        <Image height={400} width={400} alt="" src='https://framerusercontent.com/images/U9G0NspnHN4PLubgUi69HHxug.png' />
+                        <Image height={400} width={400} alt="App developement, android, ios, responsive design" src='https://framerusercontent.com/images/U9G0NspnHN4PLubgUi69HHxug.png' />
                     </div>
                 </div>
             </div>
@@ -91,10 +91,10 @@ export default function AppDevPage() {
                 <div className={appcss.container}>
 
                     <div data-scroll data-scroll-speed='0.5' className={appcss.p2c1 + ' ' + appcss.p3c1}>
-                        <Image height={400} width={400} alt="" src='https://framerusercontent.com/images/LrbnXprPfPD5RFyVd7gwXAqpGY.png' />
+                        <Image height={400} width={400} alt="App developement, android, ios, responsive design" src='https://framerusercontent.com/images/LrbnXprPfPD5RFyVd7gwXAqpGY.png' />
                     </div>
                     <div data-scroll data-scroll-speed='0.8' className={appcss.p2c2 + ' ' + appcss.p3c2}>
-                        <Image height={400} width={400} alt="" src='https://framerusercontent.com/images/2IFGrfquCalyJJmwTffgtNYPgH4.png' />
+                        <Image height={400} width={400} alt="App developement, android, ios, responsive design" src='https://framerusercontent.com/images/2IFGrfquCalyJJmwTffgtNYPgH4.png' />
                     </div>
                 </div>
             </div>
@@ -104,10 +104,10 @@ export default function AppDevPage() {
                 <div className={appcss.container + ' ' + appcss.container4}>
 
                     <div data-scroll data-scroll-speed='0.4' className={appcss.p2c1 + ' ' + appcss.p4c1}>
-                        <Image height={400} width={400} alt="" src='https://framerusercontent.com/images/K6VFftynlCSxm5B928v9pJgSQAI.png' />
+                        <Image height={400} width={400} alt="App developement, android, ios, responsive design" src='https://framerusercontent.com/images/K6VFftynlCSxm5B928v9pJgSQAI.png' />
                     </div>
                     <div data-scroll data-scroll-speed='-0.2' className={appcss.p2c2 + ' ' + appcss.p4c2}>
-                        <Image height={400} width={400} alt="" src='https://framerusercontent.com/images/N4DS9jet0Rb2X5oK6rbPG8l3g.png' />
+                        <Image height={400} width={400} alt="App developement, android, ios, responsive design" src='https://framerusercontent.com/images/N4DS9jet0Rb2X5oK6rbPG8l3g.png' />
                     </div>
                 </div>
             </div>
