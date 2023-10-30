@@ -4,7 +4,7 @@ import footercss from "./footer.module.css";
 import uiux from "../../services/ui-ux/uiux.module.css";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-export default function Footer() {
+export default function Footer({customstyle}) {
   const data1 = [
     {
       title: "About",
@@ -76,7 +76,7 @@ export default function Footer() {
     }
   }, []);
   return (
-    <div id="footerPage" className={footercss.footerPage}>
+    <div id="footerPage" style={customstyle} className={footercss.footerPage}>
       <div className={footercss.linksContainer}>
         <div className={footercss.lefttext}>
           <div className={footercss.imageBox}>

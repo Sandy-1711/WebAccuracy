@@ -2,12 +2,15 @@
     height: max-content;
     width: 100vw;
     background-color: #210C4B;
+    background-color: #0D102C;
     position: relative;
+    overflow: hidden;
 }
 
 .sec1 {
     position: relative;
     background-color: #210C4B;
+    background-color: #0D102C;
     height: 740px;
 }
 
@@ -28,10 +31,64 @@
     transform: translate(-50%, -40%);
     height: 200%;
     width: 120%;
-    background: radial-gradient(circle, #6B007E 0%, #210C4B 50%);
+    background: radial-gradient(circle, #6B007E 0%, #0D102C 50%);
     z-index: 0;
 }
 
+.yellowgradient{
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: -100px;
+    height: 1000px;
+    width: 1000px;
+    pointer-events: none;
+    background: radial-gradient(circle,rgba(125, 141, 1, 0.264) 0%,#00000000 50%);
+}
+.yellowgradient1{
+    position: absolute;
+    z-index: 0;
+    top: 400px;
+    left: -300px;
+    height: 1500px;
+    width: 1500px;
+    pointer-events: none;
+    background: radial-gradient(circle,rgba(141, 134, 1, 0.242) 0%,#00000000 50%);
+}
+.bluegradient1{
+    position: absolute;
+    z-index: 0;
+    top: -200px;
+    right: 200px;
+    height: 1000px;
+    width: 1000px;
+    pointer-events: none;
+    background: radial-gradient(circle,rgba(0, 6, 171, 0.264) 0%,#00000000 50%);
+
+}
+.bluegradient2{
+    
+    position: absolute;
+    z-index: 0;
+    top: 500px;
+    right: 100px;
+    height: 1000px;
+    width: 1000px;
+    pointer-events: none;
+    background: radial-gradient(circle,rgba(0, 171, 151, 0.264) 0%,#00000000 50%);
+
+}
+.pinkgradient2{
+    position: absolute;
+    z-index: 0;
+    top: 950px;
+    left: -450px;
+    height: 800px;
+    width: 1000px;
+    pointer-events: none;
+    background: radial-gradient(circle,rgba(171, 0, 171, 0.355) 0%,#00000000 50%);
+
+}
 .main text {
     position: absolute;
     z-index: 1;
@@ -89,11 +146,11 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -2%);
-    z-index: 1;
+    z-index: 5;
     height: 200px;
     width: 90vw;
     border-radius: 20px;
-    background: #ffffff08;
+    background: #ffffff05;
     backdrop-filter: blur(25px);
     z-index: 1;
     display: flex;
@@ -119,7 +176,7 @@
     border-radius: 20px;
     background: #ffffff08;
     backdrop-filter: blur(25px);
-    z-index: 1;
+    z-index: 5;
     min-height: 350px;
     flex-wrap: wrap;
 }
@@ -392,7 +449,6 @@
         top: 120px;
     }
 
-    .footer {}
 }
 
 @media screen and (width<300px) {

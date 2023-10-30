@@ -39,9 +39,10 @@
 }
 
 .sec1Image {
-    z-index: 9999;
+    z-index: 99;
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 .sec1Image img {

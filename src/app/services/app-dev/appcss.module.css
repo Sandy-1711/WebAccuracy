@@ -201,7 +201,12 @@
     /* box-shadow: 0px 0px 20px 0 black; */
 
 }
-
+@media screen and (width<1200px) {
+    .parallax1{
+        gap: 5px;
+        padding: 10px;
+    }
+}
 @media screen and (width<900px) {
     .section2 {
         flex-direction: column-reverse;

@@ -3,10 +3,13 @@ import navcss from './navcss.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 export default function AdNav() {
+    const path = usePathname();
     useEffect(function () {
+        console.log(path);
 
-        if (window.location.pathname === '/services/adshooting-photography' && window.innerWidth > 1200) {
+        if (path === '/services/adshooting-photography' && window.innerWidth > 1200) {
 
             window.addEventListener('scroll', function (e) {
                 // print "false" if direction is down and "true" if up

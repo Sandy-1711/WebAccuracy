@@ -55,7 +55,7 @@ export default function Adshootingpage() {
       });
     }
 
-    if (window!=='undefined' && window.innerWidth > 1200) {
+    if (window !== 'undefined' && window.innerWidth > 1200) {
       gsap.to(`.${adcss.fixbutton}`, {
         opacity: 0,
         scrollTrigger: {
@@ -151,7 +151,7 @@ export default function Adshootingpage() {
         </div>
         <Button className={adcss.fixbutton} text="Creative services" />
         <div className={adcss.sec1Image}>
-          <Image height={5000} width={5000} src="/4.jpg" />
+          <Image height={5000} width={5000} src="/4.jpg" alt="ad shooting in Ranchi, Ranchi ad campaign, professional ad photography, creative ad visuals, photography in Ranchi, Ranchi photographers, professional photoshoots, memorable photography, creative photo sessions" />
         </div>
       </section>
       <section className={adcss.section2}>
@@ -160,10 +160,7 @@ export default function Adshootingpage() {
             Let&apos;s create amazing <br /> video content
           </h2>
           <p>
-            CO-DA Studios is a digital media content production company
-            specializing in marketing content creation for brands & individuals.
-            Providing graphic design, video production, photography, and
-            animation that seek to inspire your brand&apos;s clientele.
+            Are you looking for top-notch ad shooting and photography services in Ranchi? Look no further! Our team of skilled professionals is here to capture your vision and bring it to life through captivating visuals. Whether you're in need of stunning ad campaigns or memorable photography, we&apos;ve got you covered.
           </p>
           <Button text="Watch our reel " />
         </div>
@@ -174,28 +171,26 @@ export default function Adshootingpage() {
         <div className={adcss.secInner}>
           <div className={adcss.sec3InLeft}>
             <p>
-              <span>V</span>
-              <span>I</span>
-              <span>D</span>
               <span>E</span>
-              <span>O</span>
-              <span> </span>
+              <span>X</span>
               <span>P</span>
+              <span>E</span>
               <span>R</span>
-              <span>O</span>
-              <span>D</span>
-              <span>U</span>
-              <span>C</span>
-              <span>T</span>
               <span>I</span>
-              <span>O</span>
+              <span>E</span>
               <span>N</span>
+              <span>C</span>
+              <span>E</span>
+              <span>D</span>
+              <span> </span>
+              <span>T</span>
+              <span>E</span>
+              <span>A</span>
+              <span>M</span>
             </p>
 
             <p>
-              The world of social media is transitioning to video. CO-DA Studios
-              is here to make sure your brand is at the forefront of that
-              change.
+              Our team consists of experienced photographers and videographers who are well-versed in the art of visual storytelling. With a keen eye for detail, we capture every moment with precision.
             </p>
           </div>
           <div className={adcss.sec3InRight}>
@@ -203,6 +198,7 @@ export default function Adshootingpage() {
               height={1000}
               width={1000}
               src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2022/12/Video-2048x2048.jpg"
+              alt="ad shooting in Ranchi, Ranchi ad campaign, professional ad photography, creative ad visuals, photography in Ranchi, Ranchi photographers, professional photoshoots, memorable photography, creative photo sessions"
             />
           </div>
         </div>
@@ -213,28 +209,27 @@ export default function Adshootingpage() {
         <div className={adcss.secInner}>
           <div className={adcss.sec3InLeft}>
             <p>
-              <span>V</span>
-              <span>I</span>
-              <span>D</span>
+              <span>C</span>
+              <span>R</span>
               <span>E</span>
-              <span>O</span>
+              <span>A</span>
+              <span>T</span>
+              <span>I</span>
+              <span>V</span>
+              <span>E</span>
               <span> </span>
+              <span>A</span>
+              <span>P</span>
               <span>P</span>
               <span>R</span>
               <span>O</span>
-              <span>D</span>
-              <span>U</span>
+              <span>A</span>
               <span>C</span>
-              <span>T</span>
-              <span>I</span>
-              <span>O</span>
-              <span>N</span>
+              <span>H</span>
             </p>
 
             <p>
-              The world of social media is transitioning to video. CO-DA Studios
-              is here to make sure your brand is at the forefront of that
-              change.
+              We take a creative approach to every project, ensuring that each ad or photograph is unique and tailored to your specific needs. Our innovative ideas bring out the best in your brand.
             </p>
           </div>
           <div className={adcss.sec3InRight}>
@@ -242,6 +237,7 @@ export default function Adshootingpage() {
               height={1000}
               width={1000}
               src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2022/12/Video-2048x2048.jpg"
+              alt="ad shooting in Ranchi, Ranchi ad campaign, professional ad photography, creative ad visuals, photography in Ranchi, Ranchi photographers, professional photoshoots, memorable photography, creative photo sessions"
             />
           </div>
         </div>
@@ -250,28 +246,25 @@ export default function Adshootingpage() {
         <div className={adcss.secInner}>
           <div className={adcss.sec3InLeft}>
             <p>
-              <span>V</span>
-              <span>I</span>
-              <span>D</span>
-              <span>E</span>
-              <span>O</span>
-              <span> </span>
-              <span>P</span>
-              <span>R</span>
-              <span>O</span>
-              <span>D</span>
-              <span>U</span>
-              <span>C</span>
               <span>T</span>
               <span>I</span>
-              <span>O</span>
-              <span>N</span>
+              <span>M</span>
+              <span>E</span>
+              <span>L</span>
+              <span>Y</span>
+              <span> </span>
+              <span>D</span>
+              <span>E</span>
+              <span>L</span>
+              <span>I</span>
+              <span>V</span>
+              <span>E</span>
+              <span>R</span>
+              <span>Y</span>
             </p>
 
             <p>
-              The world of social media is transitioning to video. CO-DA Studios
-              is here to make sure your brand is at the forefront of that
-              change.
+              We value your time, and we are committed to delivering our work on schedule without compromising on quality.
             </p>
           </div>
           <div className={adcss.sec3InRight}>
@@ -279,6 +272,7 @@ export default function Adshootingpage() {
               height={1000}
               width={1000}
               src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2022/12/Video-2048x2048.jpg"
+              alt="ad shooting in Ranchi, Ranchi ad campaign, professional ad photography, creative ad visuals, photography in Ranchi, Ranchi photographers, professional photoshoots, memorable photography, creative photo sessions"
             />
           </div>
         </div>
@@ -286,13 +280,10 @@ export default function Adshootingpage() {
       <section className={adcss.section6}>
         <div className={adcss.sec6Inner}>
           <div className={adcss.sec6Text}>
-            <h2>We capture your vision</h2>
+            <h2>Why Choose Us?</h2>
             <p>
-              Looking to shoot a big-budget commercial or maybe just a short
-              social video? CO-DA Studios has you covered with our team of
-              talented creatives, and film industry professionals to take on
-              productions of any size. We are the creative team you partner with
-              to make your vision a reality.
+              Our gear, combined with our skills, guarantees professional results.
+              We understand that every project is different. That&apos;s why we offer customizable packages that fit your requirements and budget perfectly. We use the latest photography and videography equipment to ensure high-quality output.
             </p>
           </div>
           <div className={adcss.imagesbox}>
@@ -301,32 +292,33 @@ export default function Adshootingpage() {
                 <h2>Animation</h2>
                 <p>Seamlessly looping content</p>
               </div>
-              <Image height={1000} width={1000} src="/2.jpg" />
+              <Image height={1000} width={1000} src="/2.jpg" alt="ad shooting in Ranchi, Ranchi ad campaign, professional ad photography, creative ad visuals, photography in Ranchi, Ranchi photographers, professional photoshoots, memorable photography, creative photo sessions" />
             </div>
             <div className={adcss.imagebox}>
               <div className={adcss.imageboxtext}>
                 <h2>Animation</h2>
                 <p>Seamlessly looping content</p>
               </div>
-              <Image height={1000} width={1000} src="/3.jpg" />
+              <Image height={1000} width={1000} src="/3.jpg" alt="ad shooting in Ranchi, Ranchi ad campaign, professional ad photography, creative ad visuals, photography in Ranchi, Ranchi photographers, professional photoshoots, memorable photography, creative photo sessions" />
             </div>
             <div className={adcss.imagebox}>
               <div className={adcss.imageboxtext}>
                 <h2>Animation</h2>
                 <p>Seamlessly looping content</p>
               </div>
-              <Image height={1000} width={1000} src="/4.jpg" />
+              <Image height={1000} width={1000} src="/4.jpg" alt="ad shooting in Ranchi, Ranchi ad campaign, professional ad photography, creative ad visuals, photography in Ranchi, Ranchi photographers, professional photoshoots, memorable photography, creative photo sessions" />
             </div>
           </div>
         </div>
       </section>
       <section className={adcss.section7}>
-        <h2>Talk to a creative</h2>
+        <h2>Contact Us</h2>
         <div className={adcss.sec7ImageBox}>
           <Image
             height={1000}
             width={1000}
             src="https://i0.wp.com/co-dastudios.com/wp-content/uploads/2023/01/Studios-SubHeader-copy-22-2.jpg"
+            alt="ad shooting in Ranchi, Ranchi ad campaign, professional ad photography, creative ad visuals, photography in Ranchi, Ranchi photographers, professional photoshoots, memorable photography, creative photo sessions"
           />
           <h2>Have a project in mind?</h2>
         </div>
