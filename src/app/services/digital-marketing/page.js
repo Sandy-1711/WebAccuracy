@@ -4,8 +4,13 @@ import Button from "./Button";
 import DigitalNav from "./DigitalNav";
 import digitalcss from './digitalcss.module.css'
 import LocoScroll from "../../../../hooks/LocoScroll";
+import { useEffect, useLayoutEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 export default function DigitalMarketing() {
     LocoScroll(true);
+
+
     return (<div>
         {/* <DigitalNav /> */}
         <main className={digitalcss.main}>
@@ -29,18 +34,18 @@ export default function DigitalMarketing() {
                     <p>AS SEEN IN</p>
                     <div className={digitalcss.carousalContainer}>
                         <div className={digitalcss.carousalImagesContainer}>
-                            <img src="/1.jpg" />
-                            <img src="/2.jpg" />
-                            <img src="/3.jpg" />
-                            <img src="/4.jpg" />
-                            <img src="/5.jpg" />
+                            <img src="/1.jpg" alt="1" />
+                            <img src="/2.jpg" alt="1" />
+                            <img src="/3.jpg" alt="1" />
+                            <img src="/4.jpg" alt="1" />
+                            <img src="/5.jpg" alt="1" />
                         </div>
                         <div className={digitalcss.carousalImagesContainer}>
-                            <img src="/1.jpg" />
-                            <img src="/2.jpg" />
-                            <img src="/3.jpg" />
-                            <img src="/4.jpg" />
-                            <img src="/5.jpg" />
+                            <img src="/1.jpg" alt="1" />
+                            <img src="/2.jpg" alt="1" />
+                            <img src="/3.jpg" alt="1" />
+                            <img src="/4.jpg" alt="1" />
+                            <img src="/5.jpg" alt="1" />
                         </div>
                     </div>
 

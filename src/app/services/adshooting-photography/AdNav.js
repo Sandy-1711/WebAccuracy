@@ -81,10 +81,10 @@ export default function AdNav() {
                     </div>
                 </li>
                 <li>
-                    <a>Our Clients</a>
+                    <a href='our-clients'>Our Clients</a>
                 </li>
                 <li>
-                    <a>Pricing</a>
+                    <a href='/'>Pricing</a>
                 </li>
                 {/* <li>
                 <a>Get In Touch</a>
@@ -124,7 +124,7 @@ export default function AdNav() {
                 </li>
                 <li className={navcss.servicestab}>
 
-                    <a>Services <i class="fa-solid fa-chevron-right"></i></a>
+                    <span>Services</span>
 
                     <div className={navcss.submenu}>
                         <ul>
@@ -138,9 +138,8 @@ export default function AdNav() {
                 </li>
 
                 <li className={navcss.trendstab}>
-                    <a>Web 3.0 & trends <i class="fa-solid fa-chevron-right"></i></a>
+                    <span>Web 3.0 & trends</span>
                     <div className={navcss.submenu}>
-
                         <ul>
                             <li><a href='/trends/ai-ml'>AI/ML</a></li>
                             <li><a href='/trends/blockchain'>Blockchain</a></li>
@@ -148,7 +147,7 @@ export default function AdNav() {
                     </div>
                 </li>
                 <li className={navcss.threedtechtab}>
-                    <a>3D reality <i class="fa-solid fa-chevron-right"></i></a>
+                    <span>3D reality</span>
                     <div className={navcss.submenu}>
                         <ul>
                             <li><a href='/3dtech/ar-vr-mr'>AR/VR/MR</a></li>
@@ -157,14 +156,12 @@ export default function AdNav() {
                     </div>
                 </li>
                 <li>
-                    <a>Our Clients</a>
+                    <a href='/our-clients'>Our Clients</a>
                 </li>
                 <li>
-                    <a>Pricing</a>
+                    <a href='/'>Pricing</a>
                 </li>
-                <li>
-                    <a>Get In Touch</a>
-                </li>
+               
 
             </ul>
         </div>

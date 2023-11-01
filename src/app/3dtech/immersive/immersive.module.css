@@ -4,6 +4,10 @@
     background-color: black;
     position: relative;
     overflow: hidden;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page {
@@ -11,6 +15,7 @@
     width: 1200px;
     margin: auto;
     position: relative;
+    
 }
 
 .audios {
@@ -116,8 +121,15 @@
     color: white;
     transform: translate(-50%, -50%);
     font-size: 50px;
+    user-select: none;
+    /* transform-style: preserve-3d; */
+    
 }
 
+.heading h2{
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(40deg);
+}
 .overlay {
     height: 100vh;
     width: 100vw;
@@ -296,7 +308,26 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
+.grid{
+    height: 100vh;
+    display: grid;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    grid-template-columns: repeat(25,50px);
+    /* gap: 2px; */
+    transform:translate(-50%,-50%)  perspective(1500px) rotateX(50deg) ;
+    transform-style: preserve-3d;
+    transform-origin: center;
+}
+.grid line{
+    /* stroke:#ddd; */
+    /* background-color: #0ff; */
+    border: 1px solid rgba(56, 54, 54, 0.39);
+   height: 100px;
+   width: 100px;
 
+}
 .you span {
     position: absolute;
     color: greenyellow;
@@ -345,7 +376,7 @@
     }
 
     .top {
-        top: 30%;
+        top: 25%;
         height: 30px;
         width: 30px;
         background: radial-gradient(rgb(77, 77, 77), black);
@@ -358,7 +389,7 @@
     .bottom {
         height: 100px;
         width: 100px;
-        bottom: 10%;
+        bottom: 15%;
     }
 
     .line1 {
@@ -368,5 +399,14 @@
     .line2 {
         rotate: 5deg;
     }
+    .grid{
+        transform:translate(-50%,-50%)  perspective(1500px) rotateX(50deg) ;
 
+    }
+
+    .heading h2{
+        font-size: 40px;
+        top: 10%;
+        transform: perspective(1000px) rotateX(50deg);
+    }
 }

@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { createElement, useEffect, useState } from 'react'
 import audiocss from './immersive.module.css'
 import Nav from '@/app/components/Nav/nav';
 export default function Immersive() {
@@ -63,7 +63,13 @@ export default function Immersive() {
         }
 
     })
-
+    useEffect(function () {
+        var grid = document.querySelector(`.${audiocss.grid}`);
+        for (let i = 0; i < 300; i++) {
+            const line = document.createElement('line');
+            grid.appendChild(line);
+        }
+    }, [])
 
     return <div className={audiocss.pageWrapper}>
         <div className={audiocss.overlay}>
@@ -80,13 +86,16 @@ export default function Immersive() {
             {/* <p>For best experience,</p>
             <span>Please wear your headphones</span> */}
         </div>
-        <div className={audiocss.line1} />
-        <div className={audiocss.line2} />
-        <div className={audiocss.line3} />
-        <div className={audiocss.line4} />
+        {/* <div className={audiocss.line1} /> */}
+        {/* <div className={audiocss.line2} /> */}
+        {/* <div className={audiocss.line3} /> */}
+        {/* <div className={audiocss.line4} /> */}
+        <div className={audiocss.grid}>
+
+        </div>
         <div className={audiocss.page}>
             <div className={audiocss.heading}>
-                {/* <h2>Immersive Audio</h2> */}
+                <h2>Immersive Audio</h2>
             </div>
 
             <div className={audiocss.audios}>

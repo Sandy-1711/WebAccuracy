@@ -101,13 +101,13 @@ export default function Nav() {
             <div className={navcss.submenu}>
               <ul>
                 <a href="/3dtech/ar-vr-mr">AR/VR/MR</a>
-                <a href="/3dtech/immersive-audio">Immersive Audio</a>
-                <a href="/3dtech/immersive">Immersive Audio 1</a>
+                {/* <a href="/3dtech/immersive-audio">Immersive Audio</a> */}
+                <a href="/3dtech/immersive">Immersive Audio</a>
               </ul>
             </div>
           </li>
           <li>
-            <a href="/">Our Clients</a>
+            <a href="/our-clients">Our Clients</a>
           </li>
           <li>
             <a href="/">Pricing</a>
@@ -123,7 +123,7 @@ export default function Nav() {
           <Image
             height={100}
             width={100}
-            src="https://zimed.netlify.app/assets/images/logo-1-1.png"
+            src="/logo.png"
             alt="logo"
           />
         </div>
@@ -212,13 +212,13 @@ export default function Nav() {
                   <a href="/3dtech/ar-vr-mr">AR/VR/MR</a>
                 </li>
                 <li>
-                  <a href="/3dtech/immersive-audio">Immersive Audio</a>
+                  <a href="/3dtech/immersive">Immersive Audio</a>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <a href="/">Our Clients</a>
+            <a href="/our-clients">Our Clients</a>
           </li>
           <li>
             <a href="/">Pricing</a>
