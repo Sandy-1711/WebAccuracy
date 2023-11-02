@@ -160,7 +160,7 @@ export default function Adshootingpage() {
             Let&apos;s create amazing <br /> video content
           </h2>
           <p>
-            Are you looking for top-notch ad shooting and photography services in Ranchi? Look no further! Our team of skilled professionals is here to capture your vision and bring it to life through captivating visuals. Whether you're in need of stunning ad campaigns or memorable photography, we&apos;ve got you covered.
+            Are you looking for top-notch ad shooting and photography services in Ranchi? Look no further! Our team of skilled professionals is here to capture your vision and bring it to life through captivating visuals. Whether you&apos;re in need of stunning ad campaigns or memorable photography, we&apos;ve got you covered.
           </p>
           <Button text="Watch our reel " />
         </div>

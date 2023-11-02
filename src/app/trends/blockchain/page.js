@@ -21,7 +21,7 @@ export default function Blockchain() {
                     </h1>
                 </text>
                 <div className={blockcss.middleText}>
-                    <p>Welcome to Ranchi's Leading Web 3.0 and Blockchain Experts: Discover cutting-edge solutions at the forefront of technology with our team of skilled designers and developers in Ranchi.
+                    <p>Welcome to Ranchi&apos;s Leading Web 3.0 and Blockchain Experts: Discover cutting-edge solutions at the forefront of technology with our team of skilled designers and developers in Ranchi.
                     </p>
                     <button>Let&apos;s Connect</button>
                 </div>
@@ -71,7 +71,7 @@ export default function Blockchain() {
                     <div className={blockcss.card2Text}>
                         <h2>Seamless Integration</h2>
                         <p>
-                            Whether you're looking to integrate blockchain into your existing systems or create a brand-new Web 3.0 platform, our developers have the expertise to seamlessly integrate these technologies for optimal performance.
+                            Whether you&apos;re looking to integrate blockchain into your existing systems or create a brand-new Web 3.0 platform, our developers have the expertise to seamlessly integrate these technologies for optimal performance.
                         </p>
                         <button>Learn More <span>&rarr;</span></button>
                     </div>
