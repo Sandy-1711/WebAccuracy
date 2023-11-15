@@ -332,8 +332,10 @@
     top: 5%;
     left: 50%;
     transform: translate(-50%, 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .sec7ImageBox {
     width: 100%;
     height: 100%;

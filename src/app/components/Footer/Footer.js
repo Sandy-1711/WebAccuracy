@@ -4,22 +4,27 @@ import footercss from "./footer.module.css";
 import uiux from "../../services/ui-ux/uiux.module.css";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-export default function Footer({customstyle}) {
+export default function Footer({ customstyle }) {
   const data1 = [
     {
       title: "About",
+      link: '/about',
     },
     {
       title: "Sales Chat",
+      link: '/',
     },
     {
       title: "Our Clients",
+      link: '/our-clients',
     },
     {
       title: "Contact Us",
+      link: '/contact',
     },
     {
       title: "Services provided by web accuracy",
+      link: '/services',
     },
   ];
   const data2 = [
@@ -93,11 +98,11 @@ export default function Footer({customstyle}) {
             yguy fty dty ytdt gvagi vigaigvagi havgavigv agh
             <br /> ghav ghavhghghga hgagh
           </p>
-          <a style={style} href="/">
+          <a style={style} href="/contact">
             webaccuracy@gmail.com
           </a>
           <br />
-          <a style={style} href="/">
+          <a style={style} href="/contact">
             666 888 0000
           </a>
         </div>
@@ -116,7 +121,7 @@ export default function Footer({customstyle}) {
                 return (
                   <li style={style} className="footerli" key={index}>
                     <span>&#10148; </span>
-                    <a href="/">{el.title}</a>
+                    <a href={el?.link}>{el.title}</a>
                   </li>
                 );
               })}

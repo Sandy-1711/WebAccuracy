@@ -2,6 +2,7 @@ import Nav from '@/app/components/Nav/nav'
 import blockcss from './blockchain.module.css'
 import Footer from '@/app/components/Footer/Footer'
 import Image from 'next/image'
+import Contact from '@/app/components/Contact/Contact'
 export default function Blockchain() {
     var style={
         backgroundColor:'transparent',
@@ -76,7 +77,8 @@ export default function Blockchain() {
                         <button>Learn More <span>&rarr;</span></button>
                     </div>
                 </div>
-            </div>
+            </div>co
+            <Contact page={"blockchain"}/>
             <div className={blockcss.footer}>
                 <Footer customstyle={style} />
             </div>

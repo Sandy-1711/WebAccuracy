@@ -6,6 +6,7 @@ import { useLayoutEffect, useState } from 'react';
 import loadcss from './loading.module.css'
 import Nav from '@/app/components/Nav/nav';
 import Image from 'next/image';
+import Contact from '@/app/components/Contact/Contact';
 export default function AppDevPage() {
     const [width, setWidth] = useState();
     LocoScroll(true);
@@ -117,6 +118,7 @@ export default function AppDevPage() {
             </div>
         </section>
         <hr style={{ width: '100%', color: 'black' }} />
+        <Contact/>
         <Footer />
     </main>)
 }

@@ -10,6 +10,7 @@ import Dots from "./ar-vr-mr-components/Dots";
 import gsap, { ScrollTrigger } from "gsap/all";
 import Footer from "@/app/components/Footer/Footer";
 import Cards from "./ar-vr-mr-components/Cards";
+import Contact from "@/app/components/Contact/Contact";
 export default function Page() {
   useEffect(function () {
     const containers = document.querySelectorAll(`.${arvrmrcss.container}`);
@@ -250,6 +251,7 @@ export default function Page() {
             </div>
           </div>
         </section>
+        <Contact/>
         <Footer />
       </main>
     </>

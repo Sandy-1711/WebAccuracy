@@ -67,7 +67,7 @@ export default function Nav() {
 
         <ul className={navcss.menu}>
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
             <a href="/about">About</a>
@@ -117,7 +117,7 @@ export default function Nav() {
                     <a>Get In Touch</a>
                 </li> */}
         </ul>
-        <button>Get In Touch</button>
+        <Link href="/contact"><button>Get In Touch</button></Link>
       </div>
       <MenuMobile/>
     </nav>

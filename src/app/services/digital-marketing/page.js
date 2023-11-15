@@ -7,6 +7,7 @@ import LocoScroll from "../../../../hooks/LocoScroll";
 import { useEffect, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import Contact from "@/app/components/Contact/Contact";
 export default function DigitalMarketing() {
     LocoScroll(true);
 
@@ -137,120 +138,11 @@ export default function DigitalMarketing() {
                     </div>
 
                 </section>
-                {/* <section className={digitalcss.section4}>
-                <div className={digitalcss.sliderOuter}>
-
-                    <div className={digitalcss.sec4slider}>
-                        <span>build</span>
-                        <span>Painter</span>
-                        <span>carpenter</span>
-                        <span>Electrician</span>
-                        <span>Developer</span>
-                        <span>build</span>
-                        <span>builders</span>
-                        <span>Bricklayers</span>
-                        <span>Road</span>
-                        <span>Pavement</span>
-                    </div>
-                    <div className={digitalcss.sec4slider}>
-                        <span>build</span>
-                        <span>Painter</span>
-                        <span>carpenter</span>
-                        <span>Electrician</span>
-                        <span>Developer</span>
-                        <span>build</span>
-                        <span>builders</span>
-                        <span>Bricklayers</span>
-                        <span>Road</span>
-                        <span>Pavement</span>
-                    </div>
-
-                </div>
-            </section>
-            <section className={digitalcss.section5}>
-                <div className={digitalcss.sec5Outer}>
-
-                    <div className={digitalcss.sec5inner}>
-
-                        <p>STRATEGIC SEO SOLUTIONS FOR THE CONSTRUCTION INDUSTRY</p>
-                        <h2>Where others stop, let&apos;s get started: SEO for construction</h2>
-                        <p>At Canes Digital, we don&apos;t just focus on technical aspects and rankings. Our holistic SEO solutions are designed to noticeably increase your sales and conversions.</p>
-                        <div className={digitalcss.list}>
-
-                            <div className={digitalcss.listitem}>
-                                <span>01.</span>
-                                <div className={digitalcss.listtext}>
-
-                                    <h2>Local SEO</h2>
-                                    <p>Increase your local visibility and reach more customers in your area</p>
-
-                                </div>
-                                <div className={digitalcss.listimage}>
-                                    <img src="/customer.svg" />
-                                </div>
-                            </div>
-                            <div className={digitalcss.listitem}>
-                                <span>02.</span>
-                                <div className={digitalcss.listtext}>
-
-                                    <h2>Keyword Optimization</h2>
-                                    <p>Increase your local visibility and reach more customers in your area</p>
-
-                                </div>
-                                <div className={digitalcss.listimage}>
-                                    <img src="/customer.svg" />
-                                </div>
-                            </div>
-                            <div className={digitalcss.listitem}>
-                                <span>03.</span>
-                                <div className={digitalcss.listtext}>
-
-                                    <h2>Content Marketing</h2>
-                                    <p>Increase your local visibility and reach more customers in your area</p>
-
-                                </div>
-                                <div className={digitalcss.listimage}>
-                                    <img src="/customer.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={digitalcss.sec5inner2}>
-                        <p>THE PARTNER YOUR CONSTRUCTION COMPANY DESERVES</p>
-                        <h2>Why Canes Digital is the best choice for your construction industry</h2>
-                        <p>With years of expertise in the field of SEO and a large number of satisfied customers in the construction industry, we offer you tailor-made solutions for your challenges.</p>
-                        <div className={digitalcss.signature}>
-
-                            <img src="https://i0.wp.com/canesdigital.de/wp-content/uploads/2023/02/signature.png?w=230&ssl=1" alt="signature" />
-                        </div>
-                        <div className={digitalcss.button}>
-                            <Button text="Free SEO Consultation" tcolor="white" bcolor="black" />
-                        </div>
-                        <div className={digitalcss.numbers}>
-                            <div className={digitalcss.number}>
-                                <h2>50<span>+</span></h2>
-                                <p>Successful support for projects</p>
-                            </div>
-                            <div className={digitalcss.number}>
-                                <h2>250<span>%</span></h2>
-                                <p>Average increase in sales
-                                </p>
-                            </div>
-                            <div className={digitalcss.number}>
-                                <h2>1000<span>+</span></h2>
-                                <p>Generated leads</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className={digitalcss.section6}>
-                <img src="/2.jpg"/>
-            </section> */}
+                
             </div>
 
         </main>
+        <Contact/>
         <div className={digitalcss.section7}><Footer /></div>
     </div>)
 }

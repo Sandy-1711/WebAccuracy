@@ -5,6 +5,7 @@ import uiux from './uiux.module.css'
 import LocoScroll from '../../../../hooks/LocoScroll'
 import Nav from '@/app/components/Nav/nav'
 import Image from 'next/image'
+import Contact from '@/app/components/Contact/Contact'
 export default function UIUX() {
     // LocoScroll(true);
     return (<>
@@ -100,6 +101,7 @@ export default function UIUX() {
                     </div>
                 </div>
             </div>
+            <Contact/>
             <Footer />
         </div>
     </>

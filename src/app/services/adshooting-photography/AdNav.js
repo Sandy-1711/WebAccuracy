@@ -88,12 +88,13 @@ export default function AdNav() {
                 <li>
                     <a href='/disclaimer'>Disclaimer</a>
                 </li>
+
                 {/* <li>
                 <a>Get In Touch</a>
             </li> */}
 
             </ul>
-            <button>Get In Touch</button>
+            <Link href='/contact'><button>Get In Touch</button></Link>
         </div>
         {/* <div id="menumobile" className={navcss.menumobile}>
 
@@ -167,7 +168,7 @@ export default function AdNav() {
 
             </ul>
         </div> */}
-        <MenuMobile/>
+        <MenuMobile />
     </nav>
     )
 }

@@ -5,6 +5,7 @@ import Footer from '../components/Footer/Footer'
 import Link from 'next/link'
 import Video from './components/Video'
 import Cursor from './components/Cursor'
+import Contact from '../components/Contact/Contact'
 export default function AboutPage() {
     return (<div className={aboutcss.aboutPage}>
         <Nav />
@@ -178,6 +179,7 @@ export default function AboutPage() {
                 </div>
             </div>
         </div>
+        <Contact/>
         <Footer />
     </div>)
 }

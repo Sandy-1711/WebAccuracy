@@ -130,7 +130,7 @@ export default function DigitalNav() {
             </li> */}
 
             </ul>
-            <button id='button'>Get In Touch</button>
+            <a href='/contact'> <button id='button'>Get In Touch</button></a>
         </div>
         {/* <div id="menumobile" className={navcss.menumobile}>
 
@@ -207,7 +207,7 @@ export default function DigitalNav() {
 
             </ul>
         </div> */}
-        <MenuMobile/>
+        <MenuMobile />
     </nav>
     )
 }

@@ -3,7 +3,46 @@ import Nav from "@/app/components/Nav/nav";
 import bpocss from './bpo.module.css'
 import LocoScroll from "../../../../hooks/LocoScroll";
 import Footer from "@/app/components/Footer/Footer";
+import Contact from "@/app/components/Contact/Contact";
 export default function Page() {
+    const data = [
+        {
+            id: 0,
+            imgsrc: '/1.jpg',
+            textHeading: 'BPO',
+            textContent: 'lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg   ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd',
+        },
+        {
+            id: 1,
+            imgsrc: '/2.jpg',
+            textHeading: 'BPO',
+            textContent: 'lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg   ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd',
+        },
+        {
+            id: 2,
+            imgsrc: '/3.jpg',
+            textHeading: 'BPO',
+            textContent: 'lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg   ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd',
+        },
+        {
+            id: 3,
+            imgsrc: '/4.jpg',
+            textHeading: 'BPO',
+            textContent: 'lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg   ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd',
+        },
+        {
+            id: 4,
+            imgsrc: '/5.jpg',
+            textHeading: 'BPO',
+            textContent: 'lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg   ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd',
+        },
+        {
+            id: 5,
+            imgsrc: '/1.jpg',
+            textHeading: 'BPO',
+            textContent: 'lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg   ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd',
+        },
+    ]
     LocoScroll(true);
     return (<>
         <Nav />
@@ -14,7 +53,6 @@ export default function Page() {
                     <h2>Welcome
                         to the premier destination for
                         Digital Marketing and Marketers in <span>Ranchi</span>!</h2>
-                    {/* <p>Welcome to the best bpo service in all over Ranchi, at a price that is durt in your palmes.</p> */}
                     <button><span>Start Now</span></button>
                 </text>
             </section>
@@ -24,44 +62,32 @@ export default function Page() {
             <section className={bpocss.section2}>
                 <div className={bpocss.sec2Wrapper}>
 
-                    <div className={bpocss.sec2Inside}>
+                    {data.map(function (item) {
+                        return (
 
-                        <div className={bpocss.left}>
-                            <img src="/1.jpg" />
-                        </div>
-                        <div className={bpocss.right}>
-                            <text>
-                                <h2>BPO</h2>
-                                <p>lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg   ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd </p></text>
-                        </div>
-                    </div>
-                    <div className={bpocss.sec2Inside}>
+                            <div key={item.id} className={bpocss.sec2Inside}>
 
-                        <div className={bpocss.left + ' ' + bpocss.second}>
-                            <img src="/2.jpg" />
-                        </div>
-                        <div className={bpocss.right + ' ' + bpocss.rsecond}>
-                            <text>
-                                <h2>BPO</h2>
-                                <p>lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg  ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd </p></text>
-                        </div>
-                    </div>
-                    <div className={bpocss.sec2Inside}>
 
-                        <div className={bpocss.left}>
-                            <img src="/3.jpg" />
-                        </div>
-                        <div className={bpocss.right}>
-                            <text>
-                                <h2>BPO</h2>
-                                <p>lorem ipsum uhiu dua gdadgasdga dgisdg fiafg gaufo gufsfsaud fusdfsdudfvdvfjsdvf sd gg  ugsdfusd g avfu duf vsad u fd uasdu fdsfsgf  bfdjf jhsbfurgu dhbfhvbsdu usdbuauu dsvurfy ufvsdvb dshbvds uvjhdvbuysgfyuesv hbvhdsvd v dsfhsidaiod vbdbsdhfiusd </p></text>
-                        </div>
-                    </div>
+                                <div className={bpocss.left + ' ' + (item.id % 2 !== 0 && bpocss.second)}>
+                                    <img src={item?.imgsrc} alt={item?.imgalt} />
+                                </div>
+
+                                <div className={bpocss.right + ' ' + (item.id % 2 !== 0 && bpocss.rsecond)}>
+                                    <text>
+                                        <h2>{item.textHeading}</h2>
+                                        <p>{item.textContent}</p>
+                                    </text>
+                                </div>
+                            </div>
+                        )
+
+                    })}
 
                 </div>
             </section>
 
         </main>
+        <Contact/>
         <Footer />
     </>)
 }
