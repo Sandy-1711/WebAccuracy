@@ -1,0 +1,27 @@
+.main{
+    height: 100vh;
+    /* delete height after production */
+    width: 100vw;
+    background: #0E0E0E;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(49.05% 108.02% at 97.4% 84.07%,rgba(55,23,255,.6) 0,rgba(55,23,255,0) 100%),radial-gradient(44.95% 80.77% at 45.94% 11.74%,rgba(22,242,117,.5) 0,rgba(22,242,117,0) 100%),#0e0e0e;
+}
+.greenGradient{
+    position: absolute;
+    z-index: 0;
+    top: -1000px;
+    left: -200px;
+    width: 2000px;
+    height: 2000px;
+    background: radial-gradient(circle,#12753D 0%,#0e0e0e00 50%);
+}
+.blueGradient{
+    z-index: 0;
+    position: absolute;
+    bottom: -1000px;
+    right: -500px;
+    width: 2000px;
+    height: 2000px;
+    background: radial-gradient(circle,#251399 0%,rgba(14, 14, 14, 0) 50%);
+}

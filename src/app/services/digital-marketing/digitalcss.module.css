@@ -686,4 +686,15 @@
         padding: 10px 20px;
         margin-top: 10px;
     } */
+    .section1{
+        height: 40vh;
+    }
+    .text{
+        font-size:22px;
+    }
+    .buttondiv button{
+        height: 40px;
+        padding: 0 15px;
+        font-size: 18px;
+    }
 }

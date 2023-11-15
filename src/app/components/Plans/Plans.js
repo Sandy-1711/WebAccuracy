@@ -42,7 +42,7 @@ export default function Plans() {
             ]
         },
         {
-            imgsrc: '/cube (1).png',
+            imgsrc: '/cube1.png',
             plan: 'Business Pro',
             price: '12,999/-',
             features: [
@@ -191,7 +191,7 @@ export default function Plans() {
             ]
         },
         {
-            imgsrc: '/octahedron (1).png',
+            imgsrc: '/octahedron1.png',
             plan: 'Go Premium',
             price: '49,999/-',
             features: [

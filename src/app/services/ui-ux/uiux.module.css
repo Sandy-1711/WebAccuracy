@@ -482,6 +482,7 @@
     }
 
     .hero {
+        height: 60vh;
         background: url('/1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -512,6 +513,8 @@
     .carousel::after {
         width: 100px;
         background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.266));
-
+    }
+    .carouselslider{
+        animation: 15s slide infinite linear;
     }
 }

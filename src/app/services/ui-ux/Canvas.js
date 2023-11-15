@@ -8,21 +8,9 @@ export default function Canvas() {
     const canvasRef = useRef(null);
     useEffect(() => {
         webGLFluidEnhanced.simulation(canvasRef.current, {
-            // SIM_RESOLUTION: 64,
-            // PRESSURE: 0.8,
-            // SUNRAYS: false,
-            // SPLAT_RADIUS: 0.5,
-            // START_SPLATS: 10,
-            // DENSITY_DISSIPATION: 2,
-            // CURL: 4,
-            // BLOOM:true,
-            // COLORFUL:true,
-            // VELOCITY_DISSIPATION: 0,
-            // INITIAL: false,
-            // COLOR_PALETTE: ['#0000ff', '#111111', '#1d1d1d', '#eaeaea', '#4dba87', '#FCD702', '#ff6347'],
-            // SIM_RESOLUTION: 128,
-            DYE_RESOLUTION: 1024,
-            CAPTURE_RESOLUTION: 512,
+            
+            DYE_RESOLUTION: 720,
+            CAPTURE_RESOLUTION: 100,
             DENSITY_DISSIPATION: 1,
             VELOCITY_DISSIPATION: 0.2,
             PRESSURE: 0.8,

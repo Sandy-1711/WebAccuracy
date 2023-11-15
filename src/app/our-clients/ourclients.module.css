@@ -1,6 +1,6 @@
 .clientsPage {
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     background-color: transparent;
     transform-style: preserve-3d;
     display: flex;
@@ -73,9 +73,9 @@
 }
 
 .clientsBox {
-    width: 200px;
+    width: 20vh;
     margin: auto;
-    height: 200px;
+    height: 20vh;
     transform-style: preserve-3d;
     transition: 1.5s;
     transform: perspective(1000px) rotateY(0deg);
@@ -84,26 +84,6 @@
 
 }
 
-@keyframes come {
-    from {
-        transform: perspective(600px) rotateY(0);
-    }
-
-    to {
-        transform: perspective(1000px) rotateY(0);
-    }
-}
-
-@keyframes revolve {
-    from {
-        transform: perspective(1000px) rotateY(0deg);
-
-    }
-
-    to {
-        transform: perspective(1000px) rotateY(360deg);
-    }
-}
 
 .clientsBox .imageBox {
     width: 100%;
@@ -119,7 +99,12 @@
     /* border: 5px solid grey; */
     /* border-bottom: 0; */
 }
+/* @media screen and (height<500px) {
+    .clientsBox .imageBox{
+        transform: rotateY(calc(var(--i) * 40deg)) translateZ(200px);
 
+    }
+} */
 .imageBox img {
     transition: 200ms ease-in-out;
     border-radius: 5px;
@@ -139,8 +124,8 @@
 
 @media screen and (width<1200px) {
     .clientsBox {
-        height: 200px;
-        width: 200px;
+        height: 20vh;
+        width: 20vh;
     }
 
     .clientsBox .imageBox {
@@ -179,7 +164,11 @@
 
     }
 }
-
+@media screen and (height<800px) {
+    .clientsBox .imageBox{
+        transform: rotateY(calc(var(--i) * 40deg)) translateZ(200px);
+    }
+}
 @media screen and (width<480px) {
     .nav {
         height: 50px;

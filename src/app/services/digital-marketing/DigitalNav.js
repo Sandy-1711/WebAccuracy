@@ -3,6 +3,7 @@ import navcss from './navcss.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect } from 'react';
+import MenuMobile from '@/app/components/MobileMenu/MenuMobile';
 export default function DigitalNav() {
     useEffect(function () {
 
@@ -119,10 +120,10 @@ export default function DigitalNav() {
                     </div>
                 </li>
                 <li>
-                    <a>Our Clients</a>
+                    <a href='/our-clients'>Our Clients</a>
                 </li>
                 <li>
-                    <a>Pricing</a>
+                    <a href='/disclaimer'>Disclaimer</a>
                 </li>
                 {/* <li>
                 <a>Get In Touch</a>
@@ -131,7 +132,7 @@ export default function DigitalNav() {
             </ul>
             <button id='button'>Get In Touch</button>
         </div>
-        <div id="menumobile" className={navcss.menumobile}>
+        {/* <div id="menumobile" className={navcss.menumobile}>
 
             <div className={navcss.logomobile}><Image height={100} width={100} src='/logo.png' alt="logo" /></div>
             <div className={navcss.menuicon}>
@@ -205,7 +206,8 @@ export default function DigitalNav() {
                 </li>
 
             </ul>
-        </div>
+        </div> */}
+        <MenuMobile/>
     </nav>
     )
 }

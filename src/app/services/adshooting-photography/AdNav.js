@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import MenuMobile from '@/app/components/MobileMenu/MenuMobile';
 export default function AdNav() {
     const path = usePathname();
     useEffect(function () {
@@ -51,6 +52,7 @@ export default function AdNav() {
                         <ul>
                             <a href="/services/app-dev">App Development</a>
                             <a href="/services/web-dev">Web Development</a>
+                            <a href='/services/bpo'>BPO</a>
                         </ul>
                         <ul>
 
@@ -81,10 +83,10 @@ export default function AdNav() {
                     </div>
                 </li>
                 <li>
-                    <a href='our-clients'>Our Clients</a>
+                    <a href='/our-clients'>Our Clients</a>
                 </li>
                 <li>
-                    <a href='/'>Pricing</a>
+                    <a href='/disclaimer'>Disclaimer</a>
                 </li>
                 {/* <li>
                 <a>Get In Touch</a>
@@ -93,7 +95,7 @@ export default function AdNav() {
             </ul>
             <button>Get In Touch</button>
         </div>
-        <div id="menumobile" className={navcss.menumobile}>
+        {/* <div id="menumobile" className={navcss.menumobile}>
 
             <div className={navcss.logomobile}><Image height={100} width={100} src='https://zimed.netlify.app/assets/images/logo-1-1.png' alt="logo" /></div>
             <div className={navcss.menuicon}>
@@ -159,12 +161,13 @@ export default function AdNav() {
                     <a href='/our-clients'>Our Clients</a>
                 </li>
                 <li>
-                    <a href='/'>Pricing</a>
+                    <a href='/disclaimer'>Disclaimer</a>
                 </li>
                
 
             </ul>
-        </div>
+        </div> */}
+        <MenuMobile/>
     </nav>
     )
 }

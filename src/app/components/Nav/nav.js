@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import uiux from "../../services/ui-ux/uiux.module.css";
+import MenuMobile from "../MobileMenu/MenuMobile";
 export default function Nav() {
   const [color, setColor] = useState("");
   const [textColor, setTextColor] = useState("");
@@ -20,7 +21,7 @@ export default function Nav() {
       //         document.getElementById("menumobile").style.transform = "translate(-50dvw)"
       //     }
       // })
-    //   console.log(window.location.pathname);
+      //   console.log(window.location.pathname);
       const path = window.location.pathname;
 
       if (path === "/services/app-dev") {
@@ -110,7 +111,7 @@ export default function Nav() {
             <a href="/our-clients">Our Clients</a>
           </li>
           <li>
-            <a href="/">Pricing</a>
+            <a href="/disclaimer">Disclaimer</a>
           </li>
           {/* <li>
                     <a>Get In Touch</a>
@@ -118,113 +119,7 @@ export default function Nav() {
         </ul>
         <button>Get In Touch</button>
       </div>
-      <div id="menumobile" className={navcss.menumobile}>
-        <div className={navcss.logomobile}>
-          <Image
-            height={100}
-            width={100}
-            src="/logo.png"
-            alt="logo"
-          />
-        </div>
-        <div className={navcss.menuicon}>
-          <img
-            className={navcss.menubar}
-            id="menubar"
-            onClick={function () {
-              document.getElementById("menuclose").style.display = "block";
-              document.getElementById("menubar").style.display = "none";
-              document.getElementById("menumobile").style.transform =
-                "translate(0)";
-            }}
-            src="/menu.svg"
-            alt="menu"
-          />
-        </div>
-        <div className={navcss.menuicon}>
-          <img
-            id="menuclose"
-            className={navcss.menuclose}
-            onClick={function () {
-              document.getElementById("menubar").style.display = "block";
-              document.getElementById("menuclose").style.display = "none";
-              document.getElementById("menumobile").style.transform =
-                "translate(-50dvw)";
-            }}
-            src="/close.svg"
-            alt="close"
-          />
-        </div>
-
-        <ul className={navcss.menulist}>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li className={navcss.servicestab}>
-            <span>
-              Services
-              {/* <i class="fa-solid fa-chevron-right"></i> */}
-            </span>
-
-            <div className={navcss.submenu}>
-              <ul>
-                <li>
-                  <a href="/services/app-dev">App Development</a>
-                </li>
-                <li>
-                  <a href="/services/web-dev">Web Development</a>
-                </li>
-                <li>
-                  <a href="/services/ui-ux">UI/UX Design</a>
-                </li>
-                <a href="/services/bpo">BPO</a>
-                <li>
-                  <a href="/services/digital-marketing">Digital Marketing</a>
-                </li>
-                <li>
-                  <a href="/services/adshooting-photography">Ad/Photography</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li className={navcss.trendstab}>
-            <span>Web 3.0 & trends </span>
-            <div className={navcss.submenu}>
-              <ul>
-                <li>
-                  <a href="/trends/ai-ml">AI/ML</a>
-                </li>
-                <li>
-                  <a href="/trends/blockchain">Blockchain</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li className={navcss.threedtechtab}>
-            <span>3D reality</span>
-            <div className={navcss.submenu}>
-              <ul>
-                <li>
-                  <a href="/3dtech/ar-vr-mr">AR/VR/MR</a>
-                </li>
-                <li>
-                  <a href="/3dtech/immersive">Immersive Audio</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="/our-clients">Our Clients</a>
-          </li>
-          <li>
-            <a href="/">Pricing</a>
-          </li>
-        </ul>
-      </div>
+      <MenuMobile/>
     </nav>
   );
 }
