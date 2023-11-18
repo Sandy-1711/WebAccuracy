@@ -7,21 +7,16 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import uiux from "../../services/ui-ux/uiux.module.css";
 import MenuMobile from "../MobileMenu/MenuMobile";
+import { useMediaQuery } from "react-responsive";
 export default function Nav() {
+  const isMobile=useMediaQuery({
+    query:'(max-width:500px)'
+  })
   const [color, setColor] = useState("");
   const [textColor, setTextColor] = useState("");
   useEffect(
     function () {
-      // window.addEventListener('mousemove', function (e) {
-      //     const mousePosition = e.clientX / window.innerWidth * 100;
-      //     console.log(mousePosition);
-      //     if (mousePosition > 55) {
-      //         document.getElementById("menubar").style.display = "block";
-      //         document.getElementById("menuclose").style.display = "none";
-      //         document.getElementById("menumobile").style.transform = "translate(-50dvw)"
-      //     }
-      // })
-      //   console.log(window.location.pathname);
+      
       const path = window.location.pathname;
 
       if (path === "/services/app-dev") {
@@ -35,7 +30,7 @@ export default function Nav() {
       } else {
         setColor("#272839");
       }
-      if (window.innerWidth > 900) {
+      if (!isMobile) {
         gsap.registerPlugin(ScrollTrigger);
         var tl = gsap.timeline();
         tl.to("#nav", {
@@ -117,7 +112,7 @@ export default function Nav() {
                     <a>Get In Touch</a>
                 </li> */}
         </ul>
-        <Link href="/contact"><button>Get In Touch</button></Link>
+        <Link href="/contact"><button className={navcss.button}>Get In Touch</button></Link>
       </div>
       <MenuMobile/>
     </nav>

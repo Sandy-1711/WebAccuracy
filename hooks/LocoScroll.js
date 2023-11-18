@@ -15,7 +15,7 @@ export default function LocoScroll(start) {
           const scroll = new locoScroll({
             el: document.querySelector("[data-scroll-container]"),
             smooth: true,
-            multiplier: 1,
+            multiplier: 2,
             smartphone: {
               smooth: true,
               // direction: 'vertical',
@@ -24,7 +24,7 @@ export default function LocoScroll(start) {
             mobile: {
               breakpoint: 0,
               smooth: true,
-              multiplier: 0.5,
+              multiplier: 1,
               class: "is-reveal",
             },
             lenisOptions: {
@@ -37,7 +37,7 @@ export default function LocoScroll(start) {
               smoothWheel: true,
               smoothTouch: false,
               wheelMultiplier: 0.8,
-              touchMultiplier: 0.8,
+              touchMultiplier: 2,
               normalizeWheel: true,
               easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
             },

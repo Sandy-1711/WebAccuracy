@@ -311,6 +311,26 @@ export default function Adshootingpage() {
           </div>
         </div>
       </section>
+      <section className={adcss.photographers}>
+        <div>
+          <h1>Our Photographers</h1>
+        </div>
+        <div className={adcss.cards}>
+          <div className={adcss.card}>
+            <img src="/Photographer1.jpg" />
+            <a href="https://youtu.be/Kg_Hq-oY1HY" target="blank"><button>SHOW</button></a>
+          </div>
+          <div className={adcss.card}>
+            <img src="/Photographer2.jpg" />
+            <a href="https://youtu.be/7IdyNfHR9vw" target="blank"><button>SHOW</button></a>
+          </div>
+          <div className={adcss.card}>
+            <img src="/Photographer3.jpg" />
+            
+            <a href="https://youtu.be/vyAMAhLW99A" target="blank"><button>SHOW</button></a>
+          </div>
+        </div>
+      </section>
       <section className={adcss.section7}>
         <h2>Contact Us</h2>
         <div className={adcss.sec7ImageBox}>

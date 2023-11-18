@@ -4,10 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import MenuMobile from '@/app/components/MobileMenu/MenuMobile';
+import { useMediaQuery } from 'react-responsive';
 export default function DigitalNav() {
+    const isLaptop=useMediaQuery({
+        query:'(max-width:1200px)'
+    })
     useEffect(function () {
 
-        if (window.location.pathname === '/services/digital-marketing' && window.innerWidth > 1200) {
+        if (window.location.pathname === '/services/digital-marketing' && !isLaptop) {
 
 
             window.addEventListener('scroll', function (e) {
@@ -55,7 +59,7 @@ export default function DigitalNav() {
                     })
                 }
                 var scrollingUp = this.oldScroll > this.scrollY;
-                if (nav && window.innerWidth > 1200) {
+                if (nav && !isLaptop) {
 
                     if (!scrollingUp) {
                         nav.style.top = '-12vh';

@@ -5,12 +5,16 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import MenuMobile from '@/app/components/MobileMenu/MenuMobile';
+import { useMediaQuery } from 'react-responsive';
 export default function AdNav() {
     const path = usePathname();
+    const isLaptop=useMediaQuery({
+        query:'(max-width:1200px)'
+    })
     useEffect(function () {
         console.log(path);
 
-        if (path === '/services/adshooting-photography' && window.innerWidth > 1200) {
+        if (path === '/services/adshooting-photography' && !isLaptop) {
 
             window.addEventListener('scroll', function (e) {
                 // print "false" if direction is down and "true" if up
@@ -94,7 +98,7 @@ export default function AdNav() {
             </li> */}
 
             </ul>
-            <Link href='/contact'><button>Get In Touch</button></Link>
+            <Link href='/contact'><button className={navcss.button}>Get In Touch</button></Link>
         </div>
         {/* <div id="menumobile" className={navcss.menumobile}>
 

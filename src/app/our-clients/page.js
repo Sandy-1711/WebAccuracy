@@ -2,9 +2,12 @@
 import { useEffect, useState } from 'react'
 import ourclientscss from './ourclients.module.css'
 import gsap from 'gsap'
+import { useMediaQuery } from 'react-responsive';
 export default function ClientsPage() {
     const [angle, setAngle] = useState(0);
-
+    const isMobile = useMediaQuery({
+        query: '(max-width<480px)'
+    })
     // var angle = 0;
     return (
         <div className={ourclientscss.clientsPage}>
@@ -44,7 +47,7 @@ export default function ClientsPage() {
                 <div className={ourclientscss.btn + ' ' + ourclientscss.prev}
                     onClick={function () {
                         var box = document.querySelector(`.${ourclientscss.clientsBox}`);
-                        if (window.innerWidth > 480) {
+                        if (!isMobile) {
                             box.style = `transform:perspective(1000px) rotateY(${angle - 40}deg)`;
 
                         }
@@ -59,7 +62,7 @@ export default function ClientsPage() {
                     var box = document.querySelector(`.${ourclientscss.clientsBox}`);
                     // box.style = `transform:perspective(1000px) rotateY(${angle + 40}deg)`;
                     // angle += 40;
-                    if (window.innerWidth > 480) {
+                    if (!isMobile) {
                         box.style = `transform:perspective(1000px) rotateY(${angle + 40}deg)`;
 
                     }

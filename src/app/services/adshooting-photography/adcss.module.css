@@ -336,6 +336,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .sec7ImageBox {
     width: 100%;
     height: 100%;
@@ -368,6 +369,70 @@
     z-index: -4;
     bottom: 0;
     left: 0;
+}
+
+.photographers {
+    height: max-content;
+    padding: 5vw 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.photographers h1 {
+
+    font-size: 50px;
+    font-family: norwester;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    height: calc(1200px / 2);
+    width: calc(1200px / 3 - 20px);
+    position: relative;
+    background: linear-gradient(white, rgba(0, 0, 0, 0.696));
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* filter: brightness(0.5); */
+    transition: .2s ease-in-out;
+    mix-blend-mode: multiply;
+}
+
+.card a button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    z-index: 1;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5vw 1.5vw;
+    font-size: 1.2vw;
+    transition: .1s ease-in-out;
+}
+
+.card button:hover {
+    color: black;
+    background: white;
+    
 }
 
 @media screen and (width<1200px) {
@@ -420,13 +485,13 @@
         margin: auto;
     }
 
-    
-    
+
+
     .section7>h2 {
         top: 10%;
         font-size: 10vw;
     }
-    
+
     .sec6Inner {
         width: 100%;
         margin: auto;
@@ -441,12 +506,13 @@
     .sec7ImageBox h2 {
         font-size: 10vw;
     }
-    
+
 
     .footer {
         position: relative;
         z-index: 0;
     }
+
     .sec7ImageBox img {
         object-fit: cover;
     }
@@ -465,9 +531,10 @@
 
 @media screen and (width<=768px) {
 
-    .section7{
+    .section7 {
         height: max-content;
     }
+
     .section1 {
         padding-top: 120px;
         height: 100vh;

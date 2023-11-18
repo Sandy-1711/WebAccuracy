@@ -7,8 +7,9 @@ import loadcss from './loading.module.css'
 import Nav from '@/app/components/Nav/nav';
 import Image from 'next/image';
 import Contact from '@/app/components/Contact/Contact';
+import { useMediaQuery } from 'react-responsive';
 export default function AppDevPage() {
-    const [width, setWidth] = useState();
+
     LocoScroll(true);
     useLayoutEffect(function () {
         document.querySelector('main').style.height = "100vh";
@@ -29,21 +30,14 @@ export default function AppDevPage() {
 
             }
         }, 100)
-        setWidth(window.innerWidth)
-        // if (width > 900) {
 
-        //     // document.getElementById('body').style.overflowY = "hidden"
-        // }
-        window.addEventListener('resize', function () {
-            setWidth(window.innerWidth);
-        })
     }, [])
     return (<main id='main' data-scroll-container className={appcss.main}>
         <div id='loading' className={loadcss.loading}>
             <h2>0%</h2>
         </div>
         <Nav />
-        {width > 900 && <section className={appcss.section1}>
+        <section className={appcss.section1}>
             <div className={appcss.sec1text}>
                 <h1>App Development</h1>
                 <p>React Native and Flutter for captivating cross-platform interfaces on iOS and Android</p>
@@ -65,7 +59,7 @@ export default function AppDevPage() {
                     <Image height={400} width={400} alt="App developement, android, ios, responsive design" className={appcss.img} src='https://framerusercontent.com/images/GtO7c1DreUXQAkBcudzbkIJtOss.png' />
                 </div>
             </div>
-        </section>}
+        </section>
         <section id='section2' className={appcss.section2}>
             <div className={appcss.parallax2}>
                 <div className={appcss.container}>
@@ -118,7 +112,7 @@ export default function AppDevPage() {
             </div>
         </section>
         <hr style={{ width: '100%', color: 'black' }} />
-        <Contact/>
+        <Contact />
         <Footer />
     </main>)
 }

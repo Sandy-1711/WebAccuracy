@@ -5,12 +5,16 @@ import Image from 'next/image'
 import { gsap } from 'gsap/dist/gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from 'react';
+import { useMediaQuery } from 'react-responsive';
 export default function Circle() {
+    const isTablet=useMediaQuery({
+        query:'(max-width:900px)'
+    })
 
     useEffect(function () {
         gsap.registerPlugin(ScrollTrigger);
         var tl = gsap.timeline();
-        if (window.innerWidth > 900) {
+        if (!isTablet) {
 
             tl.to("#nav", {
                 y: '-100%',

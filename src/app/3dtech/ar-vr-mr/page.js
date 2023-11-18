@@ -11,7 +11,11 @@ import gsap, { ScrollTrigger } from "gsap/all";
 import Footer from "@/app/components/Footer/Footer";
 import Cards from "./ar-vr-mr-components/Cards";
 import Contact from "@/app/components/Contact/Contact";
+import { useMediaQuery } from "react-responsive";
 export default function Page() {
+  const isTablet=useMediaQuery({
+    query:'(max-width:768px)'
+  })
   useEffect(function () {
     const containers = document.querySelectorAll(`.${arvrmrcss.container}`);
 
@@ -44,7 +48,7 @@ export default function Page() {
   useLayoutEffect(function () {
     gsap.registerPlugin(ScrollTrigger);
     
-    if (window !== 'undefined'  && window.innerWidth > 768) {
+    if (window !== 'undefined'  && !isTablet) {
       gsap.from("#h11", {
         x: 1000,
         scrollTrigger: {

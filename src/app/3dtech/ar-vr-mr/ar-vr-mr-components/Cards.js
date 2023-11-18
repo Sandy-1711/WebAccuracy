@@ -3,10 +3,14 @@ import { useLayoutEffect } from "react";
 import arvrmrcss from "../ar-vr-mr.module.css";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
+import { useMediaQuery } from "react-responsive";
 export default function Cards() {
+  const isTablet=useMediaQuery({
+    query: "(max-width: 768px)"
+  })
   useLayoutEffect(function () {
     gsap.registerPlugin(ScrollTrigger);
-    if (window !=='undefined' && window.innerWidth >= 768) {
+    if (window !=='undefined' && !isTablet) {
       gsap.to(`.${arvrmrcss.cards}`, {
         y: "-78%",
         scrollTrigger: {

@@ -208,6 +208,9 @@
     }
 }
 @media screen and (width<900px) {
+    .section1{
+        display: none;
+    }
     .section2 {
         flex-direction: column-reverse;
         gap: 1rem;

@@ -85,7 +85,7 @@
     left: 0;
 }
 
-.navbar button {
+.button {
     padding: 1rem 1.5rem;
     min-width: max-content;
     outline: none;
@@ -330,17 +330,23 @@
     .menumobile ul li a i {
         font-size: 15px;
     }
+    .button{
+        position: absolute;
+        top: 50%;
+        right: 4%;
+        transform: translateY(-50%);
+    }
+    
+}
 
-    .navbar button {
+@media screen and (width<960px) {
+
+    .button {
         padding: 0.1rem 0.5rem;
         position: absolute;
         right: 4%;
         font-weight: 400;
     }
-}
-
-@media screen and (width<960px) {
-
     .navinner {
         width: 100%;
     }

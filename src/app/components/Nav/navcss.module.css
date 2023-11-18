@@ -73,7 +73,11 @@
     left: 0;
 }
 
-.navbar button {
+.button {
+    left: unset;
+    top: unset;
+    bottom: unset;
+    right: unset;
     padding: 1rem 1.5rem;
     min-width: max-content;
     outline: none;
@@ -89,7 +93,7 @@
     transition: 200ms ease-in-out;
 }
 
-.navbar button:hover {
+.button:hover {
 
     background-color: white;
     color: #272839;
@@ -333,13 +337,13 @@
     .menumobile ul li a i {
         font-size: 15px;
     }
-
-    .navbar button {
-        padding: 0.1rem 0.5rem;
+    .button{
         position: absolute;
         right: 4%;
-        font-weight: 400;
+        top: 50%;
+        transform: translateY(-50%);
     }
+    
 }
 
 @media screen and (width<960px) {
@@ -373,6 +377,12 @@
 
     .menuicon {
         top: 7%;
+    }
+    .button {
+        padding: 0.1rem 0.5rem;
+        position: absolute;
+        right: 4%;
+        font-weight: 400;
     }
 
 }
