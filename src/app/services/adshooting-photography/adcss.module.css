@@ -432,10 +432,35 @@
 .card button:hover {
     color: black;
     background: white;
-    
+
 }
 
 @media screen and (width<1200px) {
+
+    .cards {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .photographers h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        height: calc(100vw / 1.5);
+        width: 100%;
+    }
+
+    .card img {
+        object-position:top;
+    }
+
+    .card a button {
+        font-size: 2vw;
+        padding: 1.5vw 3vw;
+        bottom: 10%;
+    }
 
     .sec2Text p {
         width: 80%;
@@ -639,5 +664,11 @@
 
     .imageboxtext p {
         font-size: 9px;
+    }
+}
+@media screen and (width<480px) {
+    .card a button{
+        padding: 2vw 5vw;
+        font-size: 18px;
     }
 }

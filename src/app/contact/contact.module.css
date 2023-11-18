@@ -78,6 +78,7 @@
     transform: translate(7px) rotate(45deg);
     transition: 0.05s ease-in-out;
 }
+
 .arrow {
     height: 10px;
     width: 10px;
@@ -208,12 +209,14 @@
     border-radius: 50%;
     border: 1px solid black;
 }
-.callCircle h2{
+
+.callCircle h2 {
     font-size: 1.5vw;
     font-weight: 100;
     color: black;
 }
-.contactForm{
+
+.contactForm {
     padding: 100px 0;
     height: max-content;
     display: flex;
@@ -224,47 +227,56 @@
     flex-direction: column;
 
 }
-.contactForm h2{
+
+.contactForm h2 {
     font-size: 4vw;
     margin-bottom: 2vw;
 }
-.contactForm form{
+
+.contactForm form {
     width: 50%;
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
-.contactForm input{
+
+.contactForm input {
     padding: 15px 20px 15px 15px;
     background: rgb(235, 235, 235);
-    outline: none;    
+    outline: none;
     border: 1px solid rgb(187, 187, 187);
     border-radius: 10px;
     width: 100%;
 }
-.contactForm form input::placeholder{
+
+.contactForm form input::placeholder {
     color: rgb(178, 178, 178);
 }
-.contactForm form input:focus{
+
+.contactForm form input:focus {
     border-color: blue;
 }
-.forminputs{
+
+.forminputs {
     display: flex;
     gap: 40px;
 }
-.contactForm textarea{
+
+.contactForm textarea {
     padding: 15px 20px 15px 15px;
     background: rgb(235, 235, 235);
-    outline: none;    
+    outline: none;
     border: 1px solid rgb(187, 187, 187);
     border-radius: 10px;
     width: 100%;
     resize: vertical;
 }
-.contactForm textarea::placeholder{
+
+.contactForm textarea::placeholder {
     color: rgb(178, 178, 178);
 }
-.contactForm .formbutton{
+
+.contactForm .formbutton {
     width: max-content;
     margin: auto;
     padding: 15px 30px;
@@ -274,10 +286,138 @@
     transition: 0.2s ease-in-out;
     font-size: 18px;
 }
-.formbutton:hover{
+
+.formbutton:hover {
     background: rgb(216, 247, 39);
 }
-.formbutton:hover .arrow{
+
+.formbutton:hover .arrow {
     transition: 0.1s ease-in-out;
     transform: translate(10px) rotate(45deg);
+}
+
+@media screen and (width<1200px) {
+
+    .hero {
+        height: max-content;
+        padding: 5vw;
+    }
+
+    .text h2 {
+        height: max-content;
+
+        font-size: 4vw;
+    }
+
+    .image {
+        transform: translate(0);
+    }
+
+    .text a button {
+        font-size: 2vw;
+        padding: 1.5vw 2.5vw;
+        margin-right: 2vw;
+        margin-top: 2vw;
+    }
+
+    .section1 {
+        height: max-content;
+        padding: 5vw 0;
+    }
+
+    .section2 {
+        height: max-content;
+        padding: 5vw 0;
+    }
+
+    .callCircle h2 {
+        font-size: 2.5vw;
+    }
+
+    .contactForm {
+        padding: 5vw 0;
+    }
+}
+
+@media screen and (width<900px) {
+    .hero {
+
+        flex-wrap: wrap;
+        gap: 5vw;
+        padding: 10vw 0;
+        padding-top: 120px;
+        padding-left: 5vw;
+        justify-content: flex-start;
+    }
+
+    .text {
+        width: 100%;
+        /* padding-left: 10vw; */
+    }
+
+    .image {
+        margin: 0;
+        width: 90%;
+        height: 500px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (width<480px) {
+    .section1 h2 {
+        margin-top: 5vw;
+        font-size: 4vw;
+    }
+
+    .section1 h1 {
+        font-size: 5.5vw;
+    }
+
+    .circles {
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 10vw;
+
+    }
+
+    .circle {
+        height: 80vw;
+        width: 80vw;
+        margin: auto;
+    }
+
+    .circle h2 {
+        font-size: 4vw;
+    }
+
+    .section2 {
+        flex-wrap: wrap;
+        gap: 5vw;
+    }
+
+    .section2 h2 {
+        font-size: 5vw;
+    }
+
+    .callCircle h2 {
+        font-size: 5vw;
+    }
+
+    .callCircle::before {
+        height: 90%;
+        width: 90%;
+    }
+
+    .callCircle {
+        height: 80vw;
+        width: 80vw;
+    }
+
+    .contactForm form {
+        width: 90%;
+    }
+
+    .contactForm textarea {
+        padding: 10px 0 40px 10px;
+    }
 }

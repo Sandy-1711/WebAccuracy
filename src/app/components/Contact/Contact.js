@@ -6,9 +6,9 @@ export default function Contact({ page, ...props }) {
 
             <a href='/contact'><p>webaccuracy@gmail.com</p></a>
             <div className={contactcss.divider}>
-                <div className={contactcss.line}></div>
+                {/* <div cclassName={contactcss.line}></div> */}
                 <span>Or</span>
-                <div className={contactcss.line}></div>
+                {/* <div className={contactcss.line}></div> */}
             </div>
             <a href='/contact/#callus'><p>666 888 0000</p></a>
         </div>
