@@ -4,6 +4,7 @@ import audiocss from './immersive.module.css'
 import Nav from '@/app/components/Nav/nav';
 export default function Immersive() {
     const [start, setStart] = useState(false);
+    const [instructionsOpen, setInstructionsOpen] = useState(true);
     useEffect(function () {
         var you = document.querySelector(`.${audiocss.you}`);
         var page = document.querySelector(`.${audiocss.page}`);
@@ -73,19 +74,31 @@ export default function Immersive() {
 
     return <div className={audiocss.pageWrapper}>
         <div className={audiocss.overlay}>
-            <div className={audiocss.overlaytext}>
-                <p>To see the effect of immersive audio, wear your headphones.</p>
-            </div>
-            {!start && <button className={audiocss.button} onClick={function () {
+            {instructionsOpen &&
+
+                <div className={audiocss.instructions}>
+                    <h2>Dolby Atmos Services by Web Accuracy</h2>
+                    <p>Experience the best Dolby Atmos mixing services in Ranchi, offering immersive audio that captivates. Our team of experts uses cutting-edge technology to transform your audio into a mesmerizing journey.</p>
+                    <button className={audiocss.nextButton}
+                        onClick={function () {
+                            setInstructionsOpen(false);
+                        }}>Next</button>
+                </div>
+            }
+            {!instructionsOpen &&
+
+                <div className={audiocss.overlaytext}>
+                    <p>To see the effect of immersive audio, wear your headphones.</p>
+                </div>
+            }
+            {!start && !instructionsOpen && <button className={audiocss.button} onClick={function () {
                 setStart(true)
                 document.querySelector(`.${audiocss.overlay}`).style.display = "none";
             }}>Start</button>}
         </div>
+
         <Nav />
-        <div className={audiocss.instructions}>
-            {/* <p>For best experience,</p>
-            <span>Please wear your headphones</span> */}
-        </div>
+
         {/* <div className={audiocss.line1} /> */}
         {/* <div className={audiocss.line2} /> */}
         {/* <div className={audiocss.line3} /> */}

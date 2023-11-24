@@ -18,18 +18,24 @@ export default function WebDevPage() {
     //     })
     // })
     useEffect(function () {
-        var currentIndex = 0;
+        var carouselInner = document.querySelectorAll(`.${webcss.carouselInner}`)
         var backButton = document.querySelector(`.${webcss.backButton}`);
         var nextButton = document.querySelector(`.${webcss.nextButton}`)
         backButton.addEventListener('click', function () {
-            // slideBack();
+            slideBack();
         })
         nextButton.addEventListener('click', function () {
-            // nextSlide();
+            nextSlide();
         })
-        var currentIndex = 2; // Start with the third image
 
-        
+        function slideBack() {
+            carouselInner[0].style.transform = "translate(-100%)";
+            carouselInner[1].style.transform = "translate(-100%)";
+        }
+        function nextSlide() {
+            carouselInner[0].style.transform = "translate(100%)";
+            carouselInner[1].style.transform = "translate(100%)";
+        }
     })
     return (
         <>
@@ -123,6 +129,10 @@ export default function WebDevPage() {
                                     <img src='/4.jpg' />
                                     <p>When is my brand new website available?</p>
                                 </div>
+
+                            </div>
+                            <div className={webcss.carouselInner}>
+
                                 <div className={webcss.item}>
                                     <img src='/1.jpg' />
                                     <p>When is my brand new website available?</p>
@@ -139,6 +149,7 @@ export default function WebDevPage() {
                                     <img src='/4.jpg' />
                                     <p>When is my brand new website available?</p>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -146,7 +157,7 @@ export default function WebDevPage() {
                 <section className={webcss.section4}>
                     <div className={webcss.sec4image}></div>
                     <div className={webcss.sec4text}>
-                        <h2>Let&apos;s build <br/> something great<br/> together</h2>
+                        <h2>Let&apos;s build <br /> something great<br /> together</h2>
                         <p>Whether it&apos;s a new venture or an exciting one!</p>
                     </div>
                 </section>

@@ -13,8 +13,8 @@ import Cards from "./ar-vr-mr-components/Cards";
 import Contact from "@/app/components/Contact/Contact";
 import { useMediaQuery } from "react-responsive";
 export default function Page() {
-  const isTablet=useMediaQuery({
-    query:'(max-width:768px)'
+  const isTablet = useMediaQuery({
+    query: '(max-width:768px)'
   })
   useEffect(function () {
     const containers = document.querySelectorAll(`.${arvrmrcss.container}`);
@@ -47,8 +47,8 @@ export default function Page() {
   });
   useLayoutEffect(function () {
     gsap.registerPlugin(ScrollTrigger);
-    
-    if (window !== 'undefined'  && !isTablet) {
+
+    if (window !== 'undefined' && !isTablet) {
       gsap.from("#h11", {
         x: 1000,
         scrollTrigger: {
@@ -140,10 +140,10 @@ export default function Page() {
           <div className={arvrmrcss.container1 + " " + arvrmrcss.container}>
             <img id="backimg" src="/vr-people.jpg" />
             <div className={arvrmrcss.text}>
-              <h1>Journey into the tech of tomorrow</h1>
+              <h1>AR VR MR Services in Ranchi</h1>
               <p>
-                Step into the future with our cutting-edge technology solutions
-                tailored for your business needs.
+                Web Accuracy provides cutting-edge technology solutions tailored for your business needs.
+
               </p>
             </div>
             <div className={arvrmrcss.buttonLeft}>
@@ -166,9 +166,7 @@ export default function Page() {
                   services
                 </h1>
                 <p>
-                  We&apos;re a team of technology enthusiasts committed to
-                  delivering exceptional digital solutions that align with your
-                  business goals.
+                  Augmented Reality involves overlaying digital information onto the real world using devices like smartphones, tablets, or AR glasses. AR enhances the user&apos;s perception of reality by adding digital elements such as images, videos, or 3D models to their view. It allows users to interact with virtual objects in a real environment.
                 </p>
                 <div className={arvrmrcss.textButtons}>
                   <Button color="white" text="About us" />
@@ -255,7 +253,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <Contact/>
+        <Contact />
         <Footer />
       </main>
     </>

@@ -15,7 +15,7 @@
     width: 1200px;
     margin: auto;
     position: relative;
-    
+
 }
 
 .audios {
@@ -36,14 +36,50 @@
     /* backdrop-filter: blur(25px); */
     /* padding: 40px 50px; */
     /* border-radius: 20px; */
+    width: 60%;
     position: absolute;
-    top: 95%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.526);
+    /* color: rgba(255, 255, 255, 0.526); */
+    color: white;
     /* border: 1px solid white; */
+}
+
+.instructions h2 {
+    font-size: 2.5vw;
+    color: rgb(185, 185, 185);
+    width: 100%;
+    text-align: center;
+}
+
+.instructions p {
+    font-size: 1vw;
+    color: rgb(171, 171, 171);
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 1.1vw;
+}
+
+.nextButton {
+    background: transparent;
+    outline: none;
+    color: white;
+    margin-top: 1.1vw;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: 5px;
+
+}
+
+.nextButton:hover {
+    background: white;
+    color: black;
 }
 
 .line1 {
@@ -123,13 +159,16 @@
     font-size: 50px;
     user-select: none;
     /* transform-style: preserve-3d; */
-    
+
 }
 
-.heading h2{
+.heading h2 {
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: perspective(1000px) rotateX(40deg);
     transform: perspective(1000px) rotateX(40deg);
 }
+
 .overlay {
     height: 100vh;
     width: 100vw;
@@ -146,7 +185,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(171, 171, 171);
 }
 
 .overlaytext p {
@@ -308,26 +347,29 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-.grid{
+
+.grid {
     height: 100vh;
     display: grid;
-    position: absolute; 
+    position: absolute;
     top: 50%;
     left: 50%;
-    grid-template-columns: repeat(25,50px);
+    grid-template-columns: repeat(25, 50px);
     /* gap: 2px; */
-    transform:translate(-50%,-50%)  perspective(1500px) rotateX(50deg) ;
+    transform: translate(-50%, -50%) perspective(1500px) rotateX(50deg);
     transform-style: preserve-3d;
     transform-origin: center;
 }
-.grid line{
+
+.grid line {
     /* stroke:#ddd; */
     /* background-color: #0ff; */
     border: 1px solid rgba(56, 54, 54, 0.39);
-   height: 100px;
-   width: 100px;
+    height: 100px;
+    width: 100px;
 
 }
+
 .you span {
     position: absolute;
     color: greenyellow;
@@ -358,6 +400,14 @@
 
     .instructions {
         width: 100%;
+    }
+
+    .instructions h2 {
+        font-size: 3vw;
+    }
+
+    .instructions p {
+        font-size: 1.8vw;
     }
 }
 
@@ -399,14 +449,43 @@
     .line2 {
         rotate: 5deg;
     }
-    .grid{
-        transform:translate(-50%,-50%)  perspective(1500px) rotateX(50deg) ;
+
+    .grid {
+        transform: translate(-50%, -50%) perspective(1500px) rotateX(50deg);
 
     }
 
-    .heading h2{
+    .heading h2 {
         font-size: 40px;
         top: 10%;
         transform: perspective(1000px) rotateX(50deg);
+    }
+
+    .instructions {
+        width: 100%;
+        padding: 0 5vw;
+    }
+
+    .instructions h2 {
+        font-size: 5.2vw;
+        width: 100%;
+
+    }
+
+    .instructions p {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .nextButton {
+        margin-top: 3vw;
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 8px 15px;
+
     }
 }
