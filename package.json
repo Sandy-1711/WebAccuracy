@@ -17,6 +17,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-responsive": "^9.0.2",
+    "three": "^0.158.0",
     "webgl-fluid-enhanced": "^0.5.2"
   }
 }

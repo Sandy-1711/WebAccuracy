@@ -1,0 +1,467 @@
+<svg class="hidden md:block" width="100%" viewBox="0 0 963 963" fill="none" xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="xMidYMin meet">
+    <g id="lampBrain" opacity="0" fill="none" style="opacity: 0.75;">
+        <path
+            d="M467.927 492.066C471.194 488.643 471.661 483.275 468.861 479.308C466.76 476.274 463.182 474.796 459.759 475.107"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M482.941 503.735C482.319 500.779 479.752 498.679 476.718 498.679C474.384 498.757 472.361 500.079 471.35 502.024"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M466.371 476.741C468.783 476.819 471.039 475.341 471.894 472.929C472.75 470.439 471.817 467.794 469.794 466.316"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M474.151 460.326C475.629 458.693 478.04 458.148 480.063 459.159C481.852 460.015 482.863 461.804 482.863 463.671"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M482.863 452.236C482.863 446.323 477.729 441.5 471.35 441.5C465.826 441.5 461.159 445.156 460.07 450.057"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M468.783 454.803C466.916 452.08 463.726 450.291 460.07 450.057C459.836 450.057 459.681 450.057 459.447 450.057C453.302 450.057 448.401 454.647 448.401 460.404C448.401 462.816 449.334 465.072 450.812 466.861"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M458.747 487.865C456.802 488.021 455.013 488.565 453.457 489.499C450.423 491.366 448.401 494.556 448.401 498.134C448.401 503.813 453.379 508.481 459.447 508.481C459.603 508.481 459.681 508.481 459.836 508.481"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M453.457 489.499C446.767 489.343 441.399 484.287 441.399 477.985C441.399 472.54 445.444 468.028 450.812 466.783C451.746 466.55 452.757 466.472 453.768 466.472C455.246 466.472 456.725 466.705 458.047 467.172"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M482.863 452.236V508.403C482.863 514.315 477.729 519.138 471.35 519.138C464.971 519.138 459.836 514.315 459.836 508.403C459.836 505.369 461.159 502.646 463.337 500.701"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M497.8 492.066C494.532 488.643 494.066 483.275 496.866 479.308C498.967 476.274 502.545 474.796 505.968 475.107"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M482.786 503.735C483.408 500.779 485.975 498.679 489.009 498.679C491.343 498.757 493.366 500.079 494.377 502.024"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M499.356 476.741C496.944 476.819 494.688 475.341 493.832 472.929C492.977 470.439 493.91 467.794 495.933 466.316"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M491.576 460.326C490.098 458.693 487.686 458.148 485.664 459.159C483.874 460.015 482.863 461.804 482.863 463.671"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M482.863 452.236C482.863 446.323 487.998 441.5 494.377 441.5C499.9 441.5 504.568 445.156 505.657 450.057"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M496.944 454.803C498.811 452.08 502.001 450.291 505.657 450.057C505.89 450.057 506.046 450.057 506.279 450.057C512.425 450.057 517.326 454.647 517.326 460.404C517.326 462.816 516.392 465.072 514.914 466.861"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M506.979 487.865C508.924 488.021 510.713 488.565 512.269 489.499C515.303 491.366 517.326 494.556 517.326 498.134C517.326 503.813 512.347 508.481 506.279 508.481C506.124 508.481 506.046 508.481 505.89 508.481"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M512.27 489.499C518.96 489.343 524.328 484.287 524.328 477.985C524.328 472.54 520.282 468.028 514.915 466.783C513.981 466.55 512.97 466.472 511.958 466.472C510.48 466.472 509.002 466.705 507.68 467.172"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+        <path
+            d="M482.863 452.236V508.403C482.863 514.315 487.998 519.138 494.377 519.138C500.756 519.138 505.89 514.315 505.89 508.403C505.89 505.369 504.568 502.646 502.389 500.701"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round"></path>
+    </g>
+    <g id="lampContourGroup">
+        <g class="lamp-path-glow" opacity="0" style="opacity: 1;">
+            <path stroke="#8A62FF" stroke-width="5.12748" opacity="0.3"
+                d="M543.62 480.319c0-33.918-27.228-61.379-60.757-61.379-33.529 0-60.757 27.461-60.757 61.379 0 20.071 9.569 37.886 24.272 49.088 6.379 4.901 10.191 12.525 10.191 20.616v2.489c0 3.189 2.567 5.757 5.679 5.757h41.153c3.112 0 5.679-2.568 5.679-5.757v-2.489c0-8.091 3.812-15.793 10.191-20.616 14.781-11.202 24.349-29.017 24.349-49.088z">
+            </path>
+        </g>
+        <g class="lamp-path-glow" opacity="0" style="opacity: 1;">
+            <path stroke="#8A62FF" fill="none" stroke-width="5.12748"
+                d="M543.62 480.319c0-33.918-27.228-61.379-60.757-61.379-33.529 0-60.757 27.461-60.757 61.379 0 20.071 9.569 37.886 24.272 49.088 6.379 4.901 10.191 12.525 10.191 20.616v2.489c0 3.189 2.567 5.757 5.679 5.757h41.153c3.112 0 5.679-2.568 5.679-5.757v-2.489c0-8.091 3.812-15.793 10.191-20.616 14.781-11.202 24.349-29.017 24.349-49.088z">
+            </path>
+        </g>
+        <path id="lampPath" opacity="0" stroke="#8A62FF" stroke-width="5.12748" fill="none"
+            d="M482.8,558.3h20.6c3.1,0,5.7-2.6,5.7-5.8V550 c0-8.1,3.8-15.8,10.2-20.6c14.8-11.2,24.3-29,24.3-49.1v0c0-33.9-27.2-61.4-60.8-61.4s-60.8,27.5-60.8,61.4 c0,20.1,9.6,37.9,24.3,49.1c6.4,4.9,10.2,12.5,10.2,20.6v2.5c0,3.2,2.6,5.8,5.7,5.8H482.8z"
+            style="opacity: 1;"></path>
+    </g>
+    <g id="capScrewLines">
+        <path class="screw-line" opacity="0" d="M469.716 601.133H495.855" stroke="#7158C4" stroke-width="5.12748"
+            stroke-miterlimit="10" stroke-linejoin="round" style="opacity: 1;"></path>
+        <path class="screw-line" opacity="0" d="M466.448 590.164H499.122" stroke="#7158C4" stroke-width="5.12748"
+            stroke-miterlimit="10" stroke-linejoin="round" style="opacity: 1;"></path>
+        <path class="screw-line" opacity="0" d="M463.181 579.195H502.39" stroke="#7158C4" stroke-width="5.12748"
+            stroke-miterlimit="10" stroke-linejoin="round" style="opacity: 1;"></path>
+        <path class="screw-line" opacity="0" d="M459.914 568.148H505.579" stroke="#7158C4" stroke-width="5.12748"
+            stroke-miterlimit="10" stroke-linejoin="round" style="opacity: 1;"></path>
+    </g>
+    <g id="lampFilaments">
+        <path class="lamp-filament" opacity="0" d="M494.377 519.138C489.398 534.775 488.62 544.81 488.62 559.202"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round" style="opacity: 1;">
+        </path>
+        <path class="lamp-filament" opacity="0" d="M471.35 519.138C476.329 534.775 477.107 544.81 477.107 559.202"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round" style="opacity: 1;">
+        </path>
+        <path class="lamp-filament" opacity="0" d="M475.317 534.697C480.919 533.141 484.653 533.219 490.332 534.775"
+            stroke="#8A62FF" stroke-width="5.12748" stroke-miterlimit="10" stroke-linejoin="round" style="opacity: 1;">
+        </path>
+    </g>
+    <g id="flares">
+        <g class="lamp-flare" display="none" opacity="0.5" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter2_f)">
+                <circle cx="528.5" cy="416.501" r="4.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter3_f)">
+                <circle cx="528.5" cy="416.501" r="2.5" fill="#8A62FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter4_f)">
+                <circle cx="528.5" cy="416.501" r="0.5" fill="#8A62FF"></circle>
+            </g>
+        </g>
+        <g class="lamp-flare" display="none" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter5_f)">
+                <circle cx="426.5" cy="425.501" r="6.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter6_f)">
+                <circle cx="426.5" cy="425.501" r="3.61111" fill="#9E7CFF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter7_f)">
+                <circle cx="426.5" cy="425.501" r="0.722222" fill="white"></circle>
+            </g>
+        </g>
+        <g id="mainGlow" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter8_f)">
+                <circle cx="481.5" cy="481.5" r="160.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter9_f)">
+                <circle cx="481.501" cy="481.501" r="89.1667" fill="#9E7CFF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter10_f)">
+                <circle cx="481.502" cy="481.5" r="17.8333" fill="white"></circle>
+            </g>
+        </g>
+        <g class="lamp-flare" display="none" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter11_f)">
+                <circle cx="483.5" cy="457.501" r="11.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter12_f)">
+                <circle cx="483.5" cy="457.501" r="6.38889" fill="#9E7CFF"></circle>
+            </g>
+            <g opacity="0.3" filter="url(#what_lamp_filter13_f)">
+                <circle cx="483.5" cy="457.501" r="1.27778" fill="white"></circle>
+            </g>
+        </g>
+        <g class="lamp-flare" display="none" opacity="0.5" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter17_f)">
+                <circle cx="528.5" cy="502.501" r="4.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter18_f)">
+                <circle cx="528.5" cy="502.501" r="2.5" fill="#9E7CFF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter19_f)">
+                <circle cx="528.5" cy="502.501" r="0.5" fill="white"></circle>
+            </g>
+        </g>
+        <g class="lamp-flare" display="none" opacity="0.5" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter20_f)">
+                <circle cx="610.5" cy="448.5" r="4.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter21_f)">
+                <circle cx="610.5" cy="448.5" r="2.5" fill="#9E7CFF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter22_f)">
+                <circle cx="610.5" cy="448.5" r="0.5" fill="white"></circle>
+            </g>
+        </g>
+        <g class="lamp-flare" display="none" opacity="0.5" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter23_f)">
+                <circle cx="592.5" cy="505.5" r="3.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter24_f)">
+                <circle cx="592.5" cy="505.5" r="1.94444" fill="#9E7CFF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter25_f)">
+                <circle cx="592.5" cy="505.5" r="0.388889" fill="white"></circle>
+            </g>
+        </g>
+        <g class="lamp-flare" display="none" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter26_f)">
+                <circle cx="458.5" cy="527.5" r="3.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter27_f)">
+                <circle cx="458.5" cy="527.501" r="1.94444" fill="#9E7CFF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter28_f)">
+                <circle cx="458.5" cy="527.5" r="0.388889" fill="white"></circle>
+            </g>
+        </g>
+        <g class="lamp-flare" display="none" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter29_f)">
+                <circle cx="362.5" cy="461.5" r="3.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter30_f)">
+                <circle cx="362.5" cy="461.5" r="1.94444" fill="#9E7CFF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter31_f)">
+                <circle cx="362.5" cy="461.5" r="0.388889" fill="white"></circle>
+            </g>
+        </g>
+        <g class="lamp-flare" display="none" style="mix-blend-mode: color-dodge;">
+            <g filter="url(#what_lamp_filter32_f)">
+                <circle cx="383.5" cy="517.5" r="2.5" fill="#B095FF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter33_f)">
+                <circle cx="383.5" cy="517.5" r="1.38889" fill="#9E7CFF"></circle>
+            </g>
+            <g filter="url(#what_lamp_filter34_f)">
+                <circle cx="383.5" cy="517.5" r="0.277778" fill="white"></circle>
+            </g>
+        </g>
+    </g>
+    <g id="lampLight" opacity="0" style="mix-blend-mode: color-dodge; opacity: 1;">
+        <g filter="url(#what_lamp_filter14_f)">
+            <ellipse cx="482.5" cy="494.501" rx="73.5" ry="6.5" transform="rotate(90 482.5 494.501)" fill="#B095FF">
+            </ellipse>
+        </g>
+        <g filter="url(#what_lamp_filter15_f)">
+            <ellipse cx="482.5" cy="494.501" rx="40.8333" ry="3.61111" transform="rotate(90 482.5 494.501)"
+                fill="#9E7CFF"></ellipse>
+        </g>
+        <g opacity="0.3" filter="url(#what_lamp_filter16_f)">
+            <ellipse cx="482.5" cy="494.501" rx="8.16667" ry="0.722222" transform="rotate(90 482.5 494.501)"
+                fill="white"></ellipse>
+        </g>
+    </g>
+    <g id="floatigSquares">
+        <g id="squareOne">
+            <rect opacity="0.2" x="0.33314" y="0.505702" width="62.1612" height="62.1612"
+                transform="matrix(0.962452 -0.271451 -0.629312 0.777153 864.708 428.62)"
+                fill="url(#what_lamp_paint0_linear)" stroke="#584E93" stroke-width="2"></rect>
+            <path opacity="0.3" d="M845.5 452.5L825.5 477.5L853.5 469.5" stroke="url(#what_lamp_paint1_radial)"
+                fill="none"></path>
+        </g>
+        <rect opacity="0.2" x="-0.179018" y="0.578506" width="19.8661" height="19.8661"
+            transform="matrix(0.820953 0.570995 -0.999972 0.00751083 879.432 239.67)" fill="#352B73" stroke="#584E93"
+            stroke-width="2"></rect>
+        <rect opacity="0.2" x="0.402498" y="0.452451" width="19.8661" height="19.8661"
+            transform="matrix(0.913325 -0.407232 -0.510827 0.859684 97.7741 454.606)" fill="#352B73" stroke="#584E93"
+            stroke-width="2"></rect>
+        <rect opacity="0.5" x="-0.852429" y="-0.368851" width="29.3451" height="29.3451"
+            transform="matrix(-0.999586 -0.0287665 -0.705273 -0.708936 65.7985 335.664)" fill="#352B73"
+            stroke="#584E93"></rect>
+    </g>
+    <defs>
+        <filter id="what_lamp_filter0_f" x="355.542" y="352.376" width="254.642" height="272.456"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="32" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter1_f" x="395.542" y="392.376" width="174.642" height="192.456"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="12" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter2_f" x="511" y="399.001" width="35" height="35" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="6.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter3_f" x="523" y="411.001" width="11" height="11" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter4_f" x="526" y="414.001" width="5" height="5" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter5_f" x="407" y="406.001" width="39" height="39" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="6.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter6_f" x="419.889" y="418.89" width="13.2222" height="13.2222"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter7_f" x="423.778" y="422.779" width="5.44444" height="5.44444"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter8_f" x="0.000244141" y="0" width="963" height="963" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="160.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter9_f" x="318.257" y="318.257" width="326.487" height="326.487"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="37.0385" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter10_f" x="414.284" y="414.282" width="134.436" height="134.436"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="24.6923" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter11_f" x="459" y="433.001" width="49" height="49" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="6.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter12_f" x="474.111" y="448.112" width="18.7778" height="18.7778"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter13_f" x="480.222" y="454.223" width="6.55556" height="6.55556"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter14_f" x="463" y="408.001" width="39" height="173" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="6.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter15_f" x="475.889" y="450.667" width="13.2222" height="87.6667"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter16_f" x="479.778" y="484.334" width="5.44444" height="20.3333"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter17_f" x="511" y="485.001" width="35" height="35" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="6.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter18_f" x="523" y="497.001" width="11" height="11" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter19_f" x="526" y="500.001" width="5" height="5" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter20_f" x="593" y="431" width="35" height="35" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="6.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter21_f" x="605" y="443" width="11" height="11" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter22_f" x="608" y="446" width="5" height="5" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter23_f" x="578.889" y="491.889" width="27.2222" height="27.2222"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="5.05556" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter24_f" x="588.222" y="501.222" width="8.55556" height="8.55556"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.16667" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter25_f" x="590.556" y="503.556" width="3.88889" height="3.88889"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="0.777778" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter26_f" x="442" y="511" width="33" height="33" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="6.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter27_f" x="453.556" y="522.556" width="9.88889" height="9.88889"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter28_f" x="456.111" y="525.112" width="4.77778" height="4.77778"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter29_f" x="346" y="445" width="33" height="33" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="6.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter30_f" x="357.556" y="456.556" width="9.88889" height="9.88889"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter31_f" x="360.111" y="459.111" width="4.77778" height="4.77778"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter32_f" x="371.715" y="505.714" width="23.5714" height="23.5714"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="4.64286" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter33_f" x="379.969" y="513.968" width="7.06349" height="7.06349"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="1.07143" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter34_f" x="381.794" y="515.794" width="3.4127" height="3.4127"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="0.714286" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <filter id="what_lamp_filter35_f" x="62" y="310" width="34.8878" height="27.4917" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+        <linearGradient id="what_lamp_paint0_linear" x1="-26.582" y1="105.343" x2="68.5602" y2="8.61727"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#352B73"></stop>
+            <stop offset="0.697446" stop-color="#F594FE" stop-opacity="0"></stop>
+        </linearGradient>
+        <radialGradient id="what_lamp_paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(825 477.5) rotate(-30.6186) scale(28.4693 20.0441)">
+            <stop stop-color="#F896FE"></stop>
+            <stop offset="1" stop-color="#F896FE" stop-opacity="0"></stop>
+        </radialGradient>
+    </defs>
+</svg>
