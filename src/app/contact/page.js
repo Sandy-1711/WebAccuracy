@@ -12,7 +12,7 @@ export default function Contact() {
                 <img src='/1.jpg' />
             </div>
         </div>
-        <div className={contactcss.section1}>
+        {/* <div className={contactcss.section1}>
             <h2>WHY CONTACT US</h2>
             <h1>Reaching out to us will</h1>
             <div className={contactcss.circles}>
@@ -20,7 +20,7 @@ export default function Contact() {
                 <div className={contactcss.circle}><h2>Get a Personalized Demo For Your Website</h2></div>
                 <div className={contactcss.circle}><h2>Get You a Custom Quotation!</h2></div>
             </div>
-        </div>
+        </div> */}
         <div id='callus' className={contactcss.section2}>
             <h2>Why Wait? Phone Us Directly?</h2>
             <a href='tel:6688880000' style={{ textDecoration: 'none' }}><div className={contactcss.callCircle}>

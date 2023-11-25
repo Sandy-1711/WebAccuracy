@@ -112,7 +112,7 @@ export default function Nav() {
                     <a>Get In Touch</a>
                 </li> */}
         </ul>
-        <Link href="/contact"><button className={navcss.button}>Get In Touch</button></Link>
+        <Link id="get-in-touch-btn" href="/contact"><button className={navcss.button}>Get In Touch</button></Link>
       </div>
       <MenuMobile/>
     </nav>

@@ -2,8 +2,11 @@
 import Image from "next/image";
 import footercss from "./footer.module.css";
 import uiux from "../../services/ui-ux/uiux.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { Power0 } from "gsap";
 export default function Footer({ customstyle }) {
   const data1 = [
     {
@@ -48,6 +51,25 @@ export default function Footer({ customstyle }) {
   const [style1, setStyle1] = useState({});
   var path = usePathname();
   // console.log(path);
+  useLayoutEffect(function () {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.to('#get-in-touch-btn button', {
+      // backgroundColor: '#03e9f4',
+      boxShadow: "0 0 10px #03e9f4",
+      color: 'white',
+      backgroundColor: 'black',
+      // duration:0.01,
+      borderColor: '#03e9f4',
+      scrollTrigger: {
+        trigger: '#footerPage',
+        scroller: 'body',
+        start: 'top 50%',
+        end: 'top 50%',
+        markers: true,
+        scrub: 1,
+      }
+    })
+  })
   useEffect(function () {
     if (path === "/services/ui-ux") {
       document.getElementById(`footerPage`).style.backgroundColor = "black";
