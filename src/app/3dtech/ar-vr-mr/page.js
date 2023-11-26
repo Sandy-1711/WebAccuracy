@@ -10,7 +10,6 @@ import Dots from "./ar-vr-mr-components/Dots";
 import gsap, { ScrollTrigger } from "gsap/all";
 import Footer from "@/app/components/Footer/Footer";
 import Cards from "./ar-vr-mr-components/Cards";
-import Contact from "@/app/components/Contact/Contact";
 import { useMediaQuery } from "react-responsive";
 export default function Page() {
   const isTablet = useMediaQuery({
@@ -253,7 +252,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <Contact />
+         
         <Footer />
       </main>
     </>

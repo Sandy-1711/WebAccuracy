@@ -8,8 +8,8 @@ import MenuMobile from '@/app/components/MobileMenu/MenuMobile';
 import { useMediaQuery } from 'react-responsive';
 export default function AdNav() {
     const path = usePathname();
-    const isLaptop=useMediaQuery({
-        query:'(max-width:1200px)'
+    const isLaptop = useMediaQuery({
+        query: '(max-width:1200px)'
     })
     useEffect(function () {
         console.log(path);
@@ -51,7 +51,7 @@ export default function AdNav() {
                     <a href='/about'>About</a>
                 </li>
                 <li className={navcss.servicestab}>
-                    <a href='/services'>Services</a>
+                    <a>Services</a>
                     <div className={navcss.submenu}>
                         <ul>
                             <a href="/services/app-dev">App Development</a>
@@ -68,7 +68,7 @@ export default function AdNav() {
                 </li>
 
                 <li className={navcss.trendstab}>
-                    <a href='/trends'>Web 3.0 & trends</a>
+                    <a>Web 3.0 & trends</a>
                     <div className={navcss.submenu}>
 
                         <ul>
@@ -78,7 +78,7 @@ export default function AdNav() {
                     </div>
                 </li>
                 <li className={navcss.threedtechtab}>
-                    <a href='/3dtech'>3D reality</a>
+                    <a>3D reality</a>
                     <div className={navcss.submenu}>
                         <ul>
                             <a href='/3dtech/ar-vr-mr'>AR/VR/MR</a>

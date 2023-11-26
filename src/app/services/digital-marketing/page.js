@@ -7,7 +7,6 @@ import LocoScroll from "../../../../hooks/LocoScroll";
 import { useEffect, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import Contact from "@/app/components/Contact/Contact";
 export default function DigitalMarketing() {
     LocoScroll(true);
 
@@ -142,7 +141,7 @@ export default function DigitalMarketing() {
             </div>
 
         </main>
-        <Contact/>
+          
         <div className={digitalcss.section7}><Footer /></div>
     </div>)
 }

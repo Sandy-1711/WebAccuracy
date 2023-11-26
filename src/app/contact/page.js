@@ -21,13 +21,7 @@ export default function Contact() {
                 <div className={contactcss.circle}><h2>Get You a Custom Quotation!</h2></div>
             </div>
         </div> */}
-        <div id='callus' className={contactcss.section2}>
-            <h2>Why Wait? Phone Us Directly?</h2>
-            <a href='tel:6688880000' style={{ textDecoration: 'none' }}><div className={contactcss.callCircle}>
-                <h2>668 888 0000</h2>
-            </div>
-            </a>
-        </div>
+
         <div id='contactForm' className={contactcss.contactForm}>
             <h2>Contact Our Team</h2>
             <form>
@@ -49,6 +43,13 @@ export default function Contact() {
                 </button>
             </form>
         </div>
-        <Footer />
+        <div id='callus' className={contactcss.section2}>
+            <h2>Why Wait? Phone Us Directly?</h2>
+            <a href='tel:6688880000' style={{ textDecoration: 'none' }}><div className={contactcss.callCircle}>
+                <h2>668 888 0000</h2>
+            </div>
+            </a>
+        </div>
+        <Footer customstyle={{backgroundColor:'#0E0E0E'}} />
     </main>)
 }

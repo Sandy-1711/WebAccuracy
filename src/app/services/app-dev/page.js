@@ -6,7 +6,6 @@ import { useLayoutEffect, useState } from 'react';
 import loadcss from './loading.module.css'
 import Nav from '@/app/components/Nav/nav';
 import Image from 'next/image';
-import Contact from '@/app/components/Contact/Contact';
 import { useMediaQuery } from 'react-responsive';
 export default function AppDevPage() {
 
@@ -112,7 +111,7 @@ export default function AppDevPage() {
             </div>
         </section>
         <hr style={{ width: '100%', color: 'black' }} />
-        <Contact />
+         
         <Footer />
     </main>)
 }

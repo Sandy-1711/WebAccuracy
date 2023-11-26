@@ -9,14 +9,14 @@ import uiux from "../../services/ui-ux/uiux.module.css";
 import MenuMobile from "../MobileMenu/MenuMobile";
 import { useMediaQuery } from "react-responsive";
 export default function Nav() {
-  const isMobile=useMediaQuery({
-    query:'(max-width:500px)'
+  const isMobile = useMediaQuery({
+    query: '(max-width:500px)'
   })
   const [color, setColor] = useState("");
   const [textColor, setTextColor] = useState("");
   useEffect(
     function () {
-      
+
       const path = window.location.pathname;
 
       if (path === "/services/app-dev") {
@@ -68,7 +68,7 @@ export default function Nav() {
             <a href="/about">About</a>
           </li>
           <li className={navcss.servicestab}>
-            <a href="/services">Services</a>
+            <a>Services</a>
             <div className={navcss.submenu}>
               <ul>
                 <a href="/services/app-dev">App Development</a>
@@ -84,7 +84,7 @@ export default function Nav() {
           </li>
 
           <li className={navcss.trendstab}>
-            <a href="/trends">Web 3.0 & trends</a>
+            <a>Web 3.0 & trends</a>
             <div className={navcss.submenu}>
               <ul>
                 <a href="/trends/ai-ml">AI/ML</a>
@@ -93,7 +93,7 @@ export default function Nav() {
             </div>
           </li>
           <li className={navcss.threedtechtab}>
-            <a href="/3dtech">3D reality</a>
+            <a>3D reality</a>
             <div className={navcss.submenu}>
               <ul>
                 <a href="/3dtech/ar-vr-mr">AR/VR/MR</a>
@@ -114,7 +114,7 @@ export default function Nav() {
         </ul>
         <Link id="get-in-touch-btn" href="/contact"><button className={navcss.button}>Get In Touch</button></Link>
       </div>
-      <MenuMobile/>
+      <MenuMobile />
     </nav>
   );
 }

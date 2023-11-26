@@ -35,7 +35,7 @@
     z-index: 0;
 }
 
-.yellowgradient{
+.yellowgradient {
     position: absolute;
     z-index: 0;
     top: 0px;
@@ -43,9 +43,10 @@
     height: 1000px;
     width: 1000px;
     pointer-events: none;
-    background: radial-gradient(circle,rgba(125, 141, 1, 0.264) 0%,#00000000 50%);
+    background: radial-gradient(circle, rgba(125, 141, 1, 0.264) 0%, #00000000 50%);
 }
-.yellowgradient1{
+
+.yellowgradient1 {
     position: absolute;
     z-index: 0;
     top: 400px;
@@ -53,9 +54,10 @@
     height: 1500px;
     width: 1500px;
     pointer-events: none;
-    background: radial-gradient(circle,rgba(141, 134, 1, 0.242) 0%,#00000000 50%);
+    background: radial-gradient(circle, rgba(141, 134, 1, 0.242) 0%, #00000000 50%);
 }
-.bluegradient1{
+
+.bluegradient1 {
     position: absolute;
     z-index: 0;
     top: -200px;
@@ -63,11 +65,12 @@
     height: 1000px;
     width: 1000px;
     pointer-events: none;
-    background: radial-gradient(circle,rgba(0, 6, 171, 0.264) 0%,#00000000 50%);
+    background: radial-gradient(circle, rgba(0, 6, 171, 0.264) 0%, #00000000 50%);
 
 }
-.bluegradient2{
-    
+
+.bluegradient2 {
+
     position: absolute;
     z-index: 0;
     top: 500px;
@@ -75,10 +78,11 @@
     height: 1000px;
     width: 1000px;
     pointer-events: none;
-    background: radial-gradient(circle,rgba(0, 171, 151, 0.264) 0%,#00000000 50%);
+    background: radial-gradient(circle, rgba(0, 171, 151, 0.264) 0%, #00000000 50%);
 
 }
-.pinkgradient2{
+
+.pinkgradient2 {
     position: absolute;
     z-index: 0;
     top: 950px;
@@ -86,9 +90,10 @@
     height: 800px;
     width: 1000px;
     pointer-events: none;
-    background: radial-gradient(circle,rgba(171, 0, 171, 0.355) 0%,#00000000 50%);
+    background: radial-gradient(circle, rgba(171, 0, 171, 0.355) 0%, #00000000 50%);
 
 }
+
 .main text {
     position: absolute;
     z-index: 1;
@@ -147,22 +152,24 @@
     left: 50%;
     transform: translate(-50%, -2%);
     z-index: 5;
-    height: 200px;
+    height: max-content;
     width: 90vw;
     border-radius: 20px;
     background: #ffffff05;
     backdrop-filter: blur(25px);
     z-index: 1;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0 50px;
+    padding: 2vw 50px;
 }
 
 .cardContainer {
     position: relative;
     top: 0;
     padding-bottom: 40px;
+
 }
 
 .card2 {
@@ -233,31 +240,63 @@
 }
 
 .cardInner {
-    width: 350px;
-    max-height: 200px;
+    width: 100%;
+    padding: 2vw 0;
+    /* max-height: 600px; */
+    /* height: 5vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
 }
 
-.cardInner img {
+.cardInnerOdd {
+    flex-direction: row-reverse;
+}
+
+.cardInnerText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+.cardInnerText img {
     transform: translate(-10px);
     height: 30px;
 }
 
-.cardInner h2 {
+.cardInnerText h2 {
     color: #D52150;
     font-weight: 400;
 }
 
-.cardInner p {
+.cardInnerText p {
     color: #ffffff5d;
     font-weight: 100;
+    width: 80%;
 }
 
-.line {
+.cardInnerImage {
+    width: 400px;
+    height: 400px;
+}
+
+.cardInnerImage img {
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .line {
     height: 80%;
     width: 2px;
     background: radial-gradient(circle, rgb(155, 142, 142) 0%, rgba(255, 255, 255, 0) 80%);
     border-radius: 20px;
-}
+} */
 
 .bitcoin {
     position: absolute;
@@ -284,7 +323,7 @@
     }
 
     .cardInner {
-        width: 30%;
+        /* width: 30%; */
     }
 }
 
@@ -307,17 +346,27 @@
 
 
 
-    .cardInner img {
+    .cardInnerText img {
         height: 28px;
         transform: translate(-8px);
     }
 
-    .cardInner h2 {
+    .cardInnerText {
+        height: 300px;
+        width: 300px;
+    }
+
+    .cardInnerText h2 {
         font-size: 18px;
     }
 
-    .cardInner p {
+    .cardInnerText p {
         font-size: 14px;
+    }
+
+    .cardInnerImage {
+        height: 300px;
+        width: 300px;
     }
 
     .card {
@@ -326,6 +375,7 @@
         padding-bottom: 30px;
         bottom: unset;
         gap: 1rem;
+        flex-wrap: wrap;
     }
 
     .line {
@@ -370,6 +420,29 @@
         min-height: 300px;
         min-width: 300px;
     }
+
+    
+
+    .cardInner {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .cardInnerText {
+        width: 100%;
+        height: max-content;
+    }
+
+    .cardInnerImage {
+        width: 100%;
+        height: 400px;
+        max-height: unset;
+    }
+    .cardInnerImage img{
+        border-radius: 10px;
+    }
+
 }
 
 @media screen and (width<768px) {

@@ -65,8 +65,8 @@ export default function Footer({ customstyle }) {
         scroller: 'body',
         start: 'top 50%',
         end: 'top 50%',
-        markers: true,
-        scrub: 1,
+        // markers: true,
+        scrub: true,
       }
     })
   })

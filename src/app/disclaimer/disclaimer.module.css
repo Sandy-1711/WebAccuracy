@@ -1,28 +1,41 @@
 .main{
     height: max-content;
     padding: 2vw;
-    width: 100vw;
-    /* padding: 40px; */
-}
-.content{
-    height: max-content;
     width: 1200px;
     margin: auto;
-    /* padding: 5vw; */
+    background: white;
+    /* padding: 40px; */
+}
+
+.content{
+    height: max-content;
+    width: 100%;
+    padding: 2vw;
+    background: white;
+    box-shadow: 0px 0px 5px grey,0px 0px 10px rgba(128, 128, 128, 0.603);
 }
 .content h1{
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin-bottom: 15px;
+}
+.content img{
+    width: 100%;
 }
 .nav{
     height: 110px;
     width: 100vw;
-    background: #000;;
+    background: #000;
 }
+
 .main p{
-    margin: 10px;
+    /* font-size: 1.1vw; */
+    /* margin: 10px; */
+    margin-top: 10px;
+    width: 100%;
 }
 @media screen and (width<1200px) {
     .main{
+        width: 100%;;
         padding: 10px;
     }
     .content{
@@ -31,6 +44,7 @@
     .nav{
         height: 110px;
     }
+
 }
 @media screen and (width<480px) {
     .nav{

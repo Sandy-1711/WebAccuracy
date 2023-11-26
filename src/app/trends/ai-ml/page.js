@@ -7,8 +7,8 @@ import Section5SVG from './(components)/Section5SVG'
 import { AnimationLoader } from 'three'
 import Footer from '@/app/components/Footer/Footer'
 export default function aiml() {
-    var style={
-        backgroundColor:'#2A2459'
+    var style = {
+        backgroundColor: '#2A2459'
     }
     return (
 
@@ -49,16 +49,24 @@ export default function aiml() {
                     <Canvas2 />
                 </div>
                 <div className={aimlcss.p}><p>Deep learning is a revolutionary approach to AI that uses deep neural networks to teach computers how to learn on their own. Without human input, deep learning software can sift through massive amounts of raw data and identify patterns, allowing for faster, more accurate problem solving in a variety of fields.</p></div>
-                <div className={aimlcss.banner}>
+                {/* <div className={aimlcss.banner}>
                     <Section2BannerSVG />
                     <p>Explore our Artificial Intelligence (AI) Technologies</p>
+                </div> */}
+            </section>
+            <section className={aimlcss.section2}>
+                <div className={aimlcss.section2svg}>
+                    <Section2BannerSVG />
+                    <div className={aimlcss.text}>
+                        <p>Explore our Artificial Intelligence (AI) Technologies</p>
+                    </div>
                 </div>
             </section>
             <section className={aimlcss.section5}>
-                <div className={aimlcss.banner}>
+                {/* <div className={aimlcss.banner}>
                     <Section2BannerSVG />
                     <p>Explore our Artificial Intelligence (AI) Technologies</p>
-                </div>
+                </div> */}
                 <div className={aimlcss.text}>
                     <h2>Automation</h2>
                     <p>Learn more about our processes and AI approaches</p>
@@ -68,8 +76,15 @@ export default function aiml() {
                 </div>
                 <p>Automation encompasses industrial robots, service robots, and automation systems. While many observers fear that automation will destroy jobs, ARK believes it will empower humans, increasing both productivity and wage growth.</p>
             </section>
+            <section className={aimlcss.section2}>
+                <div className={aimlcss.section2svg}>
+                    <Section2BannerSVG />
+                    <div className={aimlcss.text}>
+                        {/* <p>Explore our Artificial Intelligence (AI) Technologies</p> */}
+                    </div>
+                </div>
+            </section>
             <section className={aimlcss.section6}>
-                <Section2BannerSVG />
                 <div className={aimlcss.sec6first}>
 
                     <div className={aimlcss.text}>
@@ -89,7 +104,7 @@ export default function aiml() {
                     </div>
                 </div>
             </section>
-            <Footer customstyle={style}/>
+            <Footer customstyle={style} />
         </div>
 
     )

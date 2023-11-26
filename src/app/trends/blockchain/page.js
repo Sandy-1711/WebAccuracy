@@ -2,10 +2,9 @@ import Nav from '@/app/components/Nav/nav'
 import blockcss from './blockchain.module.css'
 import Footer from '@/app/components/Footer/Footer'
 import Image from 'next/image'
-import Contact from '@/app/components/Contact/Contact'
 export default function Blockchain() {
-    var style={
-        backgroundColor:'transparent',
+    var style = {
+        backgroundColor: 'transparent',
     }
     return (<>
         <Nav />
@@ -33,31 +32,51 @@ export default function Blockchain() {
                     <Image height={1000} width={1000} src='/bitcoin.png' alt='bitcoin' />
                 </div>
             </div>
-            <div className={blockcss.yellowgradient}/>
-            <div className={blockcss.yellowgradient1}/>
-            <div className={blockcss.bluegradient1}/>
-            <div className={blockcss.bluegradient2}/>
-            <div className={blockcss.bluegradient2}/>
-            <div className={blockcss.pinkgradient2}/>
+            <div className={blockcss.yellowgradient} />
+            <div className={blockcss.yellowgradient1} />
+            <div className={blockcss.bluegradient1} />
+            <div className={blockcss.bluegradient2} />
+            <div className={blockcss.bluegradient2} />
+            <div className={blockcss.pinkgradient2} />
             <div className={blockcss.cardContainer}>
 
                 <div className={blockcss.card}>
                     <div className={blockcss.cardInner}>
-                        <img src='/logo.png' />
-                        <h2>Web 3.0 Revolution</h2>
-                        <p> Embrace the future of the internet with our Web 3.0 services. We create immersive and interactive websites that redefine user experiences, leveraging the latest advancements in AI, IoT, and more.</p>
+                        <div className={blockcss.cardInnerText}>
+
+                            <img src='/logo.png' />
+                            <h2>Web 3.0 Revolution</h2>
+                            <p> Embrace the future of the internet with our Web 3.0 services. We create immersive and interactive websites that redefine user experiences, leveraging the latest advancements in AI, IoT, and more.</p>
+                        </div>
+                        <div className={blockcss.cardInnerImage}>
+                            <img src='/1.jpg' />
+                        </div>
+                    </div>
+                    <div className={blockcss.line}></div>
+                    <div className={blockcss.cardInner+' '+blockcss.cardInnerOdd}>
+                        <div className={blockcss.cardInnerText}>
+
+                            <img src='/logo.png' />
+                            <h2>Blockchain Innovation</h2>
+                            <p>Unlock the potential of decentralized systems with our expert Blockchain developers. We build secure and transparent applications that harness the power of blockchain technology for various industries.</p>
+                        </div>
+
+                        <div className={blockcss.cardInnerImage}>
+                            <img src='/1.jpg' />
+                        </div>
                     </div>
                     <div className={blockcss.line}></div>
                     <div className={blockcss.cardInner}>
-                        <img src='/logo.png' />
-                        <h2>Blockchain Innovation</h2>
-                        <p>Unlock the potential of decentralized systems with our expert Blockchain developers. We build secure and transparent applications that harness the power of blockchain technology for various industries.</p>
-                    </div>
-                    <div className={blockcss.line}></div>
-                    <div className={blockcss.cardInner}>
-                        <img src='/logo.png' />
-                        <h2>Tailored Solutions</h2>
-                        <p> Our team understands that every project is unique. We craft customized strategies to meet your specific goals, ensuring that your Web 3.0 and blockchain solutions are perfectly aligned with your vision.</p>
+                        <div className={blockcss.cardInnerText}>
+
+                            <img src='/logo.png' />
+                            <h2>Tailored Solutions</h2>
+                            <p> Our team understands that every project is unique. We craft customized strategies to meet your specific goals, ensuring that your Web 3.0 and blockchain solutions are perfectly aligned with your vision.</p>
+                        </div>
+
+                        <div className={blockcss.cardInnerImage}>
+                            <img src='/1.jpg' />
+                        </div>
                     </div>
 
                 </div>
@@ -78,7 +97,6 @@ export default function Blockchain() {
                     </div>
                 </div>
             </div>co
-            <Contact page={"blockchain"}/>
             <div className={blockcss.footer}>
                 <Footer customstyle={style} />
             </div>

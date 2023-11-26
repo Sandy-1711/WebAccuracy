@@ -7,7 +7,6 @@ import Plans from './components/Plans/Plans'
 import Footer from './components/Footer/Footer'
 import Feature2 from './components/Feature2/Feature2'
 import Nav from './components/Nav/nav'
-import Contact from './components/Contact/Contact'
 
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
         <Feature2 />
         <Technologies />
         <Plans />
-        <Contact/>
+          
         <Footer />
       </main>
     </div>

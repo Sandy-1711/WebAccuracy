@@ -6,8 +6,8 @@ import { useEffect } from 'react';
 import MenuMobile from '@/app/components/MobileMenu/MenuMobile';
 import { useMediaQuery } from 'react-responsive';
 export default function DigitalNav() {
-    const isLaptop=useMediaQuery({
-        query:'(max-width:1200px)'
+    const isLaptop = useMediaQuery({
+        query: '(max-width:1200px)'
     })
     useEffect(function () {
 
@@ -89,7 +89,7 @@ export default function DigitalNav() {
                     <a href='/about'>About</a>
                 </li>
                 <li className={navcss.servicestab}>
-                    <a href='/services'>Services</a>
+                    <a>Services</a>
                     <div className={navcss.submenu}>
                         <ul>
                             <a href="/services/app-dev">App Development</a>
@@ -105,7 +105,7 @@ export default function DigitalNav() {
                 </li>
 
                 <li className={navcss.trendstab}>
-                    <a href='/trends'>Web 3.0 & trends</a>
+                    <a>Web 3.0 & trends</a>
                     <div className={navcss.submenu}>
 
                         <ul>
@@ -115,7 +115,7 @@ export default function DigitalNav() {
                     </div>
                 </li>
                 <li className={navcss.threedtechtab}>
-                    <a href='/3dtech'>3D reality</a>
+                    <a>3D reality</a>
                     <div className={navcss.submenu}>
                         <ul>
                             <li><a href='/3dtech/ar-vr-mr'>AR/VR/MR</a></li>

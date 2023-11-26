@@ -3,7 +3,6 @@ import Nav from "@/app/components/Nav/nav";
 import bpocss from './bpo.module.css'
 import LocoScroll from "../../../../hooks/LocoScroll";
 import Footer from "@/app/components/Footer/Footer";
-import Contact from "@/app/components/Contact/Contact";
 export default function Page() {
     const data = [
         {
@@ -87,7 +86,7 @@ export default function Page() {
             </section>
 
         </main>
-        <Contact/>
+          
         <Footer />
     </>)
 }
