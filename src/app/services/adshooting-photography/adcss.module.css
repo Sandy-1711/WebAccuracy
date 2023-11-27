@@ -397,13 +397,15 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    position: relative;
 }
 
 .card {
     height: calc(1200px / 2);
     width: calc(1200px / 3 - 20px);
-    position: relative;
+    /* position: relative; */
     background: linear-gradient(white, rgba(0, 0, 0, 0.696));
+    cursor: pointer;
 }
 
 .card img {
@@ -415,23 +417,100 @@
     mix-blend-mode: multiply;
 }
 
-.card a button {
-    position: absolute;
-    bottom: 5%;
+.card2 img {
+    object-position: left;
+}
+
+.cardGallery {
+    /* display: none; */
+    /* pointer-events: none; */
+    transform-origin: center;
+    /* transform:scale(0); */
+    position: fixed;
+    /* opacity: 1; */
+    scale: 0;
+    /* display: none; */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 30%);
+    scale: 0;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 75vh;
+    padding: 2.5vw;
+    background: white;
+    z-index: 10;
+    border: 2px solid black;
+    /* box-shadow: 0px 0px 5px 100vh black; */
+
+}
+
+.show {
+    scale: 1;
+}
+
+
+
+.cardGalleryCross {
+    position: absolute;
+    /* pointer-events: all; */
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: max-content;
+    height: max-content;
+    z-index: 20;
+}
+
+.cardGalleryCross img {
+    height: 30px !important;
+    margin: 0 !important;
+    width: 30px !important;
+    filter: invert(1);
+}
+
+.cardGallery img {
+    width: calc(100% / 3 - 10px);
+    height: calc(100% / 3);
+    max-height: 400px;
+    object-position: center;
+    /* height: auto; */
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cardGallery:nth-of-type(3) img {
+    object-position: top;
+}
+
+.cardGallery iframe {
+    /* aspect-ratio:1; */
+    /* width: calc(100% / 3 - 10px);  */
+    height: 170px;
+    width: auto;
+    margin-right: 10px;
+    /* height: 300px; */
+    /* height: calc(100% / 3); */
+}
+
+.card a button {
+    position: relative;
+    /* bottom: 5%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, 30%); */
     z-index: 1;
     background: transparent;
-    color: white;
-    border: 1px solid white;
+    /* color: white; */
+    border: 1px solid black;
     padding: 0.5vw 1.5vw;
+    margin-right: 10px;
+    margin-top: 10px;
     font-size: 1.2vw;
     transition: .1s ease-in-out;
 }
 
 .card button:hover {
-    color: black;
-    background: white;
+    color: white;
+    background: black;
 
 }
 
@@ -453,7 +532,7 @@
     }
 
     .card img {
-        object-position:top;
+        object-position: top;
     }
 
     .card a button {
@@ -666,8 +745,9 @@
         font-size: 9px;
     }
 }
+
 @media screen and (width<480px) {
-    .card a button{
+    .card a button {
         padding: 2vw 5vw;
         font-size: 18px;
     }

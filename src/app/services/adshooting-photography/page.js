@@ -1,13 +1,16 @@
 "use client";
 
-import { useLayoutEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import adcss from "./adcss.module.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Button from "./Button";
 import Footer from "@/app/components/Footer/Footer";
 import LocoScroll from "../../../../hooks/LocoScroll";
+import navcss from './navcss.module.css'
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
+import Photographers from "./components/Photographers";
 export default function Adshootingpage() {
   LocoScroll(true);
 
@@ -80,9 +83,12 @@ export default function Adshootingpage() {
       },
     });
   });
+  
   return (
     <main className={adcss.main}>
-      {/* <div className={adcss.mouseCursor}></div> */}
+
+
+
       <section className={adcss.section1}>
         <div data-scroll data-scroll-speed="-1" className={adcss.sec1Text}>
           <p>
@@ -311,26 +317,8 @@ export default function Adshootingpage() {
           </div>
         </div>
       </section>
-      <section className={adcss.photographers}>
-        <div>
-          <h1>Our Photographers</h1>
-        </div>
-        <div className={adcss.cards}>
-          <div className={adcss.card}>
-            <img src="/Photographer1.jpg" />
-            <a href="https://youtu.be/Kg_Hq-oY1HY" target="blank"><button>SHOW</button></a>
-          </div>
-          <div className={adcss.card}>
-            <img src="/Photographer2.jpg" />
-            <a href="https://youtu.be/7IdyNfHR9vw" target="blank"><button>SHOW</button></a>
-          </div>
-          <div className={adcss.card}>
-            <img src="/Photographer3.jpg" />
-            
-            <a href="https://youtu.be/vyAMAhLW99A" target="blank"><button>SHOW</button></a>
-          </div>
-        </div>
-      </section>
+
+      <Photographers/>
       <section className={adcss.section7}>
         <h2>Contact Us</h2>
         <div className={adcss.sec7ImageBox}>
