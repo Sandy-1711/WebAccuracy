@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import footercss from "./footer.module.css";
+import navcss from '../Nav/navcss.module.css'
 import uiux from "../../services/ui-ux/uiux.module.css";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -53,13 +54,33 @@ export default function Footer({ customstyle }) {
   // console.log(path);
   useLayoutEffect(function () {
     gsap.registerPlugin(ScrollTrigger)
+    
     gsap.to('#get-in-touch-btn button', {
       // backgroundColor: '#03e9f4',
-      boxShadow: "0 0 10px #03e9f4",
-      color: 'white',
-      backgroundColor: 'black',
+      // background: 'linear-gradient(90deg,#d1ff2c,#f37324,#40daf5,#ee39c7)',
+      // backgroundSize: '400px',
+      // animation:'glowbutton 8s infinite linear',
+      // boxShadow: "0 0 10px #03e9f4",
+      color: 'black',
+      // fontWeight:600,
+      // fontFamily:'sans-serif',
+      // backgroundColor: 'black',
       // duration:0.01,
-      borderColor: '#03e9f4',
+      // borderColor: '#03e9f4',
+      // onReverseComplete: function () {
+
+      //   if (path !== '/services/digital-marketing' && path !== '/services/adshooting-photography') {
+      //     document.querySelector('#get-in-touch-btn button').style.background = "transparent"
+      //   }
+
+      // },
+      onStart: function () {
+        if (path !== '/services/digital-marketing' && path !== '/services/adshooting-photography') {
+          document.querySelector('#get-in-touch-btn button').style.background = "linear-gradient(90deg,#40daf5,#ee39c7,#40daf5)";
+          document.querySelector('#get-in-touch-btn button').style.backgroundSize = "400%";
+        }
+
+      },
       scrollTrigger: {
         trigger: '#footerPage',
         scroller: 'body',

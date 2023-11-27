@@ -83,20 +83,34 @@
     outline: none;
     border: none;
     border: 2px solid white;
-    background-color: transparent;
+    background: transparent;
+    /* background: linear-gradient(90deg,#d1ff2c,#f37324,#40daf5,#ee39c7,#40daf5,#f37324,#d1ff2c); */
     color: white;
+    background: transparent;
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
     font-size: 20px;
     font-weight: 900;
     transition: 200ms ease-in-out;
+    background-size: 400%;
+    animation: glowbutton 8s infinite linear;
+}
+
+@keyframes glowbutton {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 400%;
+    }
 }
 
 .button:hover {
 
-    background-color: white;
-    color: #272839;
+    background: white;
+    color: #272839 !important;
 }
 
 .navbar form input {
@@ -337,13 +351,14 @@
     .menumobile ul li a i {
         font-size: 15px;
     }
-    .button{
+
+    .button {
         position: absolute;
         right: 4%;
         top: 50%;
         transform: translateY(-50%);
     }
-    
+
 }
 
 @media screen and (width<960px) {
@@ -378,6 +393,7 @@
     .menuicon {
         top: 7%;
     }
+
     .button {
         padding: 0.1rem 0.5rem;
         position: absolute;
