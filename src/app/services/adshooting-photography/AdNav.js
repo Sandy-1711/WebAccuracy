@@ -98,7 +98,7 @@ export default function AdNav() {
             </li> */}
 
             </ul>
-            <Link id='get-in-touch-btn' href='/contact'><button className={navcss.button}>Get In Touch</button></Link>
+            <Link  href='/contact'><button className={navcss.button}>Get In Touch</button></Link>
         </div>
         {/* <div id="menumobile" className={navcss.menumobile}>
 
