@@ -45,7 +45,7 @@ export default function Contact() {
         </div>
         <div id='callus' className={contactcss.section2}>
             <h2>Why Wait? Phone Us Directly?</h2>
-            <a href='tel:6688880000' style={{ textDecoration: 'none' }}><div className={contactcss.callCircle}>
+            <a href='tel:+918539923343' style={{ textDecoration: 'none' }}><div className={contactcss.callCircle}>
                 <h2>668 888 0000</h2>
             </div>
             </a>
