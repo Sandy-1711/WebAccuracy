@@ -37,10 +37,10 @@ export default function Photographers() {
             console.log(e.code);
             if (e.code === 'Escape') {
                 gal.forEach(function (it) {
-                    it.style.scale = 0;
+                    it.style.transform = 'scale(0) translate(-50%,-50%)';
                 })
                 card.forEach(function (i) {
-                    i.childNodes[0].style.scale = 1;
+                    i.childNodes[0].style.transform = 'scale(1) translate(-50%,-50%)';
                 })
             }
         })
@@ -49,8 +49,8 @@ export default function Photographers() {
         card.forEach(function (item, index) {
             item.addEventListener('click', function () {
 
-                gal[index].style.scale = 1;
-                item.childNodes[0].style.scale = 0;
+                gal[index].style.transform = 'scale(1) translate(-50%,-50%)';
+                item.childNodes[0].style.transform = "scale(0) translate(-50%,-50%)";
                 // setShow(true);
             })
         })
@@ -58,10 +58,10 @@ export default function Photographers() {
         cross.forEach(function (item) {
             item.addEventListener('click', function () {
                 gal.forEach(function (it) {
-                    it.style.scale = 0;
+                    it.style.transform = "scale(0) translate(-50%,-50%)";
                 })
                 card.forEach(function (i) {
-                    i.childNodes[0].style.scale = 1;
+                    i.childNodes[0].style.transform = 'scale(1) translate(-50%,-50%)';
                 })
                 // gal[0].style.scale=0;
             })

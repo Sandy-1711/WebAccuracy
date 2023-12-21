@@ -3,10 +3,15 @@ import webcss from './webcss.module.css'
 import LocoScroll from '../../../../hooks/LocoScroll';
 import { useEffect, useState } from 'react';
 import Nav from '@/app/components/Nav/nav';
+import { useMediaQuery } from 'react-responsive'
 import Footer from '@/app/components/Footer/Footer';
 export default function WebDevPage() {
     // const [width, setWidth] = useState();
-    LocoScroll(true);
+    const mobile = useMediaQuery({
+        query: '(width<650px)'
+    })
+    // console.log(mobile);
+    !mobile && LocoScroll(true);
     // useEffect(function () {
     //     setWidth(window.innerWidth)
     //     if (width > 900) {

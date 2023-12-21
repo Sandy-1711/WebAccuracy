@@ -454,12 +454,12 @@
     /* transform:scale(0); */
     position: fixed;
     /* opacity: 1; */
-    scale: 0;
+
     /* display: none; */
     top: 50%;
     left: 50%;
-    scale: 0;
-    transform: translate(-50%, -50%);
+    /* scale: 0; */
+    transform: translate(-50%, -50%) scale(0);
     width: 80vw;
     height: 75vh;
     padding: 2.5vw;
@@ -471,7 +471,7 @@
 }
 
 .show {
-    scale: 1;
+    transform: scale(1) translate(-50%, -50%);
 }
 
 

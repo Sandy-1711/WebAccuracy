@@ -238,9 +238,6 @@
 
 }
 
-.carouselInner:nth-child(1) {
-    /* transform: translate(-100%); */
-}
 
 .carouselInner {
     /* width: 200%; */
@@ -407,13 +404,16 @@
     .section2 {
         width: 100%;
     }
-    .imageContainer{
+
+    .imageContainer {
         width: 30vw;
         height: 30vw;
     }
-    .cont{
+
+    .cont {
         width: 30vw;
     }
+
     .imagesContainer {
         width: 100%;
     }
@@ -470,5 +470,157 @@
 
     .item p {
         font-size: 1.5vw;
+    }
+}
+
+@media screen and (width<990px) {
+    .rect1 {
+        border-radius: 5px;
+    }
+
+    .cont {
+        border-radius: 5px;
+    }
+
+    .imageContainer {
+        border-radius: 5px;
+    }
+
+    .imageContainer img {
+        border-radius: 5px;
+    }
+
+    .item img {
+        border-radius: 5px;
+    }
+
+    .section1 {
+        padding-top: 22vw;
+    }
+
+    .section1 p {
+        font-size: 18px;
+    }
+
+    .caption h2 {
+        font-size: 18px;
+    }
+
+    .caption p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .section3 h2 {
+        font-size: 26px;
+    }
+
+    .section1 .leadingp {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .sec4text h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .sec4text p {
+        font-size: 14px;
+    }
+
+
+    .item img {
+        border-radius: 5px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .item p {
+        font-size: 13px;
+        width: 200px;
+        word-wrap: break-word;
+        white-space: wrap;
+    }
+
+    .item:hover {
+        transform: translateY(-25px);
+    }
+}
+
+@media screen and (width<650px) {
+    .imagesContainer {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .cont {
+        width: 80%;
+    }
+
+    .cont:nth-child(even) {
+        margin-top: 0;
+        margin: 2rem 2rem;
+    }
+
+    .imageContainer {
+        width: 100%;
+        margin: auto;
+        height: 300px;
+        position: relative;
+    }
+
+    .imageContainer img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .section4 {
+        padding: 2vw;
+        width: 90%;
+        flex-direction: column-reverse;
+        height: max-content;
+    }
+
+    .sec4image {
+        height: 90vw;
+        width: 100%;
+    }
+
+    .sec4text {
+        width: 100%;
+    }
+
+}
+
+@media screen and (width<480px) {
+    .navbar {
+        height: 50px;
+    }
+
+    .section1 {
+        padding-top: 70px;
+        width: 100%;
+    }
+
+    .text {
+        width: 90%;
+    }
+
+    .rect1 {
+        width: 90%;
+    }
+
+    .image1 {
+        max-width: 55vw;
+        margin-left: 40px;
+    }
+
+    .image2 {
+        width: 75vw;
+    }
+
+    .cont {
+        width: 90%;
     }
 }

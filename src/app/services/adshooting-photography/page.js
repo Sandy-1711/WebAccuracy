@@ -9,7 +9,6 @@ import Footer from "@/app/components/Footer/Footer";
 import LocoScroll from "../../../../hooks/LocoScroll";
 import navcss from './navcss.module.css'
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 import Photographers from "./components/Photographers";
 export default function Adshootingpage() {
   LocoScroll(true);
