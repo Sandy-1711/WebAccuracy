@@ -9,6 +9,10 @@ import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 export default function AppDevPage() {
 
+    // const mobile = useMediaQuery({
+    //     query: '(width<800px)'
+    // })
+    // console.log(mobile);
     LocoScroll(true);
     useLayoutEffect(function () {
         document.querySelector('main').style.height = "100vh";
@@ -111,7 +115,7 @@ export default function AppDevPage() {
             </div>
         </section>
         <hr style={{ width: '100%', color: 'black' }} />
-         
+
         <Footer />
     </main>)
 }

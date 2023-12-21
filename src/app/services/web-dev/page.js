@@ -7,11 +7,9 @@ import { useMediaQuery } from 'react-responsive'
 import Footer from '@/app/components/Footer/Footer';
 export default function WebDevPage() {
     // const [width, setWidth] = useState();
-    const mobile = useMediaQuery({
-        query: '(width<650px)'
-    })
+    
     // console.log(mobile);
-    !mobile && LocoScroll(true);
+    LocoScroll(true);
     // useEffect(function () {
     //     setWidth(window.innerWidth)
     //     if (width > 900) {
