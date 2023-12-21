@@ -27,7 +27,7 @@ export default function Hero() {
                         while offering our employees the best training.</p>
                     <button>Start Now</button>
                 </div>
-                
+
             </div>
             {/* <div className={herocss.customshapedividerbottom}>
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
