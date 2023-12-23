@@ -1,7 +1,8 @@
 .techPage {
 
-    height: 100dvh;
-    width: 100dvw;
+    height: 100svh;
+    min-height: 900px;
+    width: 100svw;
     background: linear-gradient(-45deg, #354289, #03A9DB);
     text-transform: uppercase;
     color: white;
@@ -119,7 +120,7 @@
     position: absolute;
     bottom: 0;
     width: 2px;
-    background-color: white;
+    background-color: #F4F4F8;
 }
 
 .outerCircle2 {
