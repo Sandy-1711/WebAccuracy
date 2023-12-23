@@ -4,8 +4,9 @@
     position: absolute;
     z-index: 9999;
     top: 0;
-    left: 50%;
-    transform: translate(-50%);
+    left: 0%;
+    right: 0;
+    /* transform: translate(-50%); */
     height: 12vh;
     width: 100dvw;
 
